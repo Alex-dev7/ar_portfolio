@@ -1,0 +1,29 @@
+.header-container {
+    height: 100vh;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #satellite{
+        width: 60px;
+        position: absolute;
+        
+    }
+    .hello {
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(100, 31, 31);
+    }
+    .title{
+        margin: auto ;
+        font-size: 8rem;
+        font-weight: 500;
+        transition: 1s ease-in-out;
+       
+    }
+
+}
+
+
+
+

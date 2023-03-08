@@ -1,0 +1,23 @@
+.nav-container {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    margin: 2rem;
+    a {
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        margin: .5rem;
+        letter-spacing: .2rem;
+        text-decoration: line-through transparent;
+        transition: all 1;
+        animation: myanimation 5s ease;
+    }
+    a:hover {
+        // color: white;
+        text-decoration: line-through  rgb(255, 255, 0) 3px;
+    
+    }
+}
+
+
+// 
