@@ -15,7 +15,7 @@ function Nav(props){
                     <div>resume</div>    
                 </a> 
                 <a href="" >
-                    <div>contact me</div>    
+                    <div>contact </div>    
                 </a> 
             </nav>
         </>

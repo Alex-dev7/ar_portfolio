@@ -2,25 +2,28 @@
     height: 100vh;
     // text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    #satellite{
-        width: 60px;
-        position: absolute;
-        
-    }
+    margin-right: 5vw;
+
     .hello {
-        text-align: center;
+        // text-align: center;
         font-size: 3rem;
         color: rgb(100, 31, 31);
     }
     .title{
-        margin: auto ;
+        margin: inherit ;
         font-size: 8rem;
-        font-weight: 500;
-        transition: 1s ease-in-out;
-       
+        font-weight: 800;
+        color: transparent;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        -webkit-text-stroke: 1px #ffffff;
+        transition: all 1s;
+
     }
+
+
 
 }
 

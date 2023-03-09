@@ -32,7 +32,7 @@ function Projects(props) {
 
                 <div className='column2'>
                     <Link className="title" to={`/show/${project.id}`}>
-                        <h3>{project.title}</h3>
+                        <p>{project.title}</p>
                     </Link>
                     
                   <div>

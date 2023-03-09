@@ -1,6 +1,6 @@
 import Nav from './components/Nav/Nav'
 import Header from './components/Header/Header'
-import Bio from './components/Bio/Bio'
+// import Bio from './components/Bio/Bio'
 import Projects from './components/Projects/Projects'
 import './index.scss'
 
