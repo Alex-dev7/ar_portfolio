@@ -1,14 +1,39 @@
-import { useLoaderData } from "react-router-dom"
-
+import { useLoaderData, Link } from "react-router-dom"
+import './show.scss'
+import {motion as m, AnimatePresence} from 'framer-motion'
 function Show(props) {
 
     const item = useLoaderData()
 
-    return (<div>
 
-        <h1>{item.title}</h1>
+    return (<AnimatePresence mode={'wait'}>
+        <div  className='show-container'>
+            <m.div
+            key={item.id}
+                    initial={{opacity: .5, y: "-100%"}}
+                    animate={{opacity: 1, y: "0%"}}
+                    // exit={{opacity: 0.5, y: -1500}}
+                    transition={{duration: 0.8, ease: "easeOut"}}
+            className='left-column'>
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>        
+            </m.div>
+            <div className='right-column'>
+                <Link to='/'>
+                    <p>close</p>
+                </Link>
+                <m.img
+                    initial={{opacity: .5, x: "-250%"}}
+                    animate={{opacity: 1, x: "0%"}}
+                                 // exit={{opacity: 0.5, y: -1500}}
+                     transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
+                src={item.image} />
+            </div>
 
-    </div>)
+        </div>
+
+    </AnimatePresence>
+)
 }
 
 export default Show

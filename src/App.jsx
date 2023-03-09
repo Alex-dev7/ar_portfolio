@@ -3,16 +3,21 @@ import Header from './components/Header/Header'
 // import Bio from './components/Bio/Bio'
 import Projects from './components/Projects/Projects'
 import './index.scss'
+import {motion as m} from "framer-motion"
+import Footer from './components/Footer/Footer'
 
-function App() {
+function App({pageProps, router}) {
   
 
   return (
-    <div className="App">
+    <div
+
+    
+    className="App">
       <Nav />
       <Header />
-      {/* <Bio /> */}
-      <Projects />
+      <Projects  />
+      <Footer />
     </div>
   )
 }

@@ -1,23 +1,26 @@
 import './nav.scss'
+import { container, item } from './animation'
+import {motion as m } from 'framer-motion'
 
 function Nav(props){
 
     return (
         <>
-            <nav className='nav-container'>
-                <a href="" >
-                    <div>about</div>    
+            <m.nav variants={container} initial={"hidden"}
+            animate="show" className='nav-container'>
+                <a  href="" >
+                    <m.div variants={item} >about</m.div>    
                 </a> 
                 <a href="" >
-                    <div>work</div>    
+                    <m.div variants={item} >work</m.div>    
                 </a> 
-                <a href="" >
-                    <div>resume</div>    
+                <a variants={item} href="" >
+                    <m.div variants={item} >resume</m.div>    
                 </a> 
-                <a href="" >
-                    <div>contact </div>    
+                <a variants={item} href="" >
+                    <m.div variants={item} >contact </m.div>    
                 </a> 
-            </nav>
+            </m.nav>
         </>
     )
 }
