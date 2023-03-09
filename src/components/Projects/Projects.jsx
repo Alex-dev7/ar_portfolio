@@ -8,10 +8,14 @@ import {
     useTransform,
     useMotionValue,
     useVelocity,
-    useAnimationFrame
+    useAnimationFrame,
+
+   
   } from "framer-motion";
 import { wrap } from "framer-motion"
 import { Link } from "react-router-dom"
+
+
 
 
 //----------------------------------------------------------------
@@ -27,7 +31,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     clamp: false,
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-20, 0, v)}%`);
+  // `${wrap(-20, -45, v)}%`);
 
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
@@ -58,17 +63,19 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+
       </m.div>
     </div>
   );
 }
 //----------------------------------------------------------------
 function Projects(props) {
+
   
 
-    return <m.section
-
-    className="projects-container">
+    return <section className="projects-container">
         <section >
             <ParallaxText baseVelocity={3} >my_work</ParallaxText>
         </section>
@@ -80,10 +87,12 @@ function Projects(props) {
             
          
             <m.div
-            initial={{ opacity: 0, x: 900 ,duration: 9000}}
-            whileInView={{ opacity: 1, x: 0}}
-            viewport={{ once: true }} className={`project-card ${project.class}`} key={project.title} >
-             
+            initial={{ opacity: 0, x: "100%"}}
+            transition={{duration: 1.2, ease: "easeOut", delay: .5 }}
+            whileInView={{ opacity: 1, x: "0%",}}
+            viewport={{ once: true }}
+            className={`project-card ${project.class}`} key={project.title} >
+           
                <div className='column1'>
                     
                     <Link className="title" to={`/show/${project.id}`}>
@@ -106,7 +115,7 @@ function Projects(props) {
 
         )
         }
-    </m.section>
+    </section>
 }
 
 export default Projects
