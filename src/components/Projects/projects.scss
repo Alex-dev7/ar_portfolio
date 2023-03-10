@@ -2,7 +2,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
     gap: 2rem;
     perspective: 1000px;
     .parallax {
@@ -16,7 +16,7 @@
       
       .parallax .scroller {
         color: #ffffff2f;
-        -webkit-text-stroke: .2px #ffffff;
+        // -webkit-text-stroke: .2px #ffffff;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 64px;
@@ -129,12 +129,12 @@
         }
     }
     .first-card {
-        margin-left: 10vw;
+        margin-left: 20%;
         direction:rtl;
         
     }
     .second-card{
-        margin-left: 40vw;
+        margin-left: 10%;
         .column1{
             img {
                 width: 80%;
@@ -145,7 +145,7 @@
        
     }
     .third-card{
-        margin-left: 10vw;
+        margin-left: 35%;
         .column1{
             img {
                 width: 90%;
@@ -154,11 +154,11 @@
         }
     }
     .fourth-card{
-        margin-left: 28vw;
+        margin-left: 10%;
         direction:rtl;
     }
     .fifth-card {
-        margin-left: 40vw;
+        margin-left: 30%;
         direction:rtl;
     }
 }
