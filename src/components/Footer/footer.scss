@@ -3,7 +3,7 @@ footer {
     font-family: 'Anton', sans-serif;
     width: 100%;
     padding-bottom: 1rem ;
-  
+   
     .p-container{
         width: 100%;
         display:flex;
@@ -31,10 +31,12 @@ footer {
         }   
         #underline {
             border-bottom: 10px solid rgba(255, 0, 0, 0);
-            
+            -webkit-text-stroke: 1px rgb(247, 222, 0);
+            // background-color: #cecccc68;
         } 
         #underline:hover {
-           
+            -webkit-text-stroke: 2px rgb(255, 255, 255);
+           background-color: transparent;
             border-bottom: 10px solid rgb(255, 0, 0);
             
         }

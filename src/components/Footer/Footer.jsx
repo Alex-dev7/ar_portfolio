@@ -5,10 +5,10 @@ import { container, item } from '../Nav/animation'
 function Footer(props){
 
     return (
-        <footer>
+        <footer id="footer">
             <div
             className="p-container">
-                <p>Are you hiring?</p>
+                <p>Minding a project?</p>
                 <p id="underline">
                     Let's connect.
                 </p>
@@ -21,9 +21,9 @@ function Footer(props){
                     <li><a href="">contact me</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">white mode</a></li>
-                    <li>copyright</li>
-                    <li><a href="">back to top</a></li>
+                    <li><a href="">light mode</a></li>
+                    <li><a>copyright</a></li>
+                    <li><a href="#header">back to top</a></li>
                 </ul>
             </div>
         </footer>

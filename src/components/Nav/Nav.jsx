@@ -8,16 +8,16 @@ function Nav(props){
         <>
             <m.nav variants={container} initial={"hidden"}
             animate="show" className='nav-container'>
-                <a  href="" >
+                <a  href="#about" >
                     <m.div variants={item} >about</m.div>    
                 </a> 
-                <a href="" >
+                <a href="#work" >
                     <m.div variants={item} >work</m.div>    
                 </a> 
                 <a variants={item} href="" >
                     <m.div variants={item} >resume</m.div>    
                 </a> 
-                <a variants={item} href="" >
+                <a variants={item} href="#footer" >
                     <m.div variants={item} >contact </m.div>    
                 </a> 
             </m.nav>

@@ -4,26 +4,47 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 5vw;
+    margin-right: 10%;
 
     .hello {
         // text-align: center;
         font-size: 2.5rem;
         color: rgb(100, 31, 31);
+        // color: red;
     }
     .title{
+        font-family: 'Anton', sans-serif;
         margin: inherit ;
-        font-size: 4rem;
-        color: cadetblue;
-        font-weight: 800;
-        perspective: 1000px;
-        transform-style: preserve-3d;
-        // -webkit-text-stroke: 3px rgb(255, 255, 255);
-        transition: all 1s;
+        font-size: 10rem;
+        color: rgba(0, 187, 255, 0);
+        // perspective: 1000px;
+        // transform-style: preserve-3d;
+        text-transform: uppercase;
+        animation: textAnim .3s ease 1s 2 normal forwards;
+        @keyframes textAnim {
+            0%,
+            50%{
+                -webkit-text-stroke: .5px rgba(0, 221, 255, 0.781);
+            }
+        
+           100% {
+            -webkit-text-stroke: .5px rgb(0, 221, 255);
+                text-shadow:  -2px 2px 200px #06fbe220;
+               
+            }
+        
+            25%,
+            75% {
+                -webkit-text-stroke: .5px rgba(0, 221, 255, 0);
+                text-shadow:  -2px 2px 200px #06fbe200;
+            }
+        }
+        span {
+            color: rgba(0, 255, 255, 0);
+            text-shadow: 0px 8px 23px #02ffff0e, -2px 2px 49px #06fbe226;
+        }
 
     }
-
-
 
 }
 

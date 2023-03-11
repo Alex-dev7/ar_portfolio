@@ -10,13 +10,14 @@ function Header(props){
    
     return (
         <m.section
-        
+        id="header"
         className='header-container'>                   
              <div  className='text-wrapper'>
-                    <h2 className="hello" >hello_world</h2>
-                    <h1  className="title">I'm Alexei Rusu</h1>
+                    <h2 className="hello" >software engineer * full-stack developer</h2>
+                    <h1  className="title">I<span>'</span>m Alexei Rusu</h1>
                     <div>
-                        <p>full-stack engineer | </p>
+                        <p></p>
+                         <p> </p>
                     </div>
                 </div>
             

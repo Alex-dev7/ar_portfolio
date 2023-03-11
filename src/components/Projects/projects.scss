@@ -15,8 +15,8 @@
       }
       
       .parallax .scroller {
-        color: #ffffff2f;
-        // -webkit-text-stroke: .2px #ffffff;
+        color: #ffffff00;
+        -webkit-text-stroke: .8px #ffffffaf;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 64px;
@@ -30,31 +30,6 @@
         display: block;
         margin-right: 60px;
       }
-    // .title-container{
-    //     width: 100vw;
-    //     // outline: auto;
-    //     display: flex;
-    //     // justify-content: space-evenly;
-
-
-    //     .work-title {
-    //     font-size: 5rem;
-    //     font-weight: 500;
-    //     color: rgb(203, 18, 18);
-    //     // text-align: center;
-    //     // animation: carousel-animation 7s linear  infinite;
-    // }
-    // @keyframes carousel-animation {
-    //     0% {
-    //         transform: translate(-100vw,0);
-    //     }
-    //     100% {
-    //         transform: translate(0vw,0);
-    //     }
-    // }
-
-    // }
-
 
 
     .project-card {
@@ -80,7 +55,7 @@
               width: 100%;
               height: 100%;
               object-fit: cover;
-              filter: grayscale(1) sepia(0.5) saturate(0.9) contrast(0.6) brightness(0.8);
+              filter: grayscale(1) sepia(0.5) saturate(0.5) contrast(0.5) brightness(0.8);
               transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
             }
           
@@ -88,7 +63,7 @@
             //   background-size: 120%;
               transform: scale(0.95);
               transition: all 1s ease-in-out;
-              filter: grayscale(0.3) sepia(0.5) saturate(0.9) contrast(0.9) brightness(0.9);
+          
             }
 
             &:hover img {
@@ -124,7 +99,23 @@
             }
             a{
                 text-decoration: none;
-                color: cadetblue;
+              
+
+            }
+            .links-wrapper {
+                // outline: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 1rem;
+                a {
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 5px 10px;
+                    color: rgb(255, 208, 0);
+                    // border: 1px solid rgb(255, 255, 255); 
+                    // border-radius: 15px;
+                }
             }
         }
     }

@@ -75,7 +75,7 @@ function Projects(props) {
 
   
 
-    return <section className="projects-container">
+    return <section className="projects-container" id="work">
         <section >
             <ParallaxText baseVelocity={3} >my_work</ParallaxText>
         </section>
@@ -101,7 +101,7 @@ function Projects(props) {
                     <Link className="title" to={`/show/${project.id}`}>
                         <p>{project.title}</p>
                     </Link>  
-                  <div>
+                  <div className="links-wrapper">
                     <a  href={project.repo} >GitHub</a>
                     <a  href={project.live} >Live Site</a>                    
                   </div>
