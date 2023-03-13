@@ -1,21 +1,21 @@
 [
-    {   
+    {
         "id" : 1,
         "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
-        "title": "Pocket Somelier",
-        "description": "PROJECT 1 at General Assembly",
+        "title": "Capstone Project",
+        "description": "Capstone Project at General Assembly",
         "live": "https://pocket-sommelier.vercel.app/",
         "repo": "https://github.com/Alex-dev7/Project1-SEI",
-        "class": "first-card"
+        "class": "fifth-card"
     },
     {
         "id" : 2,
         "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
-        "title": "Missing Pets",
-        "description": "PROJECT 2 at General Assembly",
-        "live": "https://missing-pets.onrender.com/",
-        "repo": "https://github.com/Alex-dev7/Missing_Pet_Project2",
-        "class": "second-card"
+        "title": "Project4",
+        "description": "PROJECT 4 at General Assembly",
+        "live": "https://pocket-sommelier.vercel.app/",
+        "repo": "https://github.com/Alex-dev7/Project1-SEI",
+        "class": "fourth-card"
     },
     {
         "id" : 3,
@@ -29,19 +29,19 @@
     {
         "id" : 4,
         "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
-        "title": "Project4",
-        "description": "PROJECT 4 at General Assembly",
-        "live": "https://pocket-sommelier.vercel.app/",
-        "repo": "https://github.com/Alex-dev7/Project1-SEI",
-        "class": "fourth-card"
+        "title": "Missing Pets",
+        "description": "PROJECT 2 at General Assembly",
+        "live": "https://missing-pets.onrender.com/",
+        "repo": "https://github.com/Alex-dev7/Missing_Pet_Project2",
+        "class": "second-card"
     },
-    {
+    {   
         "id" : 5,
         "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
-        "title": "Capstone Project",
-        "description": "Capstone Project at General Assembly",
+        "title": "Pocket Somelier",
+        "description": "PROJECT 1 at General Assembly",
         "live": "https://pocket-sommelier.vercel.app/",
         "repo": "https://github.com/Alex-dev7/Project1-SEI",
-        "class": "fifth-card"
+        "class": "first-card"
     }
 ]

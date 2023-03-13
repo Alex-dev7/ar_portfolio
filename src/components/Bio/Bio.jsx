@@ -1,5 +1,3 @@
-import about from "../../json/about.json"
-import {motion as m} from "framer-motion"
 import './bio.scss'
 import svg from './nnneon.svg'
 

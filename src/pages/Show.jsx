@@ -1,12 +1,12 @@
 import { useLoaderData, Link } from "react-router-dom"
 import './show.scss'
-import {motion as m, AnimatePresence} from 'framer-motion'
+import {motion as m} from 'framer-motion'
 function Show(props) {
 
     const item = useLoaderData()
 
 
-    return (<AnimatePresence mode={'wait'}>
+    return (<section>
         <div  className='show-container'>
             <m.div
             key={item.id}
@@ -32,7 +32,7 @@ function Show(props) {
 
         </div>
 
-    </AnimatePresence>
+    </section>
 )
 }
 
