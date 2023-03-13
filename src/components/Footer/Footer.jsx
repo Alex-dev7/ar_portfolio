@@ -15,12 +15,12 @@ function Footer(props){
             </div>
             <div className="links-container">
                 <ul>
-                    <li><a href="">linkedin</a></li>
-                    <li><a href="">github</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">linkedin</a></li>
+                    <li><a href="https://github.com/Alex-dev7" target="_blank">github</a></li>
                     <li><a href="">resume</a></li>
                     <li><a href="">contact me</a></li>
                 </ul>
-                <ul>
+                <ul id="copyright-wrapper">
                     <li><a href="">light mode</a></li>
                     <li><a>copyright</a></li>
                     <li><a href="#header">back to top</a></li>

@@ -46,7 +46,8 @@ footer {
         margin: 0 auto;
         padding: 0 5%;
         width: 98%;
-        // font-family: 'Gruppo', cursive;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 900;
         height: 180px;
         background-color: rgb(255, 255, 255);
         display: flex;
@@ -64,6 +65,12 @@ footer {
                 font-weight:600;
                 letter-spacing: 1px;
             }
+        }
+        #copyright-wrapper {
+            li a {
+                font-family: 'Gruppo', cursive;
+            }
+            
         }
     }
 }

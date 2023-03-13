@@ -12,7 +12,7 @@
         p{
             -webkit-text-stroke: .8px #ffffff5b;
             letter-spacing: 0rem;
-            font-size: 6rem;
+            font-size: 5rem;
             font-weight: 900;
             color: #ffffff00;
             
@@ -21,9 +21,6 @@
     }
     .bio-wrapper {
         width: 100vw;
-        // font-family: 'Six Caps', sans-serif;
-        // font-family: 'Gruppo', cursive;
-        // font-family: 'Anton', sans-serif;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.7rem;
         font-weight:100;
@@ -38,12 +35,13 @@
             display: flex;
             flex-direction: column;
             text-align: justify;
-          
+            padding: 2rem;
+            gap: 2rem;
             z-index: 11;
             p {
                
                 color: rgb(197, 195, 195);
-                padding: 1rem;
+      
             }
         }
 
@@ -54,7 +52,7 @@
                 left: 50%;
                 top: 0%;
                 transform: translateY(-30%);
-                width: 900px;
+                width: 800px;
                 background-color: transparent;
             }
         }
