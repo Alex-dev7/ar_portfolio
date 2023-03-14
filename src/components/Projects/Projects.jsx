@@ -85,7 +85,7 @@ function Projects(props) {
         (
             <m.div
             initial={{ opacity: 0, x: "100%"}}
-            transition={{duration: 1.2, ease: "easeOut", delay: .5 }}
+            transition={{duration: 1.2, ease: "easeOut", delay: .2 }}
             whileInView={{ opacity: 1, x: "0%",}}
             viewport={{ once: true, }}
             className={`project-card ${project.class}`} key={project.title} >

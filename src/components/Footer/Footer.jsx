@@ -11,7 +11,7 @@ function Footer(props){
             className="p-container">
                 <p>Minding a project?</p>
                 <p id="underline">
-                    Let's connect.
+                    <a href="#contact">Let's connect.</a>
                 </p>
             </div>
             <div className="links-container">
@@ -19,7 +19,7 @@ function Footer(props){
                     <li><a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">linkedin</a></li>
                     <li><a href="https://github.com/Alex-dev7" target="_blank">github</a></li>
                     <li><a href="">resume</a></li>
-                    <li><a href="">contact me</a></li>
+                    <li><a href="#contact">contact me</a></li>
                 </ul>
                 <ul id="copyright-wrapper">
                     <li><a href="">light mode</a></li>
