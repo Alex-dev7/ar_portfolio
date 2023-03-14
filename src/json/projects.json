@@ -1,12 +1,12 @@
 [
     {
         "id" : 1,
-        "desktopImage" : "#",
-        "mobileImage": "#",
+        "desktopImage" : "https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2016Q4/8-steps-to-build-a-project-management-timeline@2x.png",
+        "mobileImage": "https://w0.peakpx.com/wallpaper/203/559/HD-wallpaper-iphone-xs-max-xsmax-iphone10-iphonex-iphonexr-xr-world-ios.jpg",
         "title": "Capstone Project",
         "description": "Capstone Project at General Assembly",
-        "live": "https://pocket-sommelier.vercel.app/",
-        "repo": "https://github.com/Alex-dev7/Project1-SEI",
+        "live": "#",
+        "repo": "#",
         "class": "fifth-card"
     },
     {
@@ -21,8 +21,8 @@
     },
     {
         "id" : 3,
-        "desktopImage" : "#",
-        "mobileImage": "#",
+        "desktopImage" : "https://i.imgur.com/MmBBmOu.png",
+        "mobileImage": "https://i.imgur.com/xrnuLPT.png",
         "title": "MyEvents",
         "description": "MyEvents is a React application that allows users to keep track of events.",
         "live": "https://myevents-s.netlify.app/",

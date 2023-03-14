@@ -102,8 +102,8 @@ function Projects(props) {
                         <p>{project.title}</p>
                     </Link>  
                   <div className="links-wrapper">
-                    <a  href={project.repo} >GitHub</a>
-                    <a  href={project.live} >Live Site</a>                    
+                    <a  href={project.repo} target="_blank"  >Source code -{'>'}</a>
+                    <a  href={project.live} target="_blank">Live Site</a>                    
                   </div>
                 </div>  
             </m.div>

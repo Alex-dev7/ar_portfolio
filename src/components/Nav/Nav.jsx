@@ -17,7 +17,7 @@ function Nav(props){
                 <a variants={item} href="" >
                     <m.div variants={item} >resume</m.div>    
                 </a> 
-                <a variants={item} href="#footer" >
+                <a variants={item} href="#contact" >
                     <m.div variants={item} >contact </m.div>    
                 </a> 
             </m.nav>

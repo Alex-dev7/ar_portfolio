@@ -1,4 +1,5 @@
 import {useForm }from "react-hook-form"
+import './contact.scss'
 
 export default function ContactForm() {
     const { register, handleSubmit, formState: {errors} } = useForm()
@@ -8,12 +9,18 @@ export default function ContactForm() {
 
      console.log(errors)
     return (
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("name", {required: "This is required."})} placeholder="name" />
-        <input {...register("email", {required: "This is required."})} placeholder="email"/>
-        <input {...register("subject", {required: "This is required."})} placeholder="subject" />
-        <input {...register("message", {required: "This is required.", minLength: 4})} placeholder="message"/>
-        <input type="submit" />
-      </form>
+      <div className="contact-container" id="contact">
+        <p>contact/</p>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div>
+            <input {...register("name", {required: "This is required."})} placeholder="name" />
+            <input {...register("email", {required: "This is required."})} placeholder="email"/>            
+          </div>
+          <input {...register("subject", {required: "This is required."})} placeholder="subject" />
+          <textarea {...register("message", {required: "This is required.", minLength: 4})} placeholder="message"/>
+          <input type="submit" />
+        </form>        
+      </div>
+
     );
   }

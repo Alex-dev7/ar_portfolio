@@ -19,7 +19,7 @@ function Show(props) {
                 <p>{item.description}</p>        
             </m.div>
             <div className='right-column'>
-                <Link to='/'>
+                <Link to='/#work'>
                     <p>close</p>
                 </Link>
                 <m.img

@@ -1,6 +1,7 @@
 import './footer.scss'
 import {motion as m } from 'framer-motion'
 import { container, item } from '../Nav/animation'
+import ContactForm from '../Contact/ContactForm'
 
 function Footer(props){
 
@@ -26,6 +27,7 @@ function Footer(props){
                     <li><a href="#header">back to top</a></li>
                 </ul>
             </div>
+            <ContactForm />
         </footer>
     )
 }
