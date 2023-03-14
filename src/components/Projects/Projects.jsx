@@ -16,7 +16,7 @@ import { wrap } from "framer-motion"
 import { Link } from "react-router-dom"
 
 
-
+console.log(projects)
 
 //----------------------------------------------------------------
 function ParallaxText({ children, baseVelocity = 100 }) {
@@ -93,7 +93,7 @@ function Projects(props) {
                <div className='column1'>
                     
                     <Link className="title" to={`/show/${project.id}`}>
-                        <img src={project.image} />  
+                        <img src={project.desktopImage} referrerpolicy="no-referrer"/>  
                     </Link>                    
                 </div>
 

@@ -1,7 +1,8 @@
 [
     {
         "id" : 1,
-        "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
+        "desktopImage" : "#",
+        "mobileImage": "#",
         "title": "Capstone Project",
         "description": "Capstone Project at General Assembly",
         "live": "https://pocket-sommelier.vercel.app/",
@@ -10,8 +11,9 @@
     },
     {
         "id" : 2,
-        "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
-        "title": "Project4",
+        "desktopImage" : "https://i.imgur.com/6aGXhWO.png",
+        "mobileImage": "https://i.imgur.com/2aSywHO.png",
+        "title": "SupplySmart",
         "description": "PROJECT 4 at General Assembly",
         "live": "https://pocket-sommelier.vercel.app/",
         "repo": "https://github.com/Alex-dev7/Project1-SEI",
@@ -19,7 +21,8 @@
     },
     {
         "id" : 3,
-        "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
+        "desktopImage" : "#",
+        "mobileImage": "#",
         "title": "MyEvents",
         "description": "MyEvents is a React application that allows users to keep track of events.",
         "live": "https://myevents-s.netlify.app/",
@@ -28,7 +31,8 @@
     },
     {
         "id" : 4,
-        "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
+        "desktopImage" : "https://i.imgur.com/UWxjF08.png",
+        "mobileImage": "https://i.imgur.com/wSMFzTo.png",
         "title": "Missing Pets",
         "description": "PROJECT 2 at General Assembly",
         "live": "https://missing-pets.onrender.com/",
@@ -37,7 +41,8 @@
     },
     {   
         "id" : 5,
-        "image" : "https://hive.com/wp-content/uploads/2022/04/creative-project-management.png",
+        "desktopImage" : "https://i.imgur.com/FHqD6ET.png",
+        "mobileImage": "https://i.imgur.com/jCQ83qp.png",
         "title": "Pocket Somelier",
         "description": "PROJECT 1 at General Assembly",
         "live": "https://pocket-sommelier.vercel.app/",

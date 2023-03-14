@@ -1,4 +1,3 @@
-import about from "../../json/about.json"
 import './header.scss'
 import { motion as m, transform} from "framer-motion"
 
