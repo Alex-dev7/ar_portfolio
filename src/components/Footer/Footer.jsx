@@ -27,7 +27,7 @@ function Footer(props){
                 </ul>
                 <ul id="copyright-wrapper">
                     
-                    <li>copyright</li>
+                    {/* <li>copyright</li> */}
                     <li><a href="#header">back to top</a></li>
                 </ul>
             </div>

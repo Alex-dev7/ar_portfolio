@@ -16,12 +16,18 @@ function Show(props) {
                     transition={{duration: 0.8, ease: "easeOut"}}
             className='left-column'>
                 <h1>{item.title}</h1>
-                <p>{item.description}</p>        
+                <p>{item.description}</p>
+                <div className="links-wrapper">
+                    <a  href={item.repo} target="_blank"  >Source code -{'>'}</a>
+                    <a  href={item.live} target="_blank">Live Site</a>                    
+                  </div>
+
             </m.div>
             <div className='right-column'>
                 <Link to='/#work'>
                     <p>close</p>
                 </Link>
+               
                 <m.img
                 className="desktop-pic"
                     initial={{opacity: .5, x: "-250%"}}
