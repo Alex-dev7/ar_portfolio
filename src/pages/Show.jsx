@@ -5,6 +5,7 @@ function Show(props) {
 
     const item = useLoaderData()
 
+    console.log(window.history.scrollRestoration)
 
     return (<section>
         <div  className='show-container'>
@@ -29,7 +30,7 @@ function Show(props) {
                 </ul>
             </m.div>
             <div className='right-column'>
-                <Link to='/#work'>
+                <Link to={`/#work`}>
                     <p>close</p>
                 </Link>
                

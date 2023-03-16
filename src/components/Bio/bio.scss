@@ -39,10 +39,23 @@
             gap: 2rem;
             z-index: 11;
             p {
-               
                 color: rgb(197, 195, 195);
-      
+                span:hover{
+                    background-color: rgb(238, 250, 3);
+                    color: black !important;
+                    transition: all .2s;
+                }
             }
+            a{
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    text-decoration:underline;
+                    
+                }
+            }
+
         }
 
         .svg-container{
