@@ -1,7 +1,7 @@
 import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
-import pdf from './rusu-alexei-Resume.pdf'
+import pdf from '../../assets/resume.pdf'
 import { FaLinkedin, FaGithub  } from 'react-icons/fa';
 
 function Nav(props){
@@ -28,7 +28,7 @@ function Nav(props){
                 <a href="#work" >
                     <m.div variants={item} >work</m.div>    
                 </a> 
-                <a href="#"  target="_blank" >
+                <a href={pdf}  target="_blank" >
                     <m.div variants={item}>resume</m.div>    
                 </a> 
                 <a  href="#contact-link" boolean={true} >

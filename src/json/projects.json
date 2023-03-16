@@ -4,7 +4,8 @@
         "desktopImage" : "https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2016Q4/8-steps-to-build-a-project-management-timeline@2x.png",
         "mobileImage": "https://w0.peakpx.com/wallpaper/203/559/HD-wallpaper-iphone-xs-max-xsmax-iphone10-iphonex-iphonexr-xr-world-ios.jpg",
         "title": "Capstone Project",
-        "description": "Capstone Project at General Assembly",
+        "description": "WORK IN PROGRESS",
+        "skills": ["NextJS", "Prisma", "TypeScript", "Tailwind", "NextAuth", "PostgreSQL"],
         "live": "#",
         "repo": "#",
         "class": "fifth-card"
@@ -15,6 +16,7 @@
         "mobileImage": "https://i.imgur.com/2aSywHO.png",
         "title": "SupplySmart",
         "description": "SupplySmart is a dynamic and user-friendly tool for managing an inventory of tools and supplies. With a full CRUD functionality, the app will allow users to input and store data on each item in the inventory, such as its name, description, quantity, image and location. Using React's component-based architecture, the app has a modular design that makes it easy to add new features or modify existing ones. Intuitive and easy to use, with a clear and concise user interface that allows users to quickly and efficiently navigate and manage the inventory. The app also has a responsive design, allowing it to work seamlessly on any device, including desktops, laptops, tablets, and smartphones. With this app, users will be able to easily track the availability and location of tools and supplies, making it an essential tool for any workshop, garage, or storage facility.",
+        "skills": ["ReactJS", "react-router-dom", "SCSS", "Django", "MongoDB", "Mongoose", "CORS"],
         "live": "https://pocket-sommelier.vercel.app/",
         "repo": "https://github.com/Alex-dev7/Project1-SEI",
         "class": "fourth-card"
@@ -24,8 +26,10 @@
         "desktopImage" : "https://i.imgur.com/MmBBmOu.png",
         "mobileImage": "https://i.imgur.com/xrnuLPT.png",
         "title": "MyEvents",
-        "description": "MyEvents is a React application that allows users to keep track of events.",
+        "description": "MyEvents is a React application that allows users to view, create, delete, and update events. The app features user authentication, ensuring that only authorized users can access and manipulate event information. The user interface is intuitive and easy to navigate, allowing users to quickly and efficiently manage their events. Additionally, the application integrates with a backend service to securely store and retrieve event data. Overall, “MyEvents” is a powerful and user-friendly tool for managing events and keeping track of important dates and deadlines.",
+        "skills": ["ReactJS", "react-router-dom", "SCSS", "Bootstrap", "ExpressJS", "PostgreSQL", "JWT", "Bcrypt"],
         "live": "https://myevents-s.netlify.app/",
+        "repo-backend": "https://github.com/cindywongdev/Project3-myEvents-backend",
         "repo": "https://github.com/Alex-dev7/Project3-myEvents-frontend",
         "class": "third-card"
     },
@@ -34,7 +38,8 @@
         "desktopImage" : "https://i.imgur.com/UWxjF08.png",
         "mobileImage": "https://i.imgur.com/wSMFzTo.png",
         "title": "Missing Pets",
-        "description": "PROJECT 2 at General Assembly",
+        "description": "Missing Pets is a server side rendered application that uses EJS templates to display the website. In the app you can create a missing/found pet flyer, and post it on the bulletin board. Every user can see the post, and comment on it. To create a flyer, the user will make an account, that will give them acces to a template form, which after submition will be displayed on the bulletin board.",
+        "skills": ["CSS", "JavaScript", "EJS", "ExpressJS", "express-session","Bcrypt", "NodeJS", "MongoDB", "Mongoose"],
         "live": "https://missing-pets.onrender.com/",
         "repo": "https://github.com/Alex-dev7/Missing_Pet_Project2",
         "class": "second-card"
@@ -43,8 +48,9 @@
         "id" : 5,
         "desktopImage" : "https://i.imgur.com/FHqD6ET.png",
         "mobileImage": "https://i.imgur.com/jCQ83qp.png",
-        "title": "Pocket Somelier",
-        "description": "PROJECT 1 at General Assembly",
+        "title": "Pocket Sommelier",
+        "description": "Pocket Sommelier is a frontend application that is making AJAX calls to a third party API. This tool will help you find a good food match for your wine or vice versa. The app presents you with two search options, one that will look for a food pairing for the specific wine, and other will look for a wine pairing for the choice of food. The search result will display on the page with the serving recommendations, wine descriptions and images.",
+        "skills": ["HTML", "CSS", "JavaScript", "JQuery", "Spoonacular API"],
         "live": "https://pocket-sommelier.vercel.app/",
         "repo": "https://github.com/Alex-dev7/Project1-SEI",
         "class": "first-card"

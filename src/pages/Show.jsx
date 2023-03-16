@@ -20,8 +20,13 @@ function Show(props) {
                 <div className="links-wrapper">
                     <a  href={item.repo} target="_blank"  >Source code -{'>'}</a>
                     <a  href={item.live} target="_blank">Live Site</a>                    
-                  </div>
-
+                </div>
+                <h3>Tech Stack</h3>
+                <ul>
+                    {item.skills.map((i) => (
+                        <li>{i}</li>
+                    ))}
+                </ul>
             </m.div>
             <div className='right-column'>
                 <Link to='/#work'>

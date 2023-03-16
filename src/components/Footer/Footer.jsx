@@ -1,6 +1,6 @@
 import './footer.scss'
 import ContactForm from '../Contact/ContactForm'
-import pdf from '../Nav/rusu-alexei-Resume.pdf'
+import pdf from '../../assets/resume.pdf'
 import { useState } from 'react'
 
 
@@ -22,7 +22,7 @@ function Footer(props){
                 <ul>
                     <li><a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">linkedin</a></li>
                     <li><a href="https://github.com/Alex-dev7" target="_blank">github</a></li>
-                    <li><a href="#" >download resume</a></li>
+                    <li><a href={pdf} download>download resume</a></li>
                     <li><a href="#contact" onClick={() => setToggle(!toggle)}>contact me</a></li>
                 </ul>
                 <ul id="copyright-wrapper">
