@@ -62,18 +62,32 @@ footer {
         ul{
             display: flex;
             gap: 1rem;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             list-style: none;
+            font-family: 'Gruppo', cursive;
             li a {
                 text-decoration: none;
                 color: rgb(0, 0, 0);
                 font-weight:600;
                 letter-spacing: 1px;
+                border: 1px solid rgba(0, 0, 0, 0);
+                padding: 5px 8px;
+                font-variant: small-caps;
+                &:hover{
+                    border: 1px solid black;
+                    -webkit-text-stroke: 1px rgb(0, 0, 0);
+                    transition: all .1s;                   
+                }
+                &:active{
+                    border: 1px solid rgba(0, 0, 0, 0);
+                    -webkit-text-stroke: .5px rgb(0, 0, 0);
+                    transition: all .1s;                  
+                }
             }
         }
         #copyright-wrapper {
             li a {
-                font-family: 'Gruppo', cursive;
+                
             }
             
         }

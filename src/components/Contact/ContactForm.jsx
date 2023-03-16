@@ -4,7 +4,7 @@ import './contact.scss'
 export default function ContactForm() {
     const { register, handleSubmit, formState: {errors} } = useForm()
     const onSubmit = (formData) => {
-        window.location.href = `mailto:rusualexei1995@gmail.com?subject=${formData.subject}&body=${formData.message}`
+        window.location.href = `mailto:rusualexei1995@gmail.com?subject=${formData.subject}&body=${formData.message}, (${formData.email})`
     }
 
      console.log(errors)
@@ -12,9 +12,10 @@ export default function ContactForm() {
       <div className="contact-container" id="contact">
         <p>contact/</p>
         <form onSubmit={handleSubmit(onSubmit)}>
+          <h3>say Hi, 👋</h3>
           <div>
             <input {...register("name", {required: "This is required."})} placeholder="name" />
-            <input {...register("email", {required: "This is required."})} placeholder="email"/>            
+            <input {...register("email")} placeholder="email"/>            
           </div>
           <input {...register("subject", {required: "This is required."})} placeholder="subject" />
           <textarea {...register("message", {required: "This is required.", minLength: 4})} placeholder="message"/>

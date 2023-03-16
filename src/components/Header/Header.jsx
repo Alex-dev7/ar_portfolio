@@ -12,7 +12,7 @@ function Header(props){
         id="header"
         className='header-container'>                   
              <div  className='text-wrapper'>
-                    <h2 className="hello" >software engineer * full-stack developer</h2>
+                    <h2 className="hello" >full-stack software engineer</h2>
                     <h1  className="title">I<span>'</span>m Alexei Rusu</h1>
                     <div>
                         <p></p>

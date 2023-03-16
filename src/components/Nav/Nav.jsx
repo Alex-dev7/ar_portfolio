@@ -1,8 +1,11 @@
 import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
+import pdf from './rusu-alexei-Resume.pdf'
 
 function Nav(props){
+
+
 
     return (
         <>
@@ -14,10 +17,10 @@ function Nav(props){
                 <a href="#work" >
                     <m.div variants={item} >work</m.div>    
                 </a> 
-                <a variants={item} href="" >
-                    <m.div variants={item} >resume</m.div>    
+                <a href="#"  target="_blank" >
+                    <m.div variants={item}>resume</m.div>    
                 </a> 
-                <a variants={item} href="#contact" >
+                <a  href="#contact-link" boolean={true} >
                     <m.div variants={item} >contact </m.div>    
                 </a> 
             </m.nav>

@@ -10,7 +10,7 @@
         left: 2%;
         top: 5%;
         font-family: 'Orbitron', sans-serif;
-        -webkit-text-stroke: .8px #ffffff5b;
+        -webkit-text-stroke: .8px #ffffff77;
         letter-spacing: 0rem;
         font-size: 5rem;
         font-weight: 900;
@@ -23,6 +23,12 @@
         max-width: 600px;
         // max-height:400px;
         align-self: center;
+        h3 {
+            color: white;
+            font-family: 'Gruppo', cursive;
+            font-size: 2rem;
+            margin: 2rem auto;
+        }
         div input {
         width: 48%;
         }
