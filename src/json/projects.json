@@ -1,13 +1,13 @@
 [
     {
         "id" : 1,
-        "desktopImage" : "https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2016Q4/8-steps-to-build-a-project-management-timeline@2x.png",
-        "mobileImage": "https://w0.peakpx.com/wallpaper/203/559/HD-wallpaper-iphone-xs-max-xsmax-iphone10-iphonex-iphonexr-xr-world-ios.jpg",
-        "title": "Capstone Project",
-        "description": "WORK IN PROGRESS",
+        "desktopImage" : "https://imgur.com/Oq5RKex.png",
+        "mobileImage": "https://imgur.com/RoNydFC.png",
+        "title": "SyntaxSoup",
+        "description": "SyntaxSoup is a blog that chalanges you to be a better programmer, stay humble, and to keep on learning. This blogging app is built with Next.js, Prisma, and PostgreSQL. The app allows users to create an account and publish blog posts. Users can view a list of all published posts, view individual posts, search for posts based on their title or tag, delete, and upgrade posts that he created. This application is written in TypeScript, ensuring strong type safety throughout the codebase. Overall, the app is designed to provide a modern and user-friendly interface for creating and sharing content online.",
         "skills": ["NextJS", "Prisma", "TypeScript", "Tailwind", "NextAuth", "PostgreSQL"],
-        "live": "#",
-        "repo": "#",
+        "live": "https://sytycc-blog.vercel.app",
+        "repo": "https://github.com/Alex-dev7/GA-CAPSTONE-PROJECT",
         "class": "fifth-card"
     },
     {
