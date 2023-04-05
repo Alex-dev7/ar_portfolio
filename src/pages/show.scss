@@ -92,3 +92,52 @@
     }
 
 }
+
+
+@media (max-width: 1050px) {
+    .show-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+}
+
+// @media (max-width: 880px) {
+//     .contact-container {
+//         p {
+//             letter-spacing: 0rem;
+//             font-size: 2.8rem;
+       
+//         }
+//         form {
+//             div input {
+//                 display: flex;
+//                 flex-direction: column;
+//                 width: 99%;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 880px) {
+//     .contact-container {
+//         form {
+//             div input {
+//                 display: flex;
+//                 flex-direction: column;
+//                 width: 99%;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 500px) {
+//     .contact-container {
+       
+//         form {
+//             margin-top: 5rem ;
+//         }
+//     }
+// }
