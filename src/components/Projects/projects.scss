@@ -177,13 +177,11 @@
 
 @media (max-width: 1650px) {
     .projects-container {
+        margin-top: 3rem ;
         .parallax .scroller {
             font-size: 3.5rem;
           }
-
           .project-card {         
-            outline: auto;
-
             .column1 {
                 width: 500px;
                 height: 200px;
@@ -200,9 +198,7 @@
             font-size: 2.2rem;
           }
 
-          .project-card {
-            outline: auto;
-            
+          .project-card {           
             .column1 {
                 width: 380px;
                 height: 180px;
@@ -242,13 +238,13 @@
           }
 
           .project-card {
-            outline: auto;
+           
             display: flex;
             flex-direction: column;
             
             
             .column1 {
-                width: 380px;
+                width: 80vw;
                 height: 180px;
                 margin: 0;
                 img {
