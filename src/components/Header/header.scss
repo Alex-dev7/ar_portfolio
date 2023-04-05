@@ -107,6 +107,7 @@
 @media (max-width: 768px) {
 
     .header-container {
+       
         .title {
             font-size: 3rem;
             font-weight: 900;
@@ -121,6 +122,7 @@
 @media (max-width: 550px) {
 
     .header-container {
+        height: 70vh;
         align-items: start;
         margin-top: 30vh;
         .title {

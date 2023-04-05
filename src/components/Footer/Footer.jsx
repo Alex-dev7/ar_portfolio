@@ -28,7 +28,7 @@ function Footer(props){
                 <ul id="copyright-wrapper">
                     
                     {/* <li>copyright</li> */}
-                    <li><a href="#header">back to top</a></li>
+                    <li><a href="#header">back to top </a></li>
                 </ul>
             </div>
             { toggle ? <ContactForm /> : ""}

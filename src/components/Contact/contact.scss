@@ -20,7 +20,7 @@
         
         display: flex;
         flex-direction: column;
-        max-width: 600px;
+        width: 700px;
         // max-height:400px;
         align-self: center;
         h3 {
@@ -74,3 +74,99 @@
     }
 
 }
+
+
+
+
+
+
+@media (max-width: 1320px) {
+    .contact-container {
+        p {
+            letter-spacing: 0rem;
+            font-size: 4rem;
+       
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .contact-container {
+        p {
+            letter-spacing: 0rem;
+            font-size: 2.8rem;
+       
+        }
+        form {
+            div input {
+                display: flex;
+                flex-direction: column;
+                width: 99%;
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .contact-container {
+        form {
+            div input {
+                display: flex;
+                flex-direction: column;
+                width: 99%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-container {
+       
+        form {
+            margin-top: 5rem ;
+        }
+    }
+}
+
+
+// @media (max-width: 500px) {
+//     footer {
+
+//         .p-container {
+//             p {
+
+//                 line-height: 3.5rem;
+//                 font-size: 3.5rem;
+//                letter-spacing: 3px;
+    
+//             }
+//         }
+//         .links-container {
+          
+
+//             ul {
+//                 flex-direction: column;
+                
+//             }
+//             #copyright-wrapper {
+                
+//                 li {
+//                     transform: rotateZ(-90deg)
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 390px) {
+//     footer {
+//         .links-container {
+
+//             ul {
+//                 font-size: 1.3rem;
+                
+//             }
+//         }
+
+//     }
+// }
