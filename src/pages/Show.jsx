@@ -30,8 +30,8 @@ function Show(props) {
                 </ul>
             </m.div>
             <div className='right-column'>
-                <Link to={`/#work`}>
-                    <p>close</p>
+                <Link id='back-button' to={`/#work`}>
+                    back
                 </Link>
                
                 <m.img

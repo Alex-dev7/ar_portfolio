@@ -96,11 +96,27 @@
 
 @media (max-width: 1050px) {
     .show-container {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        // height: auto;
+        grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr;
+        position: relative;
         
+        .right-column {
+            overflow-y:visible;
+            margin-bottom: 5%;
+            height: auto;
+            #back-button {
+                position: absolute;
+                
+            }
+            .mobile-pic {
+                margin-top: 3rem;
+                max-width: 350px;
+                max-height: 450px;
+            }
+
+        }
+
     }
 }
 
