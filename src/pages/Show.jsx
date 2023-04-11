@@ -8,7 +8,7 @@ function Show(props) {
     console.log(window.history.scrollRestoration)
 
     return (<section>
-        <div  className='show-container'>
+        <div  className='show-container '>
             <m.div
             key={item.id}
                     initial={{opacity: .5, y: "-100%"}}
@@ -28,21 +28,23 @@ function Show(props) {
                         <li>{i}</li>
                     ))}
                 </ul>
+                <span>expect increased waitimg time due to free hosting </span>
             </m.div>
             <div className='right-column'>
                 <Link id='back-button' to={`/#work`}>
                     back
                 </Link>
-               
+               <p className="screenshot-text">Desktop Screenshot</p>
                 <m.img
-                className="desktop-pic"
+                    className="desktop-pic"
                     initial={{opacity: .5, x: "-250%"}}
                     animate={{opacity: 1, x: "0%"}}
                                  // exit={{opacity: 0.5, y: -1500}}
                      transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
                 src={item.desktopImage} referrerpolicy="no-referrer"/>
-                                <m.img
-                                className="mobile-pic"
+                 <p className="screenshot-text">Mobile Screenshot</p>
+                <m.img
+                    className="mobile-pic"
                     initial={{opacity: .5, x: "-350%"}}
                     animate={{opacity: 1, x: "0%"}}
                                  // exit={{opacity: 0.5, y: -1500}}

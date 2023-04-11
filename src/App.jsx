@@ -10,7 +10,7 @@ function App({pageProps, router}) {
   
 
   return (
-    <div className="App">
+    <div className="App "> 
       <Nav />
       <Header />
       <Bio />
