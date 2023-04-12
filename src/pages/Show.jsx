@@ -17,24 +17,26 @@ function Show(props) {
                     transition={{duration: 0.8, ease: "easeOut"}}
             className='left-column'>
                 <h1>{item.title}</h1>
+                <hr/>
                 <p>{item.description}</p>
+                <hr/>
                 <div className="links-wrapper">
                     <a  href={item.repo} target="_blank"  >Source code -{'>'}</a>
                     <a  href={item.live} target="_blank">Live Site</a>                    
                 </div>
                 <h3>Tech Stack</h3>
-                <ul>
+                <ul className="tech-stack">
                     {item.skills.map((i) => (
                         <li>{i}</li>
                     ))}
                 </ul>
-                <span>expect increased waitimg time due to free hosting </span>
+                <span>Note! Due to free hosting, some of the projects can have an increased loading time.</span>
             </m.div>
             <div className='right-column'>
-                <Link id='back-button' to={`/#work`}>
-                    back
+                <Link id='back-button' to={`/#`}>
+                    home
                 </Link>
-               <p className="screenshot-text">Desktop Screenshot</p>
+               <p className="screenshot-text">Desktop</p>
                 <m.img
                     className="desktop-pic"
                     initial={{opacity: .5, x: "-250%"}}
@@ -42,7 +44,7 @@ function Show(props) {
                                  // exit={{opacity: 0.5, y: -1500}}
                      transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
                 src={item.desktopImage} referrerpolicy="no-referrer"/>
-                 <p className="screenshot-text">Mobile Screenshot</p>
+                 <p className="screenshot-text">Mobile</p>
                 <m.img
                     className="mobile-pic"
                     initial={{opacity: .5, x: "-350%"}}

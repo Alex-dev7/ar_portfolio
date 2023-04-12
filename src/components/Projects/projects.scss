@@ -71,17 +71,17 @@
             &:hover {
                 
               transform: scale(0.95);
-              transition: all .2s ease-in-out;
+              transition: all .4s ease-in-out;
           
             }
 
             &:hover img {
                 filter: grayscale(0.2) brightness(1) sepia(0.2) saturate(0.7) contrast(0.8) ;
              
-              transform: scale(1.3);
+              transform: scale(1.1);
              
               transition: all .4s ease-in-out;
-                transition-delay: .1s;
+                // transition-delay: .1s;
             }
 
         }
