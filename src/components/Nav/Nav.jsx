@@ -1,7 +1,7 @@
 import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
-import pdf from '../../assets/AlexeiRusu_Resume2023.pdf'
+import pdf from '../../assets/AlexeiRusu_Resume.pdf'
 import { FaLinkedin, FaGithub  } from 'react-icons/fa';
 
 function Nav(props){

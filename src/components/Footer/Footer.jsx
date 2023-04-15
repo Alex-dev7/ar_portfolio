@@ -1,6 +1,6 @@
 import './footer.scss'
 import ContactForm from '../Contact/ContactForm'
-import pdf from '../../assets/AlexeiRusu_Resume2023.pdf'
+import pdf from '../../assets/AlexeiRusu_Resume.pdf'
 import { useState } from 'react'
 
 

@@ -1,6 +1,6 @@
 import './bio.scss'
 import svg from './nnneon.svg'
-import pdf from "../../assets/AlexeiRusu_Resume2023.pdf"
+import pdf from "../../assets/AlexeiRusu_Resume.pdf"
 import { TfiEmail  } from 'react-icons/tfi';
 import {DiNodejs, DiJavascript1, DiReact, DiPython, DiPostgresql, DiHtml5, DiGithubBadge, DiDjango} from 'react-icons/di';
 import {SiTypescript, SiMongodb, SiTailwindcss, SiCsswizardry, SiBootstrap, SiPrisma, SiFigma} from 'react-icons/si';
