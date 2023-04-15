@@ -17,8 +17,8 @@
         "title": "SupplySmart",
         "description": "SupplySmart is a dynamic and user-friendly tool for managing an inventory of tools and supplies. With a full CRUD functionality, the app will allow users to input and store data on each item in the inventory, such as its name, description, quantity, image and location. Using React's component-based architecture, the app has a modular design that makes it easy to add new features or modify existing ones. Intuitive and easy to use, with a clear and concise user interface that allows users to quickly and efficiently navigate and manage the inventory. The app also has a responsive design, allowing it to work seamlessly on any device, including desktops, laptops, tablets, and smartphones. With this app, users will be able to easily track the availability and location of tools and supplies, making it an essential tool for any workshop, garage, or storage facility.",
         "skills": ["ReactJS", "react-router-dom", "SCSS", "Django", "MongoDB", "Mongoose", "CORS"],
-        "live": "https://pocket-sommelier.vercel.app/",
-        "repo": "https://github.com/Alex-dev7/Project1-SEI",
+        "live": "https://supplysmart-ar.netlify.app/",
+        "repo": "https://github.com/Alex-dev7/Project4-inventoryApp-frontend",
         "class": "fourth-card"
     },
     {
