@@ -30,7 +30,7 @@ function Show(props) {
                         <li>{i}</li>
                     ))}
                 </ul>
-                <span>Note! Due to free hosting, some of the projects can have an increased loading time.</span>
+                <span>Note! Due to the free hosting, some of the projects can have a longer loading time.</span>
             </m.div>
             <div className='right-column'>
                 <Link id='back-button' to={`/#`}>

@@ -4,7 +4,8 @@
     flex-direction: column;
     gap: 3rem;
     min-height: 97vh;
-
+    max-width: 1900px;
+    // position: relative;
     .title-wrapper { 
         width: 100%;
         text-align: left;
@@ -20,7 +21,7 @@
 
     }
     .bio-wrapper {
-        width: 100vw;
+        width: 100%;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.5rem;
         font-weight:100;
@@ -40,10 +41,8 @@
             z-index: 11;
             p {
                 color: rgb(197, 195, 195);
-                span:hover{
-                    background-color: rgb(238, 250, 3);
-                    color: black !important;
-                    transition: all .2s;
+                span {
+                    font-weight: 500;
                 }
             }
             hr {
@@ -55,26 +54,33 @@
                 width:fit-content;
                 padding: 0 .6rem;
                 font-size: 1rem;
+                color: white;
+                text-decoration: none;
                 &:hover {
                     text-decoration: none;
                     color: rgb(0, 255, 0);
                     border-color: rgb(0, 194, 0);
                 }
             }
-
-            a{
-                text-decoration: none;
+            div {
                 display: flex;
-                align-items: center;
-                gap: .5rem;
-                font-size: 1.2rem;
-                color: white;
-                cursor: pointer;
-                &:hover {
-                    text-decoration:underline;
-                    
-                }
+                justify-content: space-around;
+                flex-wrap: wrap;
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    font-size: 1.2rem;
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration:underline;   
+                    }
+                }                
             }
+
+
 
         }
 
@@ -83,21 +89,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            img {
-                opacity: 0.3;
-                position: absolute;
-                left: 60%;
-                top: 0%;
-                transform: translateY(-20%);
-                width: 800px;
-                background-color: transparent;
-            }
+
             p {
-                // width: 100%;
-                // background-color: rgba(255, 255, 255, 0.481);
                 color: rgb(255, 255, 255);
                 padding: 0 1rem;
                 letter-spacing: 3px;
+                display: flex;
+               align-items: center;
+                img {
+                    // opacity: 0.8;
+           
+                    transform:  rotate(50deg);
+                    width: 100px;
+                    background-color: transparent;
+                }
             }
 
             .skills-list {
@@ -192,7 +197,7 @@
                     left: 0%;
                     top: 30%;
                     transform: translateY(0%);
-                    opacity: 0.4;
+                    display: none;
                 }
             }
         }
@@ -225,4 +230,7 @@
     }
 }
 
+// div {
+//     color: rgb(3, 222, 238);
+// }
 

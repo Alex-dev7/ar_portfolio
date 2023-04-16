@@ -41,5 +41,13 @@ html, body {
   
 }
 
+@media (min-width: 1900px) {
 
+
+  html, body {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+
+}
 
