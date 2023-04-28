@@ -84,8 +84,8 @@ function Projects(props) {
         projects.map((project) => 
         (
             <m.div
-            initial={{ opacity: 0, x: "100%"}}
-            transition={{duration: 1, ease: "easeOut", delay: .2 }}
+            initial={{ opacity: 0, x: "40%"}}
+            transition={{duration: 0.8, ease: "easeOut", delay: .2 }}
             whileInView={{ opacity: 1, x: "0%",}}
             viewport={{ once: true, }}
             className={`project-card ${project.class}`} key={project.title} >
@@ -93,7 +93,7 @@ function Projects(props) {
                <div className='column1'>
                     
                     <Link className="title" to={`/show/${project.id}`}>
-                        <img src={project.desktopImage} referrerpolicy="no-referrer"/>  
+                        <img src={project.desktopImage} alt="site screenshot" referrerpolicy="no-referrer"/>  
                     </Link>                    
                 </div>
 
@@ -103,13 +103,22 @@ function Projects(props) {
                     </Link>  
                   <div className="links-wrapper">
                     <a  href={project.repo} target="_blank"  >Source code -{'>'}</a>
-                    <a  href={project.live} target="_blank">Live Site</a>                    
+                    <a  href={project.live} target="_blank">Live Site</a>    
+             
                   </div>
+                  <div className="skills">
+                    {
+                      project.skills.map( skill => (
+                        <p>{skill}</p>
+                      ))
+                    }  
+                    </div>   
                 </div>  
             </m.div>
            )
           )
         }
+        
     </section>
 }
 
