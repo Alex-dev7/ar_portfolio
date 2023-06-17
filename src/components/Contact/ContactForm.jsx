@@ -7,7 +7,7 @@ export default function ContactForm() {
         window.location.href = `mailto:rusualexei1995@gmail.com?subject=${formData.subject}&body=${formData.message}, (${formData.email})`
     }
 
-     console.log(errors)
+    //  console.log(errors)
     return (
       <div className="contact-container" id="contact">
         <p>contact/</p>
