@@ -177,6 +177,7 @@
         .title-wrapper {
             p {
                 font-size: 2.5rem;
+      
             }
         }
         .bio-wrapper {
@@ -189,6 +190,9 @@
                 padding: 1rem;
             }
             .svg-container {
+                p{
+                    margin-top: 2rem;
+                }
                 img {
                     left: 0%;
                     top: 30%;

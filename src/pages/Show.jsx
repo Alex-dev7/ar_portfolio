@@ -7,17 +7,16 @@ function Show(props) {
 
     const item = useLoaderData()
 
-    console.log(window.history.scrollRestoration)
 
     return (<section>
         <div  className='show-container '>
             <m.div
             key={item.id}
-                    initial={{opacity: 0, y: "-100%"}}
+                    initial={{opacity: 0, y: "-10%"}}
                     animate={{opacity: 1, y: "0%"}}
                     // exit={{opacity: 0.5, y: -1500}}
                     transition={{duration: 0.8, ease: "easeOut"}}
-            className='left-column'>
+            className='left-column' id="left">
                 <h1>{item.title}</h1>
                 <hr/>
                 <p>{item.description}</p>
@@ -29,7 +28,7 @@ function Show(props) {
                 <h3>Tech Stack</h3>
                 <ul className="tech-stack">
                     {item.skills.map((i) => (
-                        <li>{i}</li>
+                        <li key={i}>{i}</li>
                     ))}
                 </ul>
                 <span>Note! Due to the free hosting, some of the projects can have a longer loading time.</span>

@@ -16,8 +16,6 @@ import { wrap } from "framer-motion"
 import { Link } from "react-router-dom"
 
 
-console.log(projects)
-
 //----------------------------------------------------------------
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -84,16 +82,17 @@ function Projects(props) {
         projects.map((project) => 
         (
             <m.div
+            key={project.id}
             initial={{ opacity: 0, x: "40%"}}
             transition={{duration: 0.8, ease: "easeOut", delay: .2 }}
             whileInView={{ opacity: 1, x: "0%",}}
             viewport={{ once: true, }}
-            className={`project-card ${project.class}`} key={project.title} >
+            className={`project-card ${project.class}`}  >
            
                <div className='column1'>
                     
                     <Link className="title" to={`/show/${project.id}`}>
-                        <img src={project.desktopImage} alt="site screenshot" referrerpolicy="no-referrer"/>  
+                        <img src={project.desktopImage} alt="site screenshot" referrerPolicy="no-referrer"/>  
                     </Link>                    
                 </div>
 
@@ -108,8 +107,8 @@ function Projects(props) {
                   </div>
                   <div className="skills">
                     {
-                      project.skills.map( skill => (
-                        <p>{skill}</p>
+                      project.skills.map( (skill, i) => (
+                        <p key={i}>{skill}</p>
                       ))
                     }  
                     </div>   
