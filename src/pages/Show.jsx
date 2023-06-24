@@ -1,11 +1,15 @@
 import { useLoaderData, Link } from "react-router-dom"
 import './show.scss'
 import {motion as m} from 'framer-motion'
-
+import { useEffect } from "react"
 
 function Show(props) {
 
     const item = useLoaderData()
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
 
     return (<section>
@@ -37,21 +41,17 @@ function Show(props) {
                 <Link id='back-button' to={`/`} >
                     home
                 </Link>
-               {/* <p className="screenshot-text">Desktop</p> */}
                 <m.img
                     className="desktop-pic"
                     initial={{opacity: 0, x: "-350%"}}
                     animate={{opacity: 1, x: "0%"}}
-                                 // exit={{opacity: 0.5, y: -1500}}
-                     transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
+                     transition={{duration: 0.8, ease: "easeOut", delay: 0.6}}               
                 src={item.desktopImage} referrerpolicy="no-referrer"/>
-                 {/* <p className="screenshot-text">Mobile</p> */}
                     <m.img
                         className="mobile-pic"
                         initial={{opacity: 0, x: "-450%"}}
                         animate={{opacity: 1, x: "0%"}}
-                                    // exit={{opacity: 0.5, y: -1500}}
-                        transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
+                        transition={{duration: 0.8, ease: "easeOut", delay: 0.6}}               
                     src={item.mobileImage} referrerpolicy="no-referrer"/>                    
             </div>
 

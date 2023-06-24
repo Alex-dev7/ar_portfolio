@@ -17,7 +17,6 @@
         text-align: justify;
         font-size: 1.2rem;
         font-weight: lighter;
-        // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-family: 'Ubuntu Mono', monospace;
         line-height: 1.6rem;
         color: rgb(255, 255, 255);
@@ -120,23 +119,22 @@
 
 @media (max-width: 1150px) {
     .show-container {
-        grid-template-columns: 1fr;
+        // grid-template-columns: 1fr;
         position: relative;
+        display: flex;
+        flex-direction: column;
 
         .left-column {
             height: fit-content;
         }
         
         .right-column {
-            overflow-y:visible;
+            // overflow-y:visible;
             margin-bottom: 5%;
-            height: auto;
+            height: fit-content;
             #back-button {
                 display: none;
                 
-            }
-            .screenshot-text {
-                margin: 2rem 1rem;
             }
             .mobile-pic {
                 margin-top: 3rem;
@@ -152,6 +150,11 @@
 @media (max-width: 850px) {
 
     .show-container {
+        
+        .left-column {
+            text-align: start;
+            font-size: 1rem;
+        }
         .right-column {
       flex-direction: column;
             
