@@ -15,9 +15,10 @@
         align-items: center;
         padding: 10% 1rem;
         text-align: justify;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: lighter;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Ubuntu Mono', monospace;
         line-height: 1.6rem;
         color: rgb(255, 255, 255);
         gap: 2rem;
@@ -78,7 +79,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        overflow-y: scroll;
+        
         gap: 4%;
         &::-webkit-scrollbar {
             width: 18px;
@@ -105,11 +106,13 @@
             width: 60%;
             object-fit: cover;
         }
-        .mobile-pic {
-            max-height: 500px;
-            object-fit: cover;
-            
-        }
+
+            .mobile-pic {
+                max-height: 500px;
+                object-fit: cover;
+                transform: translateX(-30%);
+            }            
+
     }
 
 }

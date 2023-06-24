@@ -46,13 +46,13 @@ function Show(props) {
                      transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
                 src={item.desktopImage} referrerpolicy="no-referrer"/>
                  {/* <p className="screenshot-text">Mobile</p> */}
-                <m.img
-                    className="mobile-pic"
-                    initial={{opacity: 0, x: "-450%"}}
-                    animate={{opacity: 1, x: "0%"}}
-                                 // exit={{opacity: 0.5, y: -1500}}
-                     transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
-                src={item.mobileImage} referrerpolicy="no-referrer"/>
+                    <m.img
+                        className="mobile-pic"
+                        initial={{opacity: 0, x: "-450%"}}
+                        animate={{opacity: 1, x: "0%"}}
+                                    // exit={{opacity: 0.5, y: -1500}}
+                        transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}               
+                    src={item.mobileImage} referrerpolicy="no-referrer"/>                    
             </div>
 
         </div>

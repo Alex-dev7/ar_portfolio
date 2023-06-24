@@ -1,11 +1,16 @@
 .header-container {
     height: 100vh;
-    // text-align: center;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 5%;
-
+    // background-size: 40px 40px;
+    // background-image:
+    //   linear-gradient(to right, rgba(0, 234, 255, 0.117) .5px, transparent .5px),
+    //   linear-gradient(to bottom, rgba(0, 182, 248, 0.105) .5px, transparent .5px);
+    padding-right: 3rem;
+      
     .hello {
         //  font-family: 'Anton', sans-serif;
 
@@ -96,6 +101,7 @@
     .header-container {
         justify-content: center;
         margin: 0;
+        padding-right: 0;
 
     }
 
@@ -122,9 +128,9 @@
 @media (max-width: 550px) {
 
     .header-container {
-        height: 70vh;
+        // height: 70vh;
         align-items: start;
-        margin-top: 30vh;
+        padding-top: 30vh;
         .title {
             font-size: 2.3rem;
             font-weight: 900;
