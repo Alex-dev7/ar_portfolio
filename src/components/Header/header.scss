@@ -1,10 +1,10 @@
 .header-container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 5%;
+    // margin-right: 5%;
     // background-size: 40px 40px;
     // background-image:
     //   linear-gradient(to right, rgba(0, 234, 255, 0.117) .5px, transparent .5px),
@@ -20,7 +20,7 @@
     }
     .title{
        
-        margin: inherit ;
+    //    margin-right: 3px;
         font-size: 7rem;
         font-weight: 900;
         color: rgba(0, 187, 255, 0);
