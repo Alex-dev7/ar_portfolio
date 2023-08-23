@@ -14,7 +14,7 @@ export const container ={
 
 export const item  ={
     hidden: {
-        x: '-110%',
+        x: '-150%',
         opacity: 0,
 
         
