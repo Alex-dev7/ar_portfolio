@@ -41,11 +41,16 @@
             z-index: 11;
             font-size: 1.3rem;
             // border: .5px solid white;
+            // /
             font-family: 'Ubuntu Mono', monospace;
             box-shadow: 4px 4px 10px #0b0b0bd8, 
             -2px -4px 10px #6c6c6c6d;
             background: linear-gradient(-45deg, rgba(0, 0, 0, 0.647), rgba(255, 255, 255, 0.091));
             p {
+                -webkit-line-clamp: 7;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
                 color: rgb(197, 195, 195);
                 span {
                     font-weight: 500;
