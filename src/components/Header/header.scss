@@ -4,11 +4,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    // margin-right: 5%;
-    // background-size: 40px 40px;
-    // background-image:
-    //   linear-gradient(to right, rgba(0, 234, 255, 0.117) .5px, transparent .5px),
-    //   linear-gradient(to bottom, rgba(0, 182, 248, 0.105) .5px, transparent .5px);
+    background-size: 60px 60px;
+    background-image:
+      linear-gradient(to right, rgba(0, 234, 255, 0.083) .8px, transparent .8px),
+      linear-gradient(to bottom, rgba(0, 182, 248, 0.068) .8px, transparent .8px);
     padding-right: 3rem;
       
     .hello {

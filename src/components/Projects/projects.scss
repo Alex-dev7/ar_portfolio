@@ -8,13 +8,18 @@
 
 
 .projects-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     perspective: 1000px;
+    background-size: 60px 60px;
+    background-image:
+      linear-gradient(to right, rgba(0, 234, 255, 0.083) .8px, transparent .8px),
+      linear-gradient(to bottom, rgba(0, 182, 248, 0.068) .8px, transparent .8px);
     .parallax {
+        padding-top: 5%;
         overflow: hidden;
         letter-spacing: -2px;
         margin: 0;
