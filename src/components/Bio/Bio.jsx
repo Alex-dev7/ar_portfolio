@@ -7,7 +7,7 @@ import {DiNodejs, DiJavascript1, DiReact, DiPython, DiPostgresql, DiHtml5, DiGit
 import {SiTypescript, SiMongodb, SiTailwindcss, SiCsswizardry, SiBootstrap, SiPrisma, SiFigma} from 'react-icons/si';
 import {TbBrandNextjs} from 'react-icons/tb'; 
 import { useState } from 'react';
-
+import Robot from '../3d'
 
 
 function Bio(props){
@@ -56,6 +56,7 @@ function Bio(props){
                           
                  
             </div>
+            {/* <Robot/> */}
             <div className="svg-container">
                 
                 <p>skills<img src={svg} /></p>
