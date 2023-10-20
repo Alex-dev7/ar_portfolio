@@ -73,6 +73,7 @@
               width: 100%;
               height: auto;
               object-fit: cover;
+
             //   filter: grayscale(1) sepia(0.5) saturate(0.5) contrast(0.5) brightness(0.8);
             filter: grayscale(0.3) brightness(0.8)  ;
               transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
@@ -167,7 +168,7 @@
         margin-left: 10%;
         .column1{
             img {
-                width: 80%;
+                // width: 80%;
                 height: 120%;
                
             }

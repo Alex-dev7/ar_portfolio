@@ -1,5 +1,6 @@
 import './bio.scss'
 import svg from './nnneon.svg'
+import UFO from '../../assets/UFO.svg'
 import pdf from "../../assets/AlexeiRusu_Resume.pdf"
 import certificate from "../../assets/Certificate-of-Completion.pdf"
 import {DiNodejs, DiJavascript1, DiReact, DiPython, DiPostgresql, DiHtml5, DiGithubBadge, DiDjango} from 'react-icons/di';
@@ -18,6 +19,15 @@ function Bio(props){
     }
 
     return <section id="about" className="about-container">
+        <h4 className='showcase'>This portfolio showcases a range of individual and group projects that demonstrate my <span>technical skills and creative vision.</span> </h4>
+        <div className='ufo-container'>
+            {/* <span className='banner-text'>open to work</span> */}
+            <span className='line'></span>
+            <span className='line'></span>
+            <span className='line'></span>
+            {/* <img className='ufo' src={UFO} /> */}
+        </div>
+        
         <div  className="title-wrapper">
             <p>about/</p>
         </div>
@@ -33,10 +43,8 @@ function Bio(props){
                     My name is Alexei, and I am a <span id="accent" style={{}}>FULL-STACK SOFTWARE ENGINEER.</span> 
                 Through my experience as a software engineer, I have developed a strong foundation in full-stack web development with JavaScript technologies, including the MERN stack. I have also learned how to apply product development fundamentals, object-oriented programming, data modeling, and team collaboration strategies to create complete web applications with API systems. 
                 <br/><br/>
-                This portfolio showcases a range of individual and group projects that demonstrate my technical skills and creative vision. 
-                <br/><br/>
                 My background in choreography has given me a unique perspective on problem-solving and design. I have a passion for integrating technical and artistic elements to create intuitive and visually engaging user experiences that inspire and connect with users. As a professional choreographer and dancer, I have also honed my communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams. I am always eager to learn and grow in the exciting field of development.</p> 
-                <span className='clampButton' onClick={handleClick}>{toggle ? "close" : "read more"}</span>
+                <span className='clampButton' onClick={handleClick}>{toggle ? "read less" : "read more"}</span>
                 <div className='cred-container'>
                     <a href="mailto:rusualexei1995@gmail.com">&#9993; rusualexei1995@gmail.com</a>
                     <a  href={certificate} target="_blank" > Certification</a>        

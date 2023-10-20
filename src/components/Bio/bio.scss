@@ -14,7 +14,7 @@
  }
 .about-container {
 
-   z-index: 50;
+    z-index: 50;
     display: flex;
     flex-direction: column;
     margin-top: 10%;
@@ -22,6 +22,18 @@
     min-height: 97vh;
     max-width: 1900px;
     margin-bottom: 3rem;
+    position: relative;
+
+    .showcase {
+        color: white;
+        font-family: 'Ubuntu Mono', monospace;
+        text-align: center;
+        padding: 0% 0;
+        span {
+            font: italic;
+        }
+    }
+
     .title-wrapper { 
         width: 100%;
         text-align: left;
@@ -211,6 +223,46 @@
         }
     }
 
+}
+.ufo-container {
+    position: absolute;
+    left:-1300px;
+    transform: translateY(-20px);
+    animation: ufo 10s infinite linear;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    // display: flex;
+    // justify-content: space-evenly;
+
+    .banner-text {
+        color:  white;
+        border: 1px solid white;
+        padding: 20px;
+  
+    }
+    .line {
+        width: 400px;
+        border-bottom: 1px solid white;
+        margin-right: 1rem;
+    }
+    .ufo {
+    
+    width: 80px;
+
+    }
+}
+
+
+
+@keyframes ufo {
+
+
+    100% {
+        transform: translateX(100vw )+ 1300px;
+        // transition: transform 3s ease-in-out;
+
+    }
 }
 
 @media (max-width: 1650px) {
