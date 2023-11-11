@@ -18,8 +18,11 @@ function Bio(props){
         console.log(toggle)
     }
 
-    return <section id="about" className="about-container">
-        <h4 className='showcase'>This portfolio showcases a range of individual and group projects that demonstrate my <span>technical skills and creative vision.</span> </h4>
+    return (
+    <>  
+    <h4 className='showcase'>This portfolio showcases a range of individual and group projects that demonstrate my  <span> technical skills and creative vision.</span> </h4>
+    <section id="about" className="about-container">
+        
         <div className='ufo-container'>
             {/* <span className='banner-text'>open to work</span> */}
             <span className='line'></span>
@@ -87,6 +90,8 @@ function Bio(props){
 
         
     </section>
+    </>  
+    )
 }
 
 export default Bio

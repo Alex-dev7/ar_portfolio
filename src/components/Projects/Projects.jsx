@@ -74,7 +74,7 @@ function Projects(props) {
   
 
     return <section className="projects-container" id="work">
-        <section >
+        <section className="parallax-container">
             <ParallaxText baseVelocity={3} >my_work</ParallaxText>
         </section>
         
@@ -83,9 +83,9 @@ function Projects(props) {
         (
             <m.div
             key={project.id}
-            initial={{ opacity: 0, x: "40%"}}
+            initial={{ opacity: 0, y: "-10%"}}
             transition={{duration: 0.8, ease: "easeOut", delay: .2 }}
-            whileInView={{ opacity: 1, x: "0%",}}
+            whileInView={{ opacity: 1, y: "0%",}}
             viewport={{ once: true, }}
             className={`project-card ${project.class}`}  >
            

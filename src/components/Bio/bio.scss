@@ -12,29 +12,43 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
  }
-.about-container {
 
+    .showcase {
+        height: 50vh;
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        color: rgba(0, 255, 225, 0.434);
+        font-size: 1.2rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        // font-family: 'Ubuntu Mono', monospace;
+        // text-align: center;
+        // padding: 0% 0;
+        span {
+            margin-left: 9px;
+            margin-top: 9px;
+            color: rgba(255, 158, 1, 0.702);
+         
+        }
+    }
+
+
+.about-container {
+    min-height: 100vh;
     z-index: 50;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    // margin-top: 10%;
     gap: 3rem;
     min-height: 97vh;
     max-width: 1900px;
     margin-bottom: 3rem;
     position: relative;
 
-    .showcase {
-        color: rgba(0, 221, 255, 0.426);
-        font-size: 1.2rem;
-        font-weight: 100;
-        font-family: 'Ubuntu Mono', monospace;
-        text-align: center;
-        padding: 0% 0;
-        span {
-            font: italic;
-        }
-    }
+
 
     .title-wrapper { 
         width: 100%;
@@ -267,6 +281,11 @@
 }
 
 @media (max-width: 1650px) {
+    .showcase {
+        font-size: 1rem;
+
+
+    }
     .about-container {
         .title-wrapper {
             p {
@@ -290,6 +309,11 @@
 }
 
 @media (max-width: 1300px) {
+    .showcase{
+        font-size: 0.8rem;
+        text-align: center;
+
+    }
     .about-container {
         
         .title-wrapper {
@@ -323,6 +347,8 @@
 }
 
 @media (max-width: 650px) {
+    .showcase{
+    }
     .about-container {
         .bio-wrapper {
             font-size: 0.9rem;
