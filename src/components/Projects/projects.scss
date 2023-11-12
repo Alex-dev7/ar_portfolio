@@ -262,7 +262,7 @@
 
 @media (max-width: 1110px) {
     .projects-container {
-        grid-template-columns: 95%;
+        grid-template-columns: 100%;
         padding-top: 20%;
         .parallax .scroller {
             font-size: 2rem !important;
@@ -294,8 +294,15 @@
           .third-card,
           .fourth-card,
           .fifth-card {
-            margin: auto;
+            margin: 0 auto;
 
           }
     }
+}
+@media (max-width: 1110px) {
+    // .projects-container{
+    //     .project-card{
+    //         margin :
+    //     }
+    // }
 }
