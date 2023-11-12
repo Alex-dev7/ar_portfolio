@@ -13,27 +13,49 @@
     -webkit-box-orient: vertical;
  }
 
-    .showcase {
-        height: 50vh;
-        margin: 0 2rem;
+    .avatar-container {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center ;
-        color: rgba(0, 255, 225, 0.434);
-        font-size: 1.2rem;
-        font-weight: lighter;
-        letter-spacing: 1px;
-        // font-family: 'Ubuntu Mono', monospace;
-        // text-align: center;
-        // padding: 0% 0;
-        span {
-            margin-left: 9px;
-            margin-top: 9px;
-            color: rgba(255, 158, 1, 0.702);
-         
-        }
+        gap: 2rem;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+       img {
+        margin: 0 auto;
+       }
+       .dialog{
+        position: absolute;
+        top: 30%;
+        transform: translateX(250px);
+        
+       }
+        .showcase {
+            
+            margin: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
+            color: rgba(0, 255, 225, 0.434);
+            font-size: 1.2rem;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            // font-family: 'Ubuntu Mono', monospace;
+            // text-align: center;
+            // padding: 0% 0;
+            span {
+                margin-left: 9px;
+                margin-top: 9px;
+                color: rgba(255, 158, 1, 0.702);
+            
+            }
+        }       
     }
+
+
 
 
 .about-container {
@@ -66,7 +88,7 @@
 
     }
     .bio-wrapper {
-        
+        // color: black !important;
         width: 95%;
         font-family: 'Ubuntu Mono', monospace;
         font-size: 1.4rem;
@@ -77,10 +99,12 @@
         height: 100%;
         margin: 0 auto;
         text-align: center;
-
+        // background-color: rgba(245, 245, 245, 0.291);
         position: relative;
         .text-wrapper {
-            background-image: linear-gradient(15deg, #13547a2e 0%, #80d0c725 100%);
+           
+        //    background-color: rgb(101, 101, 101); 
+            // background-image: rgb(255, 255, 255);
             display: flex;
             flex-direction: column;
             // justify-content: center;
@@ -89,19 +113,20 @@
             gap: 2rem;
             z-index: 11;
             font-size: 1.3rem;
-            // border: .5px solid white;
-            // /
-            font-family: 'Ubuntu Mono', monospace;
-            box-shadow: 4px 4px 10px #0b0b0bd8;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 6px 6px 4px #0b0b0bd8;
             p {
 
-                color: rgb(197, 195, 195);
+                color: rgb(251, 251, 251);
                 span {
                     font-weight: 500;
                 }
             }
             .clampButton {
-                font-size: 1.1rem;
+                font-size: 0.8rem;
                 width: fit-content;
                 padding: 0 8px;
                 color: white;
@@ -114,13 +139,15 @@
                 }
             }
             .cred-container {
+                margin: auto 0;
                 a {
-                    border: 1px solid rgb(18, 136, 165);
+                    font-size: 0.8rem;
+                    border: 3px solid rgba(206, 240, 246, 0.999);
                     padding: 6px 20px;
-                    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     transition: all .1s linear;
                     &:hover{
-                        background-color: rgba(17, 106, 128, 0.262);
+                        background-color: rgba(17, 106, 128, 0.375);
                         box-shadow: rgb(18, 136, 165) 0px 0px 0px 1px inset, rgba(17, 106, 128, 0) 10px -10px 0px -1px, rgba(17, 105, 128, 0.794) 10px -10px;
                         // transition: all 4s linear;
                     }
@@ -309,11 +336,16 @@
 }
 
 @media (max-width: 1300px) {
-    .showcase{
-        font-size: 0.8rem;
-        text-align: center;
-
+    .avatar-container {
+        img {
+            width: 250px;
+        }
+        .showcase{
+            font-size: 0.8rem;
+            text-align: center;
+        }
     }
+
     .about-container {
         
         .title-wrapper {
@@ -347,8 +379,10 @@
 }
 
 @media (max-width: 650px) {
-    .showcase{
+    .avatar-container{
+      
     }
+
     .about-container {
         .bio-wrapper {
             font-size: 0.9rem;

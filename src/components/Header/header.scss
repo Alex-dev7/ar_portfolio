@@ -25,18 +25,18 @@
         color: rgba(0, 187, 255, 0);
         // perspective: 1000px;
         // transform-style: preserve-3d;
-        -webkit-text-stroke: 1px rgba(0, 221, 255, 0.596);
+        -webkit-text-stroke: 1px rgba(0, 221, 255, 0.713);
         text-transform: uppercase;
         animation: textAnim .3s ease 1.3s 2 normal forwards;
         @keyframes textAnim {
             0%,
             50%{
-                -webkit-text-stroke: .5px rgba(0, 221, 255, 0.781);
+                -webkit-text-stroke: .5px rgba(0, 221, 255, 0.995);
             }
         
            100% {
             -webkit-text-stroke: .5px rgb(0, 221, 255);
-                text-shadow:  -2px 2px 200px #06fbe277;
+                text-shadow:  -2px 2px 200px rgba(0, 221, 255, 0.747);
             
                
             }
@@ -44,7 +44,7 @@
             25%,
             75% {
                 -webkit-text-stroke: .5px rgba(0, 221, 255, 0);
-                text-shadow:  -2px 2px 200px #06fbe200;
+                text-shadow:  -2px 2px 200px #06dafb00;
             }
         }
         span {

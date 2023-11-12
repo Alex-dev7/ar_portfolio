@@ -7,7 +7,9 @@ import {DiNodejs, DiJavascript1, DiReact, DiPython, DiPostgresql, DiHtml5, DiGit
 import {SiTypescript, SiMongodb, SiTailwindcss, SiCsswizardry, SiBootstrap, SiPrisma, SiFigma} from 'react-icons/si';
 import {TbBrandNextjs} from 'react-icons/tb'; 
 import { useState } from 'react';
-import Robot from '../3d'
+import avatar from '../../assets/av.png'
+import dialog from '../../assets/dialog.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 
 function Bio(props){
@@ -20,7 +22,13 @@ function Bio(props){
 
     return (
     <>  
-    <h4 className='showcase'>This portfolio showcases a range of individual and group projects that demonstrate my  <span> technical skills and creative vision.</span> </h4>
+    <div className='avatar-container'>
+        <img className='avatar'  src={avatar} alt='avatar' width={400}/>
+         {/* <img className='dialog'  src={dialog} alt='dialog' width={200}/> */}
+         <h4 className='showcase'>This portfolio showcases a range of individual and group projects that demonstrate my  <span> technical skills and creative vision.</span> </h4>
+    </div>
+    
+   
     <section id="about" className="about-container">
         
         <div className='ufo-container'>
@@ -49,9 +57,16 @@ function Bio(props){
                 My background in choreography has given me a unique perspective on problem-solving and design. I have a passion for integrating technical and artistic elements to create intuitive and visually engaging user experiences that inspire and connect with users. As a professional choreographer and dancer, I have also honed my communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams. I am always eager to learn and grow in the exciting field of development.</p> 
                 <span className='clampButton' onClick={handleClick}>{toggle ? "read less" : "read more"}</span>
                 <div className='cred-container'>
-                    <a href="mailto:rusualexei1995@gmail.com">&#9993; rusualexei1995@gmail.com</a>
-                    <a  href={certificate} target="_blank" > Certification</a>        
-                    <a className="download-button" href={pdf} download>&#8681; RESUME</a>           
+                    <a href="mailto:rusualexei1995@gmail.com"> my email </a>
+                    {/* <a href="https://github.com/Alex-dev7" target="_blank" >
+                    <FaGithub size={30} color={"white"}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">
+                        <FaLinkedin size={30} color={"white"}/>
+                    </a>  */}
+                    <a  href={certificate} target="_blank" > certification</a>        
+                    <a className="download-button" href={pdf} download>&#8681; RESUME</a>  
+        
                 </div>
 
                 
@@ -60,8 +75,11 @@ function Bio(props){
                  
             </div>
             {/* <Robot/> */}
+            
             <div className="svg-container">
-                
+            
+               
+             
                 <p>skills<img src={svg} /></p>
                 <ul className='skills-list'>
                  
