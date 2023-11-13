@@ -263,13 +263,15 @@
 @media (max-width: 1110px) {
     .projects-container {
         grid-template-columns: 100%;
-        padding-top: 20%;
+        padding: 20% 1rem 0 1rem;
+
         .parallax .scroller {
             font-size: 2rem !important;
           }
           .project-card { 
             display: flex;
             flex-direction: column;
+            // margin: 0 1rem;
             .column1 {
                 width: 80vw;
                 height: 180px;

@@ -31,13 +31,7 @@ function Bio(props){
    
     <section id="about" className="about-container">
         
-        <div className='ufo-container'>
-            {/* <span className='banner-text'>open to work</span> */}
-            <span className='line'></span>
-            <span className='line'></span>
-            <span className='line'></span>
-            {/* <img className='ufo' src={UFO} /> */}
-        </div>
+
         
         <div  className="title-wrapper">
             <p>about/</p>
@@ -45,11 +39,6 @@ function Bio(props){
         <div className="bio-wrapper">
             <div className="text-wrapper">
 
-
-          
-                {/* <p>About me:</p> */}
-                {/* <p>my name is Alexei, and I am a <span id="accent" style={{fontWeight: "bolder", textTransform:"uppercase"}}>full-stack web developer</span> with a background in choreography and a <span style={{fontWeight: "bolder"}}>unique perspective</span> to the development process. My combination of technical expertise and <span style={{fontWeight: "bolder"}}>creative vision</span>, honed by my choreographic education, allows me to approach problem-solving and design from a holistic perspective.  I am a team player, looking to integrate technical and artistic elements to create intuitive and visually engaging user experiences that inspire and connect with users. <span style={{color:"lightgreen"}}>Always eager to learn and grow</span> in the exciting field of development.</p>  */}
-                {/* fgfgf */}
                 <p className={toggle ? "falseStyle" : "trueStyle"}>
                     My name is Alexei, and I am a <span id="accent" style={{}}>FULL-STACK SOFTWARE ENGINEER.</span> 
                 Through my experience as a software engineer, I have developed a strong foundation in full-stack web development with JavaScript technologies, including the MERN stack. I have also learned how to apply product development fundamentals, object-oriented programming, data modeling, and team collaboration strategies to create complete web applications with API systems. 

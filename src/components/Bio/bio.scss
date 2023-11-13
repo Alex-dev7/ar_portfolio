@@ -52,21 +52,23 @@
                 color: rgba(255, 158, 1, 0.702);
             
             }
-        }       
+        }      
     }
 
 
 
 
 .about-container {
+    width: 100vw;
     min-height: 100vh;
+    // margin: 0 auto;
     z-index: 50;
     display: flex;
     flex-direction: column;
     // margin-top: 10%;
     gap: 3rem;
     min-height: 97vh;
-    max-width: 1900px;
+    // max-width: 1900px;
     margin-bottom: 3rem;
     position: relative;
 
@@ -88,7 +90,6 @@
 
     }
     .bio-wrapper {
-        // color: black !important;
         width: 95%;
         font-family: 'Ubuntu Mono', monospace;
         font-size: 1.4rem;
@@ -99,15 +100,11 @@
         height: 100%;
         margin: 0 auto;
         text-align: center;
-        // background-color: rgba(245, 245, 245, 0.291);
         position: relative;
+
         .text-wrapper {
-           
-        //    background-color: rgb(101, 101, 101); 
-            // background-image: rgb(255, 255, 255);
             display: flex;
             flex-direction: column;
-            // justify-content: center;
             text-align: justify;
             padding: 3rem 3rem;
             gap: 2rem;
@@ -154,10 +151,7 @@
                 }
             }
 
-            hr {
-                border-width: 0.1px ;
 
-            }
             .download-button {
                 width: fit-content;
                 align-items: center;
@@ -169,7 +163,6 @@
                 height: 48px;
                 padding-left: 16px;
                 padding-right: 16px;
-                text-align: left;
                 text-decoration: none;
                 transition: box-shadow .15s,transform .15s;
                 user-select: none;
@@ -265,47 +258,12 @@
         }
     }
 
-}
-.ufo-container {
-    position: absolute;
-    left:-1300px;
-    transform: translateY(-20px);
-    animation: ufo 10s infinite linear;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    // display: flex;
-    // justify-content: space-evenly;
 
-    .banner-text {
-        
-        border: 1px solid white;
-        padding: 20px;
-  
-    }
-    .line {
-        width: 400px;
-        border-bottom: 1px solid white;
-        margin-right: 1rem;
-    }
-    .ufo {
-    
-    width: 80px;
-
-    }
 }
 
 
 
-@keyframes ufo {
 
-
-    100% {
-        transform: translateX(100vw )+ 1300px;
-        // transition: transform 3s ease-in-out;
-
-    }
-}
 
 @media (max-width: 1650px) {
     .showcase {
@@ -380,9 +338,6 @@
 }
 
 @media (max-width: 650px) {
-    .avatar-container{
-      
-    }
 
     .about-container {
         .bio-wrapper {
@@ -392,6 +347,19 @@
            .text-wrapper {
             text-align: start;
             font-size: 0.7rem;
+            .cred-container {
+                a {
+                    font-size: 0.8rem;
+                    border: 3px solid rgba(206, 240, 246, 0.999);
+                    padding: 3px 16px;
+                    width: 160px;
+                    align-self: center;
+                }
+                .download-button {
+                    padding: 0px 26px;
+                    text-align: center; 
+                }
+            }
 
            }
             div {

@@ -70,7 +70,12 @@
 
 }
 
+@media (min-width: 2000px) {
+    .header-container {
+        padding-right: 20%;
 
+    }
+}
 @media (max-width: 1650px) {
 
     .header-container {
