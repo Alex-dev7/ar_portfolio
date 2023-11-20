@@ -55,13 +55,13 @@ function Bio(props){
                 <p className='hobbies' >hobbies</p>
                 <hr/><br/>
                 <span style={{fontSize: '50px'}}>&#127928;</span><br/>
-                Away from the screen, I find joy in a variety of pursuits. I have a deep appreciation for music and often indulge my passion by playing musical instruments. Additionally, you'll find me embracing an active lifestyle through regular workouts, a perfect counterbalance to the sedentary nature of coding.
+                Away from the screen, I am passionate about a varity of hobbies. I have a deep appreciation for music and enjoy spending free time learning to play musical instruments. Additionally, I prioritize my health and wellness by cultivating a healthy diet and maintaining an active lifestyle - a perfect counterbalance to the sedentary nature of software development!
                 <br/><br/>
                 <span style={{fontSize: '50px'}}>&#9881;</span><br/>
-                Intriguingly, I have a fascination with the intricate world of horology. Fixing and restoring old watches has become a rewarding hobby that not only hones my patience and attention to detail but also connects me with the craftsmanship of a bygone era.
+                I have a fascination with the intricate world of horology. Fixing and restoring old watches is a new hobby of mine that I am quickly becoming enamored with. I find that it not only tests my patience and attention to detail but also connects me with the craftsmanship styles of the past.
                 <br/><br/>
                 <span style={{fontSize: '50px'}}>&#129302;</span><br/>
-                Beyond that, I enjoy the thrill of building things with Raspberry Pi, exploring the limitless possibilities of this versatile microcomputer. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.
+                Beyond that, I enjoy building things with Raspberry Pi, exploring the limitless possibilities of this versatile microcomputer. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.
                 </p> 
                 <span className='clampButton' onClick={handleClick}>{toggle ? "read less" : "read more"}</span>
                 <div className='cred-container'>
