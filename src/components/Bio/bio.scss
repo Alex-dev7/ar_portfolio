@@ -4,6 +4,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+
  }
 
  .falseStyle  {
@@ -11,12 +12,13 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+   
  }
 
     .avatar-container {
         height: 100vh;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: center;
         align-items: center ;
         gap: 2rem;
@@ -25,6 +27,7 @@
         position: relative;
        img {
         margin: 0 auto;
+        width: 300px;
        }
        .dialog{
         position: absolute;
@@ -43,9 +46,6 @@
             font-size: 1.2rem;
             font-weight: lighter;
             letter-spacing: 1px;
-            // font-family: 'Ubuntu Mono', monospace;
-            // text-align: center;
-            // padding: 0% 0;
             span {
                 margin-left: 9px;
                 margin-top: 9px;
@@ -79,6 +79,7 @@
         text-align: left;
         margin-left:2rem ;
         margin-top: 5%;
+        
         p{
             -webkit-text-stroke: .8px #ffffff5b;
             letter-spacing: 0rem;
@@ -91,35 +92,52 @@
     }
     .bio-wrapper {
         width: 95%;
-        font-family: 'Ubuntu Mono', monospace;
-        font-size: 1.4rem;
+        // font-family: 'Ubuntu Mono', monospace;
+        // font-size: 2rem;
         font-weight:100;
         line-height: 2.3rem;
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        display: flex;
+        // grid-template-columns: 1.5fr 1fr;
+        flex-direction: column;
+        gap: 200px;
         height: 100%;
         margin: 0 auto;
         text-align: center;
         position: relative;
 
         .text-wrapper {
+            width: 80%;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
-            text-align: justify;
+            text-align: start;
             padding: 3rem 3rem;
             gap: 2rem;
             z-index: 11;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-family: 'Orbitron', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
+            font-family: 'Ubuntu Mono', monospace;
             border: 2px solid rgb(0, 0, 0);
             box-shadow: 6px 6px 4px #0b0b0bd8;
+            .introduction {
+                background-color: #278b03ee;
+                width: fit-content;
+                padding: 0 16px;
+            }
+            .background {
+                background-color: #0b6eb5e3;
+                width: fit-content;
+                padding: 0 16px;
+            }
+            .hobbies {
+                background-color: #be9e0cd9;
+                width: fit-content;
+                padding: 0 16px;
+            }
             p {
-
-                color: rgb(251, 251, 251);
+                color: rgb(206, 203, 203);
                 span {
-                    font-weight: 500;
+                    font-weight: 900;
                 }
             }
             .clampButton {
@@ -138,7 +156,7 @@
             .cred-container {
                 margin: auto 0;
                 a {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     border: 3px solid rgba(206, 240, 246, 0.999);
                     padding: 6px 20px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -194,18 +212,20 @@
             justify-content: center;
 
             p {
-                color: rgb(255, 255, 255);
-                padding: 0 1rem;
-                letter-spacing: 3px;
-                display: flex;
-                align-items: center;
-                img {
-                    transform:  rotate(50deg);
-                    width: 100px;
-                    background-color: transparent;
-                }
+                width: 100vw;
+                text-align: left;
+                margin-left:3rem ;
+                margin-bottom: 3rem;
+                -webkit-text-stroke: .8px #ffffff5b;
+                letter-spacing: 0rem;
+                font-size: 5rem;
+                font-weight: 900;
+                color: #ffffff00;
+                
+
             }
             .skills-list {
+                font-family: 'Ubuntu Mono', monospace;
                 margin: auto 3rem;
                 color: rgba(255, 255, 255, 0.867);
                 list-style: none;
@@ -221,39 +241,40 @@
                     width: 100%;
                     height: fit-content;
                     padding: 12px 0;
-                    background-color: #6363634f;
-                    border: none;
-                    // font-size: .9rem;
-                    border-radius: 10px;
-
+                    background-color: #0c425831;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: #24272b61;
                     gap: .5rem;
                     font-size: 0.9rem;
-                    // border: .1px solid rgba(6, 95, 95, 0.938);
+                    border: 1px solid rgba(175, 177, 177, 0.996);
+                    // border: 2px solid rgb(0, 0, 0);
+                    box-shadow: 6px 6px 4px #0b0b0bd8;
                     z-index: 111;
                     position: relative;
                     transition: all 1s ease-in-out;
                     font-size: 1.1rem;
                     span {
-                        font-size: 1.7rem;
+                        opacity: 0;
+                        font-size: 1.4rem;
+                        position: absolute;
                         transition: all .3s ease-in-out;
                     }
                 }
-                // li:hover {
-                //     background-color: rgba(17, 106, 128, 0.719) !important;
-                //     color: transparent;
-                //     transition: backgound-color .3s ease-in-out;
-                // }
-                // li:hover span {
-                //     width: fit-content;                    
-                //     color: rgb(255, 255, 255);
-                //     transform: scale(2) translateY(5px);
-                //     position: absolute;
-                //     transition: all .3s ease-in-out;
-                // }
+                li:hover {
+                    background-color: rgba(17, 106, 128, 0.719) !important;
+                    color: transparent;
+                    transition: backgound-color .3s ease-in-out;
+                }
+                li:hover span {
+                    opacity: 1;
+                    font-size: 1.4rem;
+                    width: fit-content;                    
+                    color: rgb(255, 255, 255);
+                    transform: scale(2) translateY(5px);
+                    position: absolute;
+                    transition: all .3s ease-in-out;
+                }
             }
         }
     }
@@ -274,7 +295,7 @@
     .about-container {
         .title-wrapper {
             p {
-                font-size: 4rem;
+                // font-size: 4rem;
             }
         }
         .bio-wrapper {
@@ -295,6 +316,7 @@
 
 @media (max-width: 1300px) {
     .avatar-container {
+          flex-direction: column;
         img {
             width: 200px;
         }
@@ -325,6 +347,7 @@
             .svg-container {
                 p{
                     margin-top: 2rem;
+                    font-size: 2.5rem;
                 }
                 img {
                     left: 0%;
@@ -367,6 +390,9 @@
                 gap: 2rem;
             }
             .svg-container {
+                p {
+                    font-size: 1.8rem;
+                }
                 .skills-list {
                     grid-template-columns: 50% 50%;
                     grid-template-rows: auto;
@@ -379,7 +405,7 @@
                         background-color: #6363634f;
                         border: none;
                         font-size: .9rem;
-                        border-radius: 10px;
+                        border-radius: 4px;
                      }
                 }
             }

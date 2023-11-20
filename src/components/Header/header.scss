@@ -9,22 +9,24 @@
       linear-gradient(to right, rgba(0, 234, 255, 0.083) .8px, transparent .8px),
       linear-gradient(to bottom, rgba(0, 182, 248, 0.068) .8px, transparent .8px);
     padding-right: 3rem;
+
+    .mouse {
+        width: 50px;
+        position: absolute;
+        left:  50%;
+        transform: translateX(-50%);
+        bottom: 2%;
+        opacity: 0.4;
+    }
      
     .hello {
-        //  font-family: 'Anton', sans-serif;
-
-        font-size: 2.3rem;
-        // color: rgb(100, 31, 31);
-        color: rgba(0, 221, 255, 0.178);
+        font-size: 1.9rem;
+        color: rgba(0, 221, 255, 0.272);
     }
     .title{
-       
-    //    margin-right: 3px;
-        font-size: 7rem;
+        font-size: 6.9rem;
         font-weight: 900;
         color: rgba(0, 187, 255, 0);
-        // perspective: 1000px;
-        // transform-style: preserve-3d;
         -webkit-text-stroke: 1px rgba(0, 221, 255, 0.713);
         text-transform: uppercase;
         animation: textAnim .3s ease 1.3s 2 normal forwards;

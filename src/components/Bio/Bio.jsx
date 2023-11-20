@@ -17,7 +17,6 @@ function Bio(props){
 
     function handleClick(){
         setToggle(!toggle)
-        console.log(toggle)
     }
 
     return (
@@ -40,19 +39,33 @@ function Bio(props){
             <div className="text-wrapper">
 
                 <p className={toggle ? "falseStyle" : "trueStyle"}>
+                    <p className='introduction'>introduction</p>
+                    <hr/>
+                    Hello, I'm Alexei, a Full-Stack Software Engineer specializing in JavaScript technologies, particularly the MERN stack. My journey in software development has equipped me with a strong foundation in full-stack development and a passion for crafting effortless user experiences.
+
+                    {/* /// old version 
                     My name is Alexei, and I am a <span id="accent" style={{}}>FULL-STACK SOFTWARE ENGINEER.</span> 
-                Through my experience as a software engineer, I have developed a strong foundation in full-stack web development with JavaScript technologies, including the MERN stack. I have also learned how to apply product development fundamentals, object-oriented programming, data modeling, and team collaboration strategies to create complete web applications with API systems. 
+                Through my experience as a software engineer, I have developed a strong foundation in full-stack web development with JavaScript technologies, including the MERN stack. I have also learned how to apply product development fundamentals, object-oriented programming, data modeling, and team collaboration strategies to create complete web applications with API systems.  */}
                 <br/><br/>
-                My background in choreography has given me a unique perspective on problem-solving and design. I have a passion for integrating technical and artistic elements to create intuitive and visually engaging user experiences that inspire and connect with users. As a professional choreographer and dancer, I have also honed my communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams. I am always eager to learn and grow in the exciting field of development.</p> 
+                    <p className='background' >background</p>
+                    <hr/>
+                    Beyond the world of code, my background in choreography adds a unique dimension to my problem-solving and design process. As a professional choreographer and dancer, I've cultivated communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams.
+                {/* My background in choreography has given me a unique perspective on problem-solving and design. I have a passion for integrating technical and artistic elements to create intuitive and visually engaging user experiences that inspire and connect with users. As a professional choreographer and dancer, I have also honed my communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams. I am always eager to learn and grow in the exciting field of development. */}
+                <br/><br/>
+                <p className='hobbies' >hobbies</p>
+                <hr/><br/>
+                <span style={{fontSize: '50px'}}>&#127928;</span><br/>
+                Away from the screen, I find joy in a variety of pursuits. I have a deep appreciation for music and often indulge my passion by playing musical instruments. Additionally, you'll find me embracing an active lifestyle through regular workouts, a perfect counterbalance to the sedentary nature of coding.
+                <br/><br/>
+                <span style={{fontSize: '50px'}}>&#9881;</span><br/>
+                Intriguingly, I have a fascination with the intricate world of horology. Fixing and restoring old watches has become a rewarding hobby that not only hones my patience and attention to detail but also connects me with the craftsmanship of a bygone era.
+                <br/><br/>
+                <span style={{fontSize: '50px'}}>&#129302;</span><br/>
+                Beyond that, I enjoy the thrill of building things with Raspberry Pi, exploring the limitless possibilities of this versatile microcomputer. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.
+                </p> 
                 <span className='clampButton' onClick={handleClick}>{toggle ? "read less" : "read more"}</span>
                 <div className='cred-container'>
                     <a href="mailto:rusualexei1995@gmail.com"> my email </a>
-                    {/* <a href="https://github.com/Alex-dev7" target="_blank" >
-                    <FaGithub size={30} color={"white"}/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">
-                        <FaLinkedin size={30} color={"white"}/>
-                    </a>  */}
                     <a  href={certificate} target="_blank" > certification</a>        
                     <a className="download-button" href={pdf} download>&#8681; RESUME</a>  
         
@@ -69,7 +82,7 @@ function Bio(props){
             
                
              
-                <p>skills<img src={svg} /></p>
+                <p>skills & expertise/</p>
                 <ul className='skills-list'>
                  
                  
