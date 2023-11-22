@@ -1,6 +1,7 @@
 [
     {
         "id" : 1,
+        "categorie": "Frontend CMS",
         "desktopImage" : "https://imgur.com/upuh6Td.png",
         "mobileImage": "https://imgur.com/OOnBOgM.png",
         "title": "Lake House Bistro",
@@ -12,6 +13,7 @@
     },
     {
         "id" : 2,
+        "categorie": "Full Stack",
         "desktopImage" : "https://imgur.com/Oq5RKex.png",
         "mobileImage": "https://i.imgur.com/tRLcI1O.png",
         "title": "SyntaxSoup",
@@ -23,6 +25,7 @@
     },
     {
         "id" : 3,
+        "categorie": "Full Stack",
         "desktopImage" : "https://i.imgur.com/6aGXhWO.png",
         "mobileImage": "https://imgur.com/VJQ8JvS.png",
         "title": "SupplySmart",
@@ -34,6 +37,7 @@
     },
     {
         "id" : 4,
+        "categorie": "Full Stack",
         "desktopImage" : "https://i.imgur.com/MmBBmOu.png",
         "mobileImage": "https://imgur.com/ANRDv7t.png",
         "title": "MyEvents",
@@ -46,6 +50,7 @@
     },
     {   
         "id" : 5,
+        "categorie": "Full Stack",
         "desktopImage" : "https://i.imgur.com/UWxjF08.png",
         "mobileImage": "https://imgur.com/sygPqBE.png",
         "title": "Missing Pets",
@@ -57,6 +62,7 @@
     },
     {   
         "id" : 6,
+        "categorie": "Frontend",
         "desktopImage" : "https://i.imgur.com/FHqD6ET.png",
         "mobileImage": "https://imgur.com/51JGqvY.png",
         "title": "Pocket Sommelier",

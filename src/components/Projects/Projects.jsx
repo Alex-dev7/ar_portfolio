@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 import projects from "../../json/projects.json"
 import './projects.scss'
 import { motion as m} from "framer-motion"
@@ -16,8 +16,11 @@ import { wrap } from "framer-motion"
 import { Link } from "react-router-dom"
 
 
+
+
 //----------------------------------------------------------------
 function ParallaxText({ children, baseVelocity = 100 }) {
+  
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -68,18 +71,43 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     </div>
   );
 }
+
+
+const filterLinks = ["All", "Full Stack", "Frontend", "Mobile App", "CMS"]
+
+
 //----------------------------------------------------------------
 function Projects(props) {
+  const [filteredData, setFilteredData] = useState([])
+  const [searchWord, setSearchWord] = useState('All')
 
-  
+  function handleClick(e) {
+    console.log(e.target.innerText)
+    console.log(projects)
+    setSearchWord(() => e.target.innerText)
+  }
+
+  useEffect(() => {
+    const data = projects.filter( x => searchWord === 'All' ? projects : x.categorie.includes(searchWord))
+    setFilteredData(data)
+
+
+  }, [searchWord])
 
     return <section className="projects-container" id="work">
         <section className="parallax-container">
             <ParallaxText baseVelocity={3} >my_work</ParallaxText>
         </section>
+
+        <ul className="categories-container">
+          { filterLinks.map((link) => (
+            <li onClick={handleClick}>{link}</li>
+          ))}
+        </ul>
         
-        {
-        projects.map((project) => 
+        { 
+        filteredData.length !== 0 ? 
+        filteredData?.map((project) => 
         (
             <m.div
             key={project.id}
@@ -115,7 +143,9 @@ function Projects(props) {
                 </div>  
             </m.div>
            )
-          )
+          )  : (<p style={{width: "100vw",textAlign: "center", color: "darkcyan", fontSize: "2rem"}}>In development...</p>)
+         
+          
         }
         
     </section>
