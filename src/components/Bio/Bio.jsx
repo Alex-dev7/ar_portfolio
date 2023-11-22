@@ -4,7 +4,7 @@ import UFO from '../../assets/UFO.svg'
 import pdf from "../../assets/AlexeiRusu_Resume.pdf"
 import certificate from "../../assets/Certificate-of-Completion.pdf"
 import {DiNodejs, DiJavascript1, DiReact, DiPython, DiPostgresql, DiHtml5, DiGithubBadge, DiDjango} from 'react-icons/di';
-import {SiTypescript, SiMongodb, SiTailwindcss, SiCsswizardry, SiBootstrap, SiPrisma, SiFigma, SiGraphql} from 'react-icons/si';
+import {SiTypescript, SiMongodb, SiTailwindcss, SiCsswizardry, SiBootstrap, SiPrisma, SiFigma, SiGraphql, SiExpress} from 'react-icons/si';
 import {TbBrandNextjs, TbBrandReactNative, TbBrandFramerMotion} from 'react-icons/tb'; 
 import { useState } from 'react';
 import avatar from '../../assets/av.png'
@@ -103,15 +103,16 @@ function Bio(props){
                  
                  <p>Backend</p>
            
-                 <li><span><DiNodejs/></span> Node.js</li>  
+                 <li><span><DiNodejs/></span> Node.js</li> 
+                 <li><span><SiExpress/></span> Express </li>  
                  <li><span><DiPython/></span> Python</li>  
- 
-
                  <li><span><DiDjango/></span> Django</li> 
                  <li><span><DiPostgresql/></span> PostgreSQL</li>  
                  <li><span><SiMongodb/></span> MongoDB</li>  
                  <li><span><SiGraphql /></span>GraphQL</li> 
                  <li><span><SiPrisma/></span> Prisma</li>  
+                
+
 
              </ul>  
              <ul className='skills-list'>
@@ -120,7 +121,7 @@ function Bio(props){
                 <li><span><TbBrandReactNative/></span> React Native</li>
                  <li><span><SiFigma/></span> Figma</li>
                  <li><span><TbBrandFramerMotion/></span>FramerMotion</li>
-                 <li><span><DiGithubBadge/></span> Git&GitHub</li>
+                 <li><span><DiGithubBadge/></span> Git & GitHub</li>
 
              </ul>           
             </div>
