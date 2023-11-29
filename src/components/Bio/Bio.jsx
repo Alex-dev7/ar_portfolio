@@ -8,8 +8,7 @@ import {SiTypescript, SiMongodb, SiTailwindcss, SiCsswizardry, SiBootstrap, SiPr
 import {TbBrandNextjs, TbBrandReactNative, TbBrandFramerMotion} from 'react-icons/tb'; 
 import { useState } from 'react';
 import avatar from '../../assets/av.png'
-import dialog from '../../assets/dialog.png';
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 
 
 function Bio(props){
