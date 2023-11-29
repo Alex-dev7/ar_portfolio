@@ -193,6 +193,14 @@
             }
         }
     }
+    .mobile-app {
+        .column1  {
+            img {
+                background-position-y: bottom !important;
+                top: -80%;
+            }
+        }
+    }
     // .first-card {
     //     margin-left: 20%;
     //     direction:rtl;

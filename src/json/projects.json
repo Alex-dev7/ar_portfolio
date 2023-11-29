@@ -71,5 +71,17 @@
         "live": "https://pocket-sommelier.vercel.app/",
         "repo": "https://github.com/Alex-dev7/Project1-SEI",
         "class": "first-card"
+    },
+    {   
+        "id" : 7,
+        "categorie": "Mobile App",
+        "desktopImage" : "https://i.imgur.com/ModsueL.png",
+        "mobileImage": "https://i.imgur.com/ModsueL.png",
+        "title": "Guess My Number",
+        "description": "Welcome to the Guess My Number game built using React Native! This simple and entertaining game challenges you to think of a number between 1 and 99, and then it's the phone's task to guess that number. As the player, you provide hints to the phone, and the game continues until the phone successfully guesses your chosen number.",
+        "skills": ["React Native", "Expo"],
+        "repo": "https://github.com/Alex-dev7/number_guessing_game_RN",
+        "class": "mobile-app", 
+        "videoPath": "../../assets/video/numbersGame.mp4"
     }
 ]

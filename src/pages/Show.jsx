@@ -2,6 +2,7 @@ import { useLoaderData, Link } from "react-router-dom"
 import './show.scss'
 import {motion as m} from 'framer-motion'
 import { useEffect } from "react"
+import video from '../assets/video/numbersGame.mp4'
 
 function Show(props) {
 
@@ -27,7 +28,8 @@ function Show(props) {
                 <hr/>
                 <div className="links-wrapper">
                     <a  href={item.repo} target="_blank"  >Source code -{'>'}</a>
-                    <a  href={item.live} target="_blank">Live Site</a>                    
+                    {item.live ? ( <a  href={item.live} target="_blank">Live Site</a> ) : null }
+                                      
                 </div>
                 <h3>Tech Stack</h3>
                 <ul className="tech-stack">
@@ -41,12 +43,15 @@ function Show(props) {
                 <Link id='back-button' to={`/`} >
                     home
                 </Link>
-                <m.img
+                {item.videoPath ? (<video className={item.class} src={video} width="300" height="600" loop autoPlay  muted />) 
+                :
+                (   <m.img
                     className="desktop-pic"
                     initial={{opacity: 0, x: "-350%"}}
                     animate={{opacity: 1, x: "0%"}}
                      transition={{duration: 0.8, ease: "easeOut", delay: 0.6}}               
-                src={item.desktopImage} referrerpolicy="no-referrer"/>
+                src={item.desktopImage} referrerpolicy="no-referrer"/>)}
+
                     <m.img
                         className="mobile-pic"
                         initial={{opacity: 0, x: "-450%"}}
