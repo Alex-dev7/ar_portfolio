@@ -38,7 +38,7 @@ function Header(props){
         className='header-container'> 
         <img src={mouse} alt='scroll down'  className='mouse'/> 
             <div className='cos-container' >
-                <img src={cos} alt='astronaut'  className='cos' />   
+                <img src={cos} alt='astronaut' loading='eager'  className='cos' />   
                 <div className='hello-container' ref={helloRef}>
                     <h2 className='hello'>Hi, my name is Alexei</h2>
                     <h2 className="hello" >Explore my work and get in touch!</h2>

@@ -135,6 +135,10 @@
             .cos {
                 width: 100%;
             }
+            @keyframes scaleDown {
+                0% { transform: scale(2); }
+                100% { transform: scale(1); }
+            }
             .hello-container{
                 top: -10%;
                 right: 10%;
