@@ -1,0 +1,132 @@
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    p {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        font-family: 'Orbitron', sans-serif;
+        -webkit-text-stroke: .8px #ffffff77;
+        letter-spacing: 0rem;
+        font-size: 5rem;
+        font-weight: 900;
+        color: #ffffff00;       
+    }
+    form {
+        
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        // max-height:400px;
+        align-self: center;
+        h3 {
+            color: white;
+            font-family: 'Gruppo', cursive;
+            font-size: 2rem;
+            margin: 2rem auto;
+        }
+        div input {
+        width: 48%;
+        }
+        input, textarea {
+            font-family: 'Gruppo', cursive;
+            height: 50px;
+           background-color: rgba(255, 255, 255, 0); 
+           border: none;
+           border-radius: 5px;
+           margin: 1%;
+           font-size: 1.2rem;
+           color:rgb(255, 255, 255);
+           padding: 0 1rem;
+           border: .3px solid rgba(255, 255, 0, 0.829);
+
+        }
+        input::placeholder, textarea::placeholder {
+            color: rgba(255, 252, 252, 0.801);
+        }
+        input:focus {
+           border: 1px solid transparent;
+          }
+        textarea {
+            padding: 1rem;
+            height: 150px;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(188, 159, 15);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(239, 202, 19);
+                color: black;
+                transition: all .5s;
+                
+            }
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 1320px) {
+    .contact-container {
+        p {
+            letter-spacing: 0rem;
+            font-size: 4rem;
+       
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .contact-container {
+        p {
+            letter-spacing: 0rem;
+            font-size: 2.8rem;
+       
+        }
+        form {
+            div input {
+                display: flex;
+                flex-direction: column;
+                width: 99%;
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .contact-container {
+        form {
+            div input {
+                display: flex;
+                flex-direction: column;
+                width: 99%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-container {
+       
+        form {
+            margin-top: 5rem ;
+        }
+    }
+}
+
+
