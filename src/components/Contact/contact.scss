@@ -122,9 +122,13 @@
 
 @media (max-width: 500px) {
     .contact-container {
-       
         form {
-            margin-top: 5rem ;
+            width: 90%;
+            margin: 5rem auto;
+            h3 {
+
+                margin: 3rem auto 1rem;
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ export default function ContactForm() {
       <div className="contact-container" id="contact">
         <p>contact/</p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h3>say Hi, 👋</h3>
+          <h3>👋</h3>
           <div>
             <input {...register("name", {required: "This is required."})} placeholder="name" />
             <input {...register("email")} placeholder="email"/>            

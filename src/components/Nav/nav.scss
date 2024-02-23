@@ -132,9 +132,10 @@
 @media (max-width: 550px) {
 
     .nav-container {
+        z-index: 10;
         flex-direction: column;
         gap: .6rem;
-        bottom: 10vh;
+        bottom: 5vh;
         height: fit-content;
         a {
             font-size: 1.5rem;

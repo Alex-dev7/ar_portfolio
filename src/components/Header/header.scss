@@ -171,6 +171,11 @@
                 0% { transform: scale(2); }
                 100% { transform: scale(1); }
             }
+            .led-light {
+                right: 40%;
+                top: 43%;
+                box-shadow: 0 0 20px 10px rgba(3, 220, 245, 0.778);
+            }
             .hello-container{
                 top: -20%;
                 right: 0%;
@@ -189,7 +194,7 @@
 @media (max-width: 768px) {
 
     .header-container {
-
+        z-index: -10;
         .title {
             font-size: 3rem;
             font-weight: 900;
@@ -208,16 +213,16 @@
             font-weight: 900;
         }
         .cos-container{
-            top: 25%;
+            top: 20%;
             display: flex;
             // align-items: center;
             .cos {
-                width: 80%;
+                width: 50%;
                 margin: 0 auto;
             }
             .hello-container{
-                top: -10%;
-                right: 10%;
+                top: 10%;
+                right: 5%;
                 .hello{
                     font-size: .8rem;
                 }
