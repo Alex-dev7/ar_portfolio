@@ -2,12 +2,21 @@ import './header.scss'
 import { motion as m} from "framer-motion"
 import cos from '../../assets/cos.svg'
 import mouse from '../../assets/scroll-down.png'
-import  { useEffect, useRef } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 
 
 function Header(props){
-
+    const [hasAnimated, setHasAnimated] = useState(false);
     const helloRef = useRef(null);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        const timer = setTimeout(() => {
+            setHasAnimated(true);
+        }, 300); // Replace with the duration of your animation
+    
+        return () => clearTimeout(timer); // Clean up the timer when the component unmounts
+    }, []);
 
 
     useEffect(() => {
@@ -37,8 +46,9 @@ function Header(props){
         id="header"
         className='header-container'> 
         <img src={mouse} alt='scroll down'  className='mouse'/> 
-            <div className='cos-container' >
-                <img src={cos} alt='astronaut' width={900} height={600} className='cos' />   
+            <div className='cos-container' style={{animation: hasAnimated ? "floatA 3s ease-in-out infinite" : ''}}>
+                <img src={cos} alt='astronaut' width={560} height={400} className='cos' />
+                <span className='led-light'></span>   
                 <div className='hello-container' ref={helloRef}>
                     <h2 className='hello'>Hi, my name is Alexei</h2>
                     <h2 className="hello" >Explore my work and get in touch!</h2>

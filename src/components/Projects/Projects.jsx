@@ -120,9 +120,9 @@ function Projects(props) {
               <div className="column1">
                 <Link className="title" to={`/show/${project.id}`}>
                   <img
-                    src={project.desktopImage}
-                    // width={}
-                    // height={}
+                    src={project.thumbnail}
+                    width={300}
+                    height={300}
                     alt="site screenshot"
                     referrerPolicy="no-referrer"
                   />

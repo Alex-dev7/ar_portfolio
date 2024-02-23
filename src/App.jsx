@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer'
 
 
 function App({pageProps, router}) {
-  
 
   return (
     <div className="App"> 
@@ -18,14 +17,6 @@ function App({pageProps, router}) {
         <span className='falling-star'></span>
         <span className='falling-star'></span>
       </section>
-      {/* <div class="svg-container">
-      <svg class="svg-line">
-          <line x1="50%" y1="0" x2="50%" y2="100vh" stroke="black" stroke-width="2"/>
-      </svg>
-      <svg class="svg-carrot" viewBox="0 0 50 50">
-          <polygon points="25,0 50,50 0,50" fill="black"/>
-      </svg>
-      </div> */}
       <div className='content-container'>
         <Nav />
         <Header />

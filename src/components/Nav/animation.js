@@ -14,7 +14,7 @@ export const container ={
 
 export const item  ={
     hidden: {
-        x: '-150%',
+        x: '-50%',
         opacity: 0,
 
         
@@ -23,7 +23,7 @@ export const item  ={
         x: "0%",
         opacity: 1,
         transition: {
-            duration: 0.3,
+            duration: 1,
         }
     }
 }  
