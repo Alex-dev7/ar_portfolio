@@ -2,7 +2,7 @@ import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
 import pdf from '../../assets/AlexeiRusu_Resume.pdf'
-import { FaLinkedin, FaGithub  } from 'react-icons/fa';
+
 
 function Nav(props){
 
@@ -13,10 +13,10 @@ function Nav(props){
             <div className='socials-wrapper'>
                 
                 <a href="https://github.com/Alex-dev7" target="_blank" >
-                    <FaGithub size={30} color={"white"}/>
+                    <img src='github.svg' width={30} height={30}/>
                 </a>
                 <a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">
-                    <FaLinkedin size={30} color={"white"}/>
+                     <img src='linkedin.svg' width={30} height={30}/>
                 </a>
               
             </div>
