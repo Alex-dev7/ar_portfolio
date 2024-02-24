@@ -14,21 +14,21 @@ function Bio(props){
         setToggle(!toggle)
     }
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (parallaxImageRef.current) {
-                const scrollPosition = window.scrollY;
-                parallaxImageRef.current.style.transform = `translateX(${scrollPosition * 3}px)`;
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (parallaxImageRef.current) {
+    //             const scrollPosition = window.scrollY;
+    //             parallaxImageRef.current.style.transform = `translateX(${scrollPosition * 3}px)`;
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-        // Clean up the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     // Clean up the event listener when the component unmounts
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     return (
     <>  
@@ -48,41 +48,41 @@ function Bio(props){
         <div className="bio-wrapper">
             <div className="outter-text-wrapper">
                 <div className='text-wrapper'>
-                    <div className={toggle ? 'falseStyle' : 'trueStyle'}>
-                        <p>
+                    <p className={toggle ? 'falseStyle' : 'trueStyle'}>
+                        
                         <span className='introduction'>introduction</span>
                         <br/>
                             Hello, I'm Alexei, a Full-Stack Software Engineer specializing in JavaScript technologies, particularly the MERN stack. My journey in software development has equipped me with a strong foundation in full-stack development and a passion for crafting effortless user experiences.                            
-                        </p>
+                        <br/><br/>
 
                         
-                        <p>
+                        
                         <span className='background' >background</span>
                         <br/>
                             Beyond the world of code, my background in choreography adds a unique dimension to my problem-solving and design process. As a professional choreographer and dancer, I've cultivated communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams.                            
-                        </p>
+                        <br/><br/>
 
                     
-                        <p>
-                            <span className='hobbies' >hobbies</span><br/><br/>
-                            <span style={{fontSize: '50px'}}>&#127928;</span><br/>
+                       
+                        <span className='hobbies' >hobbies</span><br/><br/>
+                        <span style={{fontSize: '50px'}}>&#127928;</span><br/>
                             Away from the screen, I am passionate about a varity of hobbies. I have a deep appreciation for music and enjoy spending free time learning to play musical instruments. Additionally, I prioritize my health and wellness by cultivating a healthy diet and maintaining an active lifestyle - a perfect counterbalance to the sedentary nature of software development!                    
-
-                        </p>
-                        <p>
-                            <span style={{fontSize: '50px'}}>&#9881;</span><br/>
+                        <br/><br/>
+                       
+                        
+                        <span style={{fontSize: '50px'}}>&#9881;</span><br/>
                             I have a fascination with the intricate world of horology. Fixing and restoring old watches is a new hobby of mine that I am quickly becoming enamored with. I find that it not only tests my patience and attention to detail but also connects me with the craftsmanship styles of the past.                        
-                        </p>
+                        <br/><br/>
                         {/* <p>
                             <span style={{fontSize: '50px'}}>&#129302;</span><br/>
                             Beyond that, I enjoy building things with Raspberry Pi, exploring the limitless possibilities of this versatile microcomputer. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.                        
                         </p> */}
-                    </div> 
-                    {/* <span className='clampButton' onClick={handleClick} >{toggle ? "read less" : "read more"}</span>       */}
+                    </p> 
+                    <span className='clampButton' onClick={handleClick} >{toggle ? "read less" : "read more"}</span>      
                     <div className='cred-container'>
-                        <a href="mailto:rusualexei1995@gmail.com"> my email </a>
+                        <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a>
                         <a  href={certificate} target="_blank" > certification</a>        
-                        <a className="download-button" href={pdf} download>&#8681; RESUME</a>  
+                        <a className="download-button" href={pdf} download>&#8681; resume</a>  
             
                     </div>                              
                 </div>   
@@ -118,6 +118,7 @@ function Bio(props){
                     <li><span><img src='figma.svg' width={20} height={20}/></span> Figma</li>
                     <li><span><img src='framer.svg' width={20} height={20}/></span>FramerMotion</li>
                     <li><span><img src='github.svg' width={20} height={20}/></span> Git & GitHub</li>
+                    <li><span><img src='openai.svg' width={20} height={20}/></span> OpenAI API</li>
                 </ul>           
             </div>
         </div>
@@ -128,23 +129,3 @@ function Bio(props){
 
 export default Bio
 
-
-// const trueStyle = {
-//     lineClamp: 7,
-//     // WebkitLineClamp: 7,
-//     overflow: 'hidden',
-//     display: 'flex',
-//     WebkitBoxOrient: 'vertical',
-//     gap: '3rem',
-//     height: '100%',
-// };
-
-// const falseStyle = {
-//     lineClamp: 0,
-//     // WebkitLineClamp: 0,
-//     overflow: 'hidden',
-//     display: 'flex',
-//     WebkitBoxOrient: 'vertical',
-//     gap: '3rem',
-//     height: '30%',
-// };

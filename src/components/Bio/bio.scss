@@ -1,11 +1,11 @@
 
 .trueStyle  {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    display: flex;
-    gap: 3rem;
+    // display: flex;
+    // gap: 3rem;
  }
 
  .falseStyle  {
@@ -13,9 +13,8 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    display: flex;
-    gap: 3rem;
-   
+    // display: flex;
+    // gap: 3rem;
  }
 
 
@@ -98,8 +97,9 @@
         
 
         .outter-text-wrapper {
-            border: 2px solid rgb(255, 255, 255);
-            box-shadow: 6px 6px 4px #0b0b0bd8;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            box-shadow: 0px 0px 4px 4px #ffffffa5;
             width: 80%;
             margin: 0 auto;
             display: flex;
@@ -122,25 +122,26 @@
             // justify-content: flex-start;
             // align-items: flex-start;
             text-align: start;
-            padding: 3rem 3rem;
+            padding: 3rem;
             gap: 2rem;
             z-index: 11;
-            font-size: 1.2rem;
-            font-family: 'Orbitron', sans-serif;
-            font-family: 'Ubuntu Mono', monospace;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            // font-family: 'Orbitron', sans-serif;
+            // font-family: 'Ubuntu Mono', monospace;
   
             .introduction {
-                background-color: #278b03ee;
+                background-color: #278b03b5;
                 width: fit-content;
                 padding: 0 16px;
             }
             .background {
-                background-color: #0b6eb5e3;
+                background-color: #0b6eb5b3;
                 width: fit-content;
                 padding: 0 16px;
             }
             .hobbies {
-                background-color: #be9e0cd9;
+                background-color: #be9d0caf;
                 width: fit-content;
                 padding: 0 16px;
             }
@@ -153,22 +154,24 @@
             .clampButton {
                 font-size: 0.8rem;
                 width: fit-content;
-                padding: 0 8px;
+                padding: 0 10px;
                 color: white;
-                background-color: #0a93f500;
+                background-color: #0a93f544;
                 border-radius: 5px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: all 2s linear;
                 cursor: pointer;
                 &:hover {
-                    background-color: #0fa3d487;
+                    background-color: #0fa3d4c4;
                 }
             }
             .cred-container {
                 margin: auto 0;
                 a {
+                    width: 170.88px;
                     font-size: 1rem;
                     border: 1px solid rgba(206, 240, 246, 0.999);
-                    padding: 6px 20px;
+                    padding: 0px 20px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     transition: all .1s linear;
                     &:hover{
@@ -382,14 +385,10 @@
                 font-size: 2.5rem;
             }
             .svg-container {
-                // gap: 0;
                 .skills-list{
                      min-width: 200px;
                      justify-content: center;
                      margin: 10px;
-                    li {
-                       
-                    }
                 }
 
                 img {
@@ -431,7 +430,7 @@
                 }
             .text-wrapper {
                 padding: 1rem;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 line-height: 1.6rem;
             }                
         }
@@ -452,18 +451,18 @@
                 width: 90vw;
             .text-wrapper {
             text-align: start;
-            font-size: 0.95rem;
+            font-size: 0.75rem;
             .cred-container {
                 a {
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                     border: 2px solid rgba(206, 240, 246, 0.999);
-                    padding: 3px 33px;
+                    padding: 3px 20px;
                     width: 160px;
                     align-self: center;
                    
                 }
                 .download-button {
-                    padding: 0px 45px;
+                    padding: 0px 20px;
                     text-align: center; 
                 }
             }

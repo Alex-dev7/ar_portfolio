@@ -7,6 +7,7 @@ import ReactPlayer from "react-player/youtube";
 function Show(props) {
   const item = useLoaderData();
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -14,6 +15,22 @@ function Show(props) {
   return (
     <section>
       <div className="show-container ">
+      <div className="nav-arrows-container">
+        { item.id - 1 === 0 ? null : 
+            <Link to={`/show/${item.id - 1}`} className="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f7f7f769" viewBox="0 0 15 24" >
+                  <path d="M15 19l-7-7 7-7"/>
+                </svg>
+            </Link>
+        }
+        { item.id + 1 === 8 ? null : 
+            <Link to={`/show/${item.id + 1}`} className="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f7f7f769" viewBox="0 0 24 24">
+                  <path d="M9 5l7 7-7 7"/>
+                </svg>
+            </Link>
+        }
+      </div>
         <m.div
           key={item.id}
           initial={{ opacity: 0, y: "-10%" }}
@@ -29,11 +46,11 @@ function Show(props) {
           <hr />
           <div className="links-wrapper">
             <a href={item.repo} target="_blank">
-              Source code -{">"}
+              source code -{">"}
             </a>
             {item.live ? (
               <a href={item.live} target="_blank">
-                Live Site
+                live site
               </a>
             ) : null}
           </div>

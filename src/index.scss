@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gruppo&family=Orbitron:wght@400;500;600;700;800;900&family=Six+Caps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 // font-family: 'Anton', sans-serif;
 // font-family: 'Gruppo', cursive;
 // font-family: 'Orbitron', sans-serif;
 // font-family: 'Six Caps', sans-serif;
+
 
   // Colors
   $white: #ffffff;
@@ -20,7 +21,7 @@
   $sky-height: 2000; // Height of your sky
 
 
-@import './components/Header/header.scss';
+// @import './components/Header/header.scss';
 
 * {
   margin: 0;
