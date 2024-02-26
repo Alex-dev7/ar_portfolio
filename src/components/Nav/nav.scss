@@ -45,6 +45,7 @@
     // margin: 2rem;
     perspective: 1000px;
     a {
+
         text-decoration: none;
         margin: 0 auto 0 5vw;
         letter-spacing: 0rem;
@@ -57,6 +58,8 @@
         transform-style: preserve-3d;
         color: #c0c0c0c5;
         position: relative;
+        
+       
         &:after {
             content: '';
             position: absolute;
@@ -66,15 +69,19 @@
             width: 0;
             background: #651818;
             transition: width 0.3s cubic-bezier(.86, 0, .07, 1);
+            
         }
     
         &:hover:after {
             width: 100%;
+            
         }
         &:hover {
             transform: perspective(1000px) rotateY(0deg);
             color: #ffffff;
+            
         }
+
     }
     
 }

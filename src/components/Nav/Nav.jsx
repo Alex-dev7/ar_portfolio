@@ -9,7 +9,7 @@ function Nav(props){
 
 
     return (
-        <>
+        <div>
             <div className='socials-wrapper'>
                 
                 <a href="https://github.com/Alex-dev7" target="_blank" >
@@ -35,7 +35,7 @@ function Nav(props){
                     <m.div variants={item} >➃ contact </m.div>    
                 </a> 
             </m.nav>
-        </>
+        </div>
     )
 }
 
