@@ -134,9 +134,10 @@ function Projects(props) {
                   <p>{project.title}</p>
                 </Link>
                 <div className="links-wrapper">
-                  <a href={project.repo} target="_blank">
+             {  project.repo &&   
+                  (<a href={project.repo} target="_blank">
                     Source code -{">"}
-                  </a>
+                  </a>)}
                   {project.live && (
                     <a href={project.live} target="_blank">
                       Live Site

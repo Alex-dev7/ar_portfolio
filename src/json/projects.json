@@ -19,10 +19,9 @@
         "desktopImage" : "https://i.imgur.com/upuh6Td.png",
         "mobileImage": "https://imgur.com/OOnBOgM.png",
         "title": "Lake House Bistro",
-        "description": " Lake House Bistro is a restaurant website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date menus and events. Lake House Bistro offers a diverse menu inspired by local and global cuisine, and the website provides easy access to online reservations, event updates, and social media connections. This project showcases my expertise in creating high-quality web applications that meet clients unique needs.",
+        "description": " Client Work: Lake House Bistro is a restaurant website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date menus and events. Lake House Bistro offers a diverse menu inspired by local and global cuisine, and the website provides easy access to online reservations, event updates, and social media connections. This project showcases my expertise in creating high-quality web applications that meet clients unique needs.",
         "skills": ["NextJS",  "TypeScript", "Tailwind",  "Sanity.io", "GROQ", "CMS"],
         "live": "https://lakehousebistro.com/",
-        "repo": "https://github.com/Alex-dev7/LakeHouse_Bistro-Sanity",
         "class": "sixth-card"
     },
     {

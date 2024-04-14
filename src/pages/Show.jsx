@@ -45,14 +45,15 @@ function Show(props) {
           <p>{item.description}</p>
           <hr />
           <div className="links-wrapper">
-            <a href={item.repo} target="_blank">
+            { item.repo && 
+            (<a href={item.repo} target="_blank">
               source code -{">"}
-            </a>
-            {item.live ? (
+            </a>)}
+            {item.live && (
               <a href={item.live} target="_blank">
                 live site
               </a>
-            ) : null}
+            ) }
           </div>
           <h3>Tech Stack</h3>
           <ul className="tech-stack">
