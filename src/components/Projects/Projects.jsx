@@ -72,7 +72,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 }
 
 
-const filterLinks = ["All", "Full Stack", "Frontend", "Mobile App", "CMS"]
+const filterLinks = ["All", "Full Stack", "Frontend", "Mobile App", "CMS", "AI"]
 
 
 //----------------------------------------------------------------

@@ -1,6 +1,19 @@
 [
-    {
+    {   
         "id" : 1,
+        "categorie": "AI",
+        "thumbnail": "https://i.imgur.com/QaNBQBrl.png",
+        "desktopImage" : "https://i.imgur.com/QaNBQBr.png",
+        "mobileImage": "https://i.imgur.com/rGeo0Ge.png",
+        "title": "Green Guru",
+        "description": "An environmental awareness bot which can offer insights and guidance on sustainability and green living.",
+        "skills": ["ReactJS", "OpenAI Assistants API", "ExpressJS", "NodeJS"],
+        "live": "https://chat-bot-red-phi.vercel.app/",
+        "repo": "https://github.com/Alex-dev7/_ChatBot_",
+        "class": "first-card"
+    },
+    {
+        "id" : 2,
         "categorie": "Frontend CMS",
         "thumbnail": "https://i.imgur.com/upuh6Tdl.png",
         "desktopImage" : "https://i.imgur.com/upuh6Td.png",
@@ -13,7 +26,7 @@
         "class": "sixth-card"
     },
     {
-        "id" : 2,
+        "id" : 3,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/Oq5RKexl.png",
         "desktopImage" : "https://i.imgur.com/Oq5RKex.png",
@@ -26,7 +39,7 @@
         "class": "fifth-card"
     },
     {
-        "id" : 3,
+        "id" : 4,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/6aGXhWOl.png",
         "desktopImage" : "https://i.imgur.com/6aGXhWO.png",
@@ -39,7 +52,7 @@
         "class": "fourth-card"
     },
     {
-        "id" : 4,
+        "id" : 5,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/MmBBmOul.png",
         "desktopImage" : "https://i.imgur.com/MmBBmOu.png",
@@ -53,7 +66,7 @@
         "class": "third-card"
     },
     {   
-        "id" : 5,
+        "id" : 6,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/UWxjF08l.png",
         "desktopImage" : "https://i.imgur.com/UWxjF08.png",
@@ -66,7 +79,7 @@
         "class": "second-card"
     },
     {   
-        "id" : 6,
+        "id" : 7,
         "categorie": "Frontend",
         "thumbnail": "https://i.imgur.com/FHqD6ETl.png",
         "desktopImage" : "https://i.imgur.com/FHqD6ET.png",
@@ -79,7 +92,7 @@
         "class": "first-card"
     },
     {   
-        "id" : 7,
+        "id" : 8,
         "categorie": "Mobile App",
         "thumbnail": "https://i.imgur.com/dHXrhOkl.png",
         "desktopImage" : "https://i.imgur.com/ModsueL.png",
@@ -91,4 +104,5 @@
         "class": "first-card", 
         "videoPath": "youtube"
     }
+
 ]

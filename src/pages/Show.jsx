@@ -23,7 +23,7 @@ function Show(props) {
                 </svg>
             </Link>
         }
-        { item.id + 1 === 8 ? null : 
+        { item.id + 1 === 9 ? null : 
             <Link to={`/show/${item.id + 1}`} className="next">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f7f7f769" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7"/>
