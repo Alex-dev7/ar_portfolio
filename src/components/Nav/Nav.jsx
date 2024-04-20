@@ -2,14 +2,17 @@ import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
 import pdf from '../../assets/AlexeiRusu_Resume.pdf'
+import ContactForm from '../Contact/ContactForm'
+import { useState } from 'react'
 
 
 function Nav(props){
-
+const {toggle, setToggle} = useState(false)
 
 
     return (
         <div>
+            
             <div className='socials-wrapper'>
                 
                 <a href="https://github.com/Alex-dev7" target="_blank" >
@@ -31,7 +34,7 @@ function Nav(props){
                 <a href={pdf}  target="_blank" >
                     <m.div variants={item}>➂ resume</m.div>    
                 </a> 
-                <a  href="#contact">
+                <a  href="#contact" onClick={() => setToggle(true)}>
                     <m.div variants={item} >➃ contact </m.div>    
                 </a> 
             </m.nav>

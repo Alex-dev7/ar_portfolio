@@ -17,7 +17,7 @@ function Footer(props){
     return (
         <footer id="footer">
             <div
-            className="p-container">
+            className="p-container" id='contact'>
                 <p>Developing a project?</p>
                 <p id="underline">
                     <a href="#contact" id="contact-link" onClick={() => setToggle(!toggle)}>Let's connect.</a>
