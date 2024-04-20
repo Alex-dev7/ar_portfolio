@@ -29,11 +29,11 @@ function Show(props) {
                     <div className="role-group">
                         <p>
                             <span>ROLE</span>
-                            {"FULL-STACK DEVELOPER"}
+                            {item.role}
                         </p>
                         <p>
                             <span>CONTEXT</span>
-                            {"PERSONAL PROJECT"}
+                            {item.context}
                         </p>
                     </div>
                 </div>
