@@ -31,7 +31,7 @@ function Nav(props){
                 <a href={pdf}  target="_blank" >
                     <m.div variants={item}>➂ resume</m.div>    
                 </a> 
-                <a  href="#contact-link">
+                <a  href="#contact">
                     <m.div variants={item} >➃ contact </m.div>    
                 </a> 
             </m.nav>

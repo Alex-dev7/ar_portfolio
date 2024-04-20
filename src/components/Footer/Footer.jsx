@@ -2,11 +2,16 @@ import './footer.scss'
 import ContactForm from '../Contact/ContactForm'
 import pdf from '../../assets/AlexeiRusu_Resume.pdf'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 function Footer(props){
 
     const [toggle, setToggle] = useState(false)
+
+    function handleClick(){
+        window.scrollTo(0, 0)
+    }
 
 
     return (
@@ -25,13 +30,15 @@ function Footer(props){
                     <li><a href={pdf} download>download resume</a></li>
                     <li><a href="#contact" onClick={() => setToggle(!toggle)}>contact me</a></li>
                 </ul>
-                <ul id="copyright-wrapper">
+                <ul className="copyright-wrapper">
+                    <li className='copy-text'>© 2024 <span>Alexei Rusu</span></li>
                     
-                    {/* <li>copyright</li> */}
-                    <li><a href="#header">to top</a></li>
+                    <li onClick={handleClick}><a href="#">to top</a></li>
                 </ul>
+                
             </div>
-            { toggle ? <ContactForm /> : ""}
+            
+          <ContactForm toggle={toggle} setToggle={setToggle}/> 
         </footer>
     )
 }

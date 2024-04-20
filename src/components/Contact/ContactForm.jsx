@@ -1,18 +1,23 @@
-import {useForm }from "react-hook-form"
+import {set, useForm }from "react-hook-form"
 import './contact.scss'
 
-export default function ContactForm() {
+
+export default function ContactForm({toggle, setToggle}) {
     const { register, handleSubmit, formState: {errors} } = useForm()
+
     const onSubmit = (formData) => {
         window.location.href = `mailto:rusualexei1995@gmail.com?subject=${formData.subject}&body=${formData.message}, (${formData.email})`
+        setToggle(!toggle)
     }
+
 
     //  console.log(errors)
     return (
-      <div className="contact-container" id="contact">
+      <div className="contact-container" id="contact"   style={{transform: toggle ?  "translateX(0%)" : "translateX(100%)" }} >
+        <button className="close-button" onClick={() => setToggle(!toggle)}>X</button>
         <p>contact/</p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h3>👋</h3>
+          <h4>Let's Connect!👋</h4>
           <div>
             <input {...register("name", {required: "This is required."})} placeholder="name" />
             <input {...register("email")} placeholder="email"/>            
@@ -25,3 +30,4 @@ export default function ContactForm() {
 
     );
   }
+ 
