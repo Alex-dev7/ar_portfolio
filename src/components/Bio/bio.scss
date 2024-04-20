@@ -35,31 +35,6 @@
     //   linear-gradient(to right, rgba(0, 234, 255, 0.083) .50%, transparent .8px),
       linear-gradient(to bottom, rgba(0, 200, 255, 0.085) 40%, rgba(0, 200, 255, 0.15) 70%, rgba(0, 200, 255, 0) 100%, );
 
-
-    // .parallax-container {
-    //     position: absolute;
-    //     // overflow: hidden;
-    //     height: 100vh; // Adjust as needed
-
-    //     top: 0%;
-    //     left: -100%;
-    //     width: 100%; // Make the image wider than the container
-    //     height: 100%;
-    //     .parallax-image {
-    //     // position: absolute;
-    //     top: 30%;
-    //     left: -100%; // Start from the left
-    //     width: 100%; // Make the image wider than the container
-    //     height: 100%;
-    //     transition: transform 0.5s ease-out; // Smooth transition
-    //     background-color: rgba(255, 0, 0, 0.063);
-    //     z-index: 111;
-    //     }
-    //     @keyframes slide {
-    //         0% { transform: translateX(-160); }
-    //         100% { transform: translateX(200%); }
-    //     }
-    // }
     
 
 
@@ -81,54 +56,43 @@
     }
     .bio-wrapper {
         width: 95%;
-        // font-family: 'Ubuntu Mono', monospace;
-        // font-size: 2rem;
         font-weight:100;
         line-height: 2.3rem;
         display: flex;
-        // grid-template-columns: 1.5fr 1fr;
         flex-direction: column;
         background-size: cover;
         gap: 100px;
-        // height: 100%;
         margin: 0 auto;
         text-align: center;
         position: relative;
         
 
         .outter-text-wrapper {
-            border: 1px solid rgb(255, 255, 255);
             border-radius: 15px;
-            box-shadow: 0px 0px 4px 4px #ffffffa5;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             display: flex;
-            // display: grid;
-            // grid-template-columns: 1.7fr 1fr;
+          
+            // align-items: flex-end;
             position: relative;
             img {
                 position: absolute;
                 right: 5%;
                 margin-top: 100px;
-            //    justify-self: center;
-            //    align-self: center;
                 width: 300px;
-                // border: 1px solid black;
                }
 
             .text-wrapper {
+            width: 75%;
             display: flex;
-            flex-direction: column;
-            // justify-content: flex-start;
-            // align-items: flex-start;
+            flex-direction: row;
             text-align: start;
             padding: 3rem;
-            gap: 2rem;
+            gap: 4rem;
             z-index: 11;
-            font-size: 0.95rem;
-            letter-spacing: 2px;
-            // font-family: 'Orbitron', sans-serif;
-            // font-family: 'Ubuntu Mono', monospace;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
   
             .introduction {
                 background-color: #278b03b5;
@@ -147,29 +111,35 @@
             }
             p {
                 color: rgb(206, 203, 203);
+                line-height: 2rem;
+               
                 span {
                     font-weight: 900;
                 }
 
-            }
+
+            }                
             .clampButton {
-                cursor: pointer !important;
-                font-size: 0.8rem;
-                width: fit-content;
-                padding: 0 10px;
-                color: white;
-                background-color: #0a93f544;
-                border-radius: 5px;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                transition: all .3s linear;
-                
-                &:hover {
-                    background-color: #0fa3d4c4;
-                  
+                position: absolute;
+                    cursor: pointer !important;
+                    font-size: 0.8rem;
+                    bottom: 0%;
+                    padding: 0 10px;
+                    color: white;       
+                    border-radius: 5px;                
+                    transition: all .3s linear;                  
+                    &:hover {
+                        // background-color: #0fa3d4c4;
+                        text-decoration: underline;
+                      
+                    }
                 }
-            }
+
             .cred-container {
                 margin: auto 0;
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
                 a {
                     width: 170.88px;
                     font-size: 1rem;
@@ -316,8 +286,14 @@
 }
 
 
-
-
+@keyframes stripe {
+    0% {
+        transform: translateY(-1.5em);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
 
 @media (max-width: 1650px) {
     .showcase {
@@ -331,7 +307,9 @@
             font-size: 1.5rem;
             line-height: 2.3rem;
             .outter-text-wrapper {
+                justify-content: center;
                 .text-wrapper {
+                    width: 80%;
                 padding:  2rem;
             }
             }
@@ -345,6 +323,8 @@
         }
     }
 }
+
+
 
 @media (max-width: 1300px) {
     .avatar-container {
@@ -370,15 +350,16 @@
         .bio-wrapper {
             display: flex;
             flex-direction: column;
-            max-width: 80vw;
+            max-width: 100vw;
             font-size: 1.4rem;
 
             .outter-text-wrapper {
-                width: 80vw;
+                width: 90vw;
                 img{
                     width: 200px;
                 }
             .text-wrapper {
+                width: 100%;
                 padding: 1rem;
                 font-size: 1rem;
                 line-height: 1.6rem;
@@ -435,9 +416,20 @@
                     padding: 0;
                 }
             .text-wrapper {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 padding: 1rem;
+                gap: 1rem;
                 font-size: 0.8rem;
                 line-height: 1.6rem;
+                .clampButton {
+                    position: static;
+                }
+                .cred-container {
+                    flex-direction: row;
+                    gap: 1rem;
+                }
             }                
         }
         
@@ -461,13 +453,19 @@
             .text-wrapper {
                 
             text-align: left;
-            font-size: 0.75rem;
+            font-size: 14px;
+            p {
+                line-height: 1.6rem;
+                
+                text-align: start;
+                // word-spacing: 0.2rem;
+            }
             .cred-container {
                 padding-bottom: 1rem ;
                 gap: 1rem;
                 a {
                     font-size: 0.8rem;
-                    // border: 1px solid rgba(206, 240, 246, 0.999);
+                  
                     border: none;
                     padding: 3px 20px;
                     width: 160px;

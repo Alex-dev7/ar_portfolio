@@ -77,8 +77,9 @@ function Bio(props){
                             <span style={{fontSize: '50px'}}>&#129302;</span><br/>
                             Beyond that, I enjoy building things with Raspberry Pi, exploring the limitless possibilities of this versatile microcomputer. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.                        
                         </p> */}
+                        
                     </p> 
-                    <span className='clampButton' onClick={handleClick} >{toggle ? "read less" : "read more"}</span>      
+                        <span className='clampButton' onClick={handleClick} >{toggle ? "read less" : "read more"}</span>  
                     <div className='cred-container'>
                         {/* <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a> */}
                         <a className="download-button" href={certificate} target="_blank" > certification</a>        
