@@ -80,10 +80,9 @@ function Bio(props){
                     </p> 
                     <span className='clampButton' onClick={handleClick} >{toggle ? "read less" : "read more"}</span>      
                     <div className='cred-container'>
-                        <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a>
-                        <a  href={certificate} target="_blank" > certification</a>        
-                        <a className="download-button" href={pdf} download>&#8681; resume</a>  
-            
+                        {/* <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a> */}
+                        <a className="download-button" href={certificate} target="_blank" > certification</a>        
+                        <a className="download-button" href={pdf} download>resume</a>  
                     </div>                              
                 </div>   
             </div>
@@ -118,7 +117,8 @@ function Bio(props){
                     <li><span><img src='figma.svg' width={20} height={20}/></span> Figma</li>
                     <li><span><img src='framer.svg' width={20} height={20}/></span>FramerMotion</li>
                     <li><span><img src='github.svg' width={20} height={20}/></span> Git & GitHub</li>
-                    <li><span><img src='openai.svg' width={20} height={20}/></span> OpenAI API</li>
+                    <li><span><img src='openai.svg' width={18} height={18}/></span> OpenAI API</li>
+                    <li><span><img src='docker.svg' width={20} height={20}/></span> Docker</li>
                 </ul>           
             </div>
         </div>

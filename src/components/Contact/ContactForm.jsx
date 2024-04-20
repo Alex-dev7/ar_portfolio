@@ -17,7 +17,7 @@ export default function ContactForm({toggle, setToggle}) {
         <button className="close-button" onClick={() => setToggle(!toggle)}>X</button>
         <p>contact/</p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h4>Let's Connect!👋</h4>
+          <h4>Please do not hesitate to contact me!</h4>
           <div>
             <input {...register("name", {required: "This is required."})} placeholder="name" />
             <input {...register("email")} placeholder="email"/>            
@@ -25,7 +25,13 @@ export default function ContactForm({toggle, setToggle}) {
           <input {...register("subject", {required: "This is required."})} placeholder="subject" />
           <textarea {...register("message", {required: "This is required.", minLength: 4})} placeholder="message"/>
           <input type="submit" />
-        </form>        
+        </form>      
+        <div className="contact-info-container">
+          <p>
+              <span>Email:</span> rusualexei1995@gmail.com
+          </p>
+        
+        </div>
       </div>
 
     );
