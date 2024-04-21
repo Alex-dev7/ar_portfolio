@@ -1,8 +1,6 @@
 import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
-import pdf from '../../assets/AlexeiRusu_Resume.pdf'
-import ContactForm from '../Contact/ContactForm'
 import { useState } from 'react'
 
 

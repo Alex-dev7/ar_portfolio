@@ -5,6 +5,10 @@
     <!-- take it off ^ -->
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./src/assets/cos.svg" />
+    <!-- Load the stylesheet that will reference the LCP image. -->
+    <link rel="stylesheet" href="./src/components/Header/header.scss">
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload" fetchpriority="high" as="image" href="./src/assets/cos.svg" type="image/svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexei Rusu</title>
   </head>

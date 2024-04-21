@@ -1,7 +1,6 @@
 import './bio.scss'
-import pdf from "../../assets/AlexeiRusu_Resume.pdf"
 import certificate from "../../assets/Certificate-of-Completion.pdf"
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 
 
@@ -14,21 +13,6 @@ function Bio(props){
         setToggle(!toggle)
     }
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (parallaxImageRef.current) {
-    //             const scrollPosition = window.scrollY;
-    //             parallaxImageRef.current.style.transform = `translateX(${scrollPosition * 3}px)`;
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     // Clean up the event listener when the component unmounts
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
 
     return (
     <>  
@@ -83,7 +67,7 @@ function Bio(props){
                     <div className='cred-container'>
                         {/* <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a> */}
                         <a className="download-button" href={certificate} target="_blank" > certification</a>        
-                        <a className="download-button" href={pdf} download>resume</a>  
+                        <a className="download-button" href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target='_blank'>resume</a>  
                     </div>                              
                 </div>   
             </div>
