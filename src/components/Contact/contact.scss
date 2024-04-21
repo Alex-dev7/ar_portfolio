@@ -158,6 +158,8 @@
 @media (max-width: 880px) {
     .contact-container {
         width: 100vw;
+        height: 100vh;
+        overflow: hidden;
         p {
             letter-spacing: 0rem;
             font-size: 2.8rem;
@@ -181,6 +183,7 @@
 
 @media (max-width: 500px) {
     .contact-container {
+
         form {
             width: 100%;
             margin: 5rem auto;
