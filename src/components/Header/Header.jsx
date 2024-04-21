@@ -47,7 +47,7 @@ function Header(props){
         className='header-container'> 
         <img src={mouse} alt='scroll down'  className='mouse'/> 
             <div className='cos-container' style={{animation: hasAnimated ? "floatA 3s ease-in-out infinite" : ''}}>
-                <img src={cos} alt='astronaut' width={560} height={400} className='cos' />
+                <img fetchpriority="high" src={cos} alt='astronaut' width={560} height={400} className='cos' />
                 <span className='led-light'></span>   
                 <div className='hello-container' ref={helloRef}>
                     <h2 className='hello'>Hi, my name is Alexei</h2>

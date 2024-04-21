@@ -27,7 +27,7 @@ function Footer(props){
                 <ul>
                     <li><a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">linkedin</a></li>
                     <li><a href="https://github.com/Alex-dev7" target="_blank">github</a></li>
-                    <li><a href={pdf} download>download resume</a></li>
+                    <li><a href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing" >resume</a></li>
                     <li><a href="#contact" onClick={() => setToggle(!toggle)}>contact me</a></li>
                 </ul>
                 <ul className="copyright-wrapper">

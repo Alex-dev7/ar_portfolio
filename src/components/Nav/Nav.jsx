@@ -31,7 +31,7 @@ const {toggle, setToggle} = useState(false)
                 <a href="#work" >
                     <m.div variants={item} >➁ work</m.div>    
                 </a> 
-                <a href={pdf}  target="_blank" >
+                <a href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target="_blank" >
                     <m.div variants={item}>➂ resume</m.div>    
                 </a> 
                 <a  href="#contact" onClick={() => setToggle(true)}>
