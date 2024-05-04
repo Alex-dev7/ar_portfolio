@@ -91,7 +91,7 @@
         "context": "Personal Project",
         "description": "Missing Pets is a server side rendered application that uses EJS templates to display the website. In the app you can create a missing/found pet flyer, and post it on the bulletin board. Every user can see the post, and comment on it. To create a flyer, the user will make an account, that will give them acces to a template form, which after submition will be displayed on the bulletin board.",
         "skills": ["CSS", "JavaScript", "EJS", "ExpressJS", "express-session","Bcrypt", "NodeJS", "MongoDB", "Mongoose", "MVC Architecture", "Responsive Design"],
-        "live": "https://missing-pets.onrender.com/",
+        "live": "https://missing-petapi.onrender.com",
         "repo": "https://github.com/Alex-dev7/Missing_Pet_Project2",
         "class": "second-card"
     },
