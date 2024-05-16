@@ -117,25 +117,28 @@
             line-height: 1.7rem;
 
           }
-          button {
-            padding: 15px 25px;
-            border: none;
-            background-color: rgba(13, 150, 116, 0.489);
-            transition: all 0.5s;
-            cursor: pointer;
             a {
        
-              font-size: 1.2rem;
-              text-decoration: none;
-              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-              font-weight: 100;
-              color: rgb(233, 233, 233);
+              padding: 15px 25px;
+              border: none;
+              background-color: rgba(13, 150, 116, 0.489);
+              transition: all 0.5s;
+              cursor: pointer;
+              button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 1.2rem;
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 100;
+                color: rgb(233, 233, 233);
+              }
             }
-          }
-          button:hover {
-            background-color: rgba(13, 150, 116, );
-            
-          }
+            a:hover {
+              background-color: rgba(13, 150, 116, );
+              
+            }
         }
     }
     .images-container {

@@ -59,11 +59,13 @@ function Show(props) {
                 <div className="description-group">
                     <h3>Description</h3>
                     <p>{item.description}</p>
-                    <button>
+                    
                         <a href={item.live} target="_blank">
+                            <button>
                             Live Site
+                            </button>
                         </a>
-                    </button>
+                    
                 </div>
             </div>
             <div className="images-container">
