@@ -72,18 +72,20 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 }
 
 
-const filterLinks = ["All", "Full Stack", "Frontend", "Mobile App", "CMS", "AI"]
+const filterLinks = ["Featured","All", "Full Stack", "Frontend", "Mobile App", "CMS", "AI"]
 
 
 //----------------------------------------------------------------
 function Projects(props) {
   const [filteredData, setFilteredData] = useState([])
-  const [searchWord, setSearchWord] = useState('All')
+  const [searchWord, setSearchWord] = useState('Featured')
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   function handleClick(e) {
     // console.log(e.target.innerText)
     // console.log(projects)
     setSearchWord(() => e.target.innerText)
+    setCurrentIndex(() => filterLinks.indexOf(e.target.innerText))
   }
 
   useEffect(() => {
@@ -100,8 +102,8 @@ function Projects(props) {
         </section>
 
         <ul className="categories-container">
-          {filterLinks.map((link) => (
-            <li key={link} onClick={handleClick}>
+          {filterLinks.map((link, index) => (
+            <li key={index} onClick={handleClick} className={`${currentIndex === index && 'active'}`}>
               {link}
             </li>
           ))}

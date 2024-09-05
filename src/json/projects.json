@@ -1,7 +1,23 @@
 [
     {   
         "id" : 1,
-        "categorie": "AI",
+        "categorie": "Featured Frontend CMS Full Stack",
+        "thumbnail": "https://imgur.com/bk0RHiLl.png",
+        "desktopImage" : "https://imgur.com/y49GQgX.png",
+        "mobileImage": "https://imgur.com/UH8fz9N.png",
+        "title": "The Hamlet at Hearthstone Pointe",
+        "subtitle": "Application built with NextJS.",
+        "role": "FULL-STACK DEVELOPER", 
+        "context": "CLIENT WORK",
+        "description": "Client Work: The Hamlet at Hearthstone Pointe is a website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date content. This project showcases my expertise in creating high-quality web applications that meet clients unique needs.",
+        "skills": ["NextJS", "Framer Motion", "TypeScript", "Tailwind",  "Sanity.io", "GROQ", "CMS", "Responsive Design", "SEO"],
+        "live": "https://www.thehamletathearthstonepointe.com/",
+        "repo": "",
+        "class": "first-card"
+    },
+    {   
+        "id" : 2,
+        "categorie": "Featured AI",
         "thumbnail": "https://i.imgur.com/QaNBQBrl.png",
         "desktopImage" : "https://i.imgur.com/HRhS9mB.png",
         "mobileImage": "https://i.imgur.com/hJuJ9ui.png",
@@ -16,8 +32,8 @@
         "class": "first-card"
     },
     {
-        "id" : 2,
-        "categorie": "Frontend CMS",
+        "id" : 3,
+        "categorie": "Featured Frontend CMS",
         "thumbnail": "https://i.imgur.com/upuh6Tdl.png",
         "desktopImage" : "https://i.imgur.com/ld4VXNH.png",
         "mobileImage": "https://imgur.com/OOnBOgM.png",
@@ -31,7 +47,7 @@
         "class": "sixth-card"
     },
     {
-        "id" : 3,
+        "id" : 4,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/Oq5RKexl.png",
         "desktopImage" : "https://i.imgur.com/7nXoVJm.png",
@@ -47,7 +63,7 @@
         "class": "fifth-card"
     },
     {
-        "id" : 4,
+        "id" : 5,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/6aGXhWOl.png",
         "desktopImage" : "https://i.imgur.com/WM4EXES.png",
@@ -63,7 +79,7 @@
         "class": "fourth-card"
     },
     {
-        "id" : 5,
+        "id" : 6,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/MmBBmOul.png",
         "desktopImage" : "https://i.imgur.com/A48pM5H.png",
@@ -80,7 +96,7 @@
         "class": "third-card"
     },
     {   
-        "id" : 6,
+        "id" : 7,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/UWxjF08l.png",
         "desktopImage" : "https://i.imgur.com/4lJFaef.png",
@@ -96,7 +112,7 @@
         "class": "second-card"
     },
     {   
-        "id" : 7,
+        "id" : 8,
         "categorie": "Frontend",
         "thumbnail": "https://i.imgur.com/FHqD6ETl.png",
         "desktopImage" : "https://i.imgur.com/41A5gzh.png",
@@ -112,7 +128,7 @@
         "class": "first-card"
     },
     {   
-        "id" : 8,
+        "id" : 9,
         "categorie": "Mobile App",
         "thumbnail": "https://i.imgur.com/dHXrhOkl.png",
         "desktopImage" : "https://i.imgur.com/ModsueL.png",

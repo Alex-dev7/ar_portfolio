@@ -85,9 +85,10 @@
             .text-wrapper {
             width: 75%;
             margin: 0 auto;
-            border: 1px solid rgba(206, 240, 246, 0.999);
+            // border: 1px solid rgba(206, 240, 246, 0.999);
             display: flex;
             flex-direction: row;
+            // align-content: end;
             text-align: start;
             padding: 3rem;
             gap: 4rem;
@@ -140,8 +141,10 @@
             .cred-container {
                 margin: auto 0;
                 display: flex;
+                // align-self: flex-start;
                 flex-direction: column;
                 gap: 2.5rem;
+                // position: absolute;
                 a {
                     width: 170.88px;
                     font-size: 1rem;
