@@ -2,11 +2,16 @@ import './header.scss'
 import { motion as m} from "framer-motion"
 import cos from '../../assets/cos.svg'
 import mouse from '../../assets/scroll-down.png'
-import  { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext, Suspense } from 'react';
+import ToggleButton from './ToggleButton';
+import { ToggleContext } from '../../context/ToggleContext';
+
+const ThreeDComponent = React.lazy(() => import('../../3Dmodel/ThreeDComponent'));
 
 
 function Header(props){
     const [hasAnimated, setHasAnimated] = useState(false);
+    const { toggle, setToggle } = useContext(ToggleContext);
     const helloRef = useRef(null);
 
     useEffect(() => {
@@ -45,16 +50,25 @@ function Header(props){
         <m.section
         id="header"
         className='header-container'> 
+        <ToggleButton />
         <img src={mouse} alt='scroll down'  className='mouse'/> 
-            <div className='cos-container' style={{animation: hasAnimated ? "floatA 3s ease-in-out infinite" : ''}}>
-                <img fetchpriority="high" src={cos} alt='astronaut' width={560} height={400} className='cos' />
-                <span className='led-light'></span>   
-                <div className='hello-container' ref={helloRef}>
-                    <h2 className='hello'>Hi, my name is Alexei</h2>
-                    <h2 className="hello" >Explore my work and get in touch!</h2>
-                </div>   
-            </div>            
+        { toggle  ? 
+        <div className='cos-container' style={{animation: hasAnimated ? "floatA 3s ease-in-out infinite" : ''}}>
+                <div>
+                    <img fetchpriority="high" src={cos} alt='astronaut' width={560} height={400} className='cos' />
+                    <span className='led-light'></span>   
+                    <div className='hello-container' ref={helloRef}>
+                        <h2 className='hello'>Hi, my name is Alexei</h2>
+                        <h2 className="hello" >Explore my work and get in touch!</h2>
+                    </div>                       
+                </div>
+        </div> 
+                :
+                <Suspense fallback={<div>Loading...</div>}>
+                    <ThreeDComponent  />
+                </Suspense>
                        
+        }          
             <div  className='text-wrapper'>  
                 <h1  className="title" >Full Stack Developer </h1>
             </div>           

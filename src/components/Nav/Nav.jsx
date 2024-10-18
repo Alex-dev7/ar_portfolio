@@ -4,8 +4,14 @@ import {motion as m } from 'framer-motion'
 import { useState } from 'react'
 
 
-function Nav(props){
+function Nav({setElementHovered}) {
 const {toggle, setToggle} = useState(false)
+
+
+const handleMouseEnter = (e) => {
+    setElementHovered(e.target.innerText);
+}
+
 
 
     return (
@@ -23,7 +29,7 @@ const {toggle, setToggle} = useState(false)
             </div>
             <m.nav variants={container} initial={"hidden"}
             animate="show" className='nav-container'>
-                <a  href="#about" >
+                <a  href="#about" onMouseEnter={handleMouseEnter}>
                     <m.div variants={item} >➀ about</m.div>    
                 </a> 
                 <a href="#work" >
