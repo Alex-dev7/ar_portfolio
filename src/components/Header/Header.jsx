@@ -58,7 +58,7 @@ function Header(props){
                     <img fetchpriority="high" src={cos} alt='astronaut' width={560} height={400} className='cos' />
                     <span className='led-light'></span>   
                     <div className='hello-container' ref={helloRef}>
-                        <h2 className='hello'>Hi, my name is Alexei</h2>
+                        <h2 className='hello'>Welcome!</h2>
                         <h2 className="hello" >Explore my work and get in touch!</h2>
                     </div>                       
                 </div>

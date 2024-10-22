@@ -32,38 +32,51 @@ function Bio(props){
         <div className="bio-wrapper">
             <div className="outter-text-wrapper">
                 <div className='text-wrapper'>
-                    <p className={toggle ? 'falseStyle' : 'trueStyle'}>
-                        
-                        <span className='introduction'>introduction</span>
-                        <br/>
-                            Hello, I'm Alexei, a Full-Stack Software Engineer specializing in JavaScript technologies, particularly the MERN stack. My journey in software development has equipped me with a strong foundation in full-stack development and a passion for crafting effortless user experiences.                            
-                        <br/><br/>
+                    <div className="text-container">
 
-                        
-                        
-                        <span className='background' >background</span>
-                        <br/>
-                            Beyond the world of code, my background in choreography adds a unique dimension to my problem-solving and design process. As a professional choreographer and dancer, I've cultivated communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams.                            
-                        <br/><br/>
+                        <div className='cell'>
+                            <span className='introduction'>- introduction -</span>
+                            <p>
+                                Hello World, <br/><br/> I'm Alexei, a Software Engineer specializing in web development technologies. My journey in software development has equipped me with a strong foundation in full-stack development and a passion for crafting effortless user experiences.                                   
+                            </p>           
+                            {/* <img loading='eager' src='cell1.jpg' alt='watch'/>                          */}
+                        </div>
 
-                    
-                       
-                        <span className='hobbies' >hobbies</span><br/><br/>
-                        <span style={{fontSize: '50px'}}>&#127928;</span><br/>
-                            Away from the screen, I am passionate about a varity of hobbies. I have a deep appreciation for music and enjoy spending free time learning to play musical instruments. Additionally, I prioritize my health and wellness by cultivating a healthy diet and maintaining an active lifestyle - a perfect counterbalance to the sedentary nature of software development!                    
-                        <br/><br/>
-                       
-                        
-                        <span style={{fontSize: '50px'}}>&#9881;</span><br/>
-                            I have a fascination with the intricate world of horology. Fixing and restoring old watches is a new hobby of mine that I am quickly becoming enamored with. I find that it not only tests my patience and attention to detail but also connects me with the craftsmanship styles of the past.                        
-                        <br/><br/>
+                        <div className='cell'>
+                            <span className='background' >- background -</span>
+                            <p>
+                                Beyond the world of code, my background in choreography adds a unique dimension to my problem-solving and design process. As a professional choreographer and dancer, I've cultivated communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams.                                   
+                            </p>
+                            {/* <img loading='eager' src='cell2.jpg' alt='watch'/>                           */}
+                        </div>
+
+                        <div >
+                            <span className='hobbies' >- hobbies -</span>
+                            <p>
+                            I am passionate about a varity of hobbies, a really exciting one is building IoT projects with Raspberry Pi and Arduino, and exploring the limitless possibilities of these versatile microcomputers. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.
+                            {/* <hr/> */}
+                            <br/><br/>
+                            Additionally, I prioritize my health and wellness by cultivating a healthy diet and maintaining an active lifestyle - a perfect counterbalance to the sedentary nature of software development!     
+                                {/* Away from the screen, I am passionate about a varity of hobbies. I have a deep appreciation for music and enjoy spending free time learning to play musical instruments. Additionally, I prioritize my health and wellness by cultivating a healthy diet and maintaining an active lifestyle - a perfect counterbalance to the sedentary nature of software development!                     */}
+                            </p>                   
+                        </div>
+
+                       {/* <div className='cell'> */}
+                            {/* <span style={{fontSize: '50px'}}>&#9881;</span><br/> */}
+                            {/* <span className='hobbies' >- hobbies -</span>
+                            <p>
+                                I have a fascination with the intricate world of horology. Fixing and restoring old watches is a new hobby of mine that I am quickly becoming enamored with. I find that it not only tests my patience and attention to detail but also connects me with the craftsmanship styles of the past.                                 
+                            </p> */}
+                            {/* <img loading='eager' src='cell4.jpg' alt='watch'/>    */}
+                       {/* </div>  */}
+
                         {/* <p>
                             <span style={{fontSize: '50px'}}>&#129302;</span><br/>
                             Beyond that, I enjoy building things with Raspberry Pi, exploring the limitless possibilities of this versatile microcomputer. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.                        
                         </p> */}
                         
-                    </p> 
-                        <span className='clampButton' onClick={handleClick} >{toggle ? "read less" : "read more"}</span>  
+                    </div> 
+                       
                     <div className='cred-container'>
                         {/* <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a> */}
                         <a className="download-button" href={certificate} target="_blank" > certification</a>        

@@ -87,6 +87,9 @@
         color: #0E141B;
         -webkit-text-stroke: 1px rgb(243, 243, 243);
         text-transform: uppercase;
+        position: absolute;
+        top:0 ;
+        left: 0;
         // animation: textAnim .3s ease 1.3s 2 normal forwards;
         @keyframes textAnim {
             0%,
