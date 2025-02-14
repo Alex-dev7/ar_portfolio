@@ -1,6 +1,22 @@
 [
     {   
         "id" : 1,
+        "categorie": "Featured Frontend Full Stack",
+        "thumbnail": "https://i.imgur.com/EfInj3dl.jpg",
+        "desktopImage" : "https://i.imgur.com/bgFFTUk.png",
+        "mobileImage": "https://i.imgur.com/qYFujG8.png",
+        "title": "SpaceLab Nonprofit",
+        "subtitle": "Application built with ReactJS.",
+        "role": "FULL-STACK DEVELOPER", 
+        "context": "CONTRIBUTOR",
+        "description": "The SpaceLab Nonprofit is a people-incubator focusing on outer-space tech initiatives. It supports and helps underrepresented communities gain experience with real-world projects to help diversify the tech space!",
+        "skills": ["ReactJS", "TypeScript", "Sass", "Bootstrap","Framer Motion", "Responsive Design", "SEO", "AWS"],
+        "live": "https://spacelab.space/",
+        "repo": "https://github.com/spacelabdev/spacelab-react",
+        "class": "first-card"
+    },
+    {   
+        "id" : 2,
         "categorie": "Featured Frontend CMS Full Stack",
         "thumbnail": "https://imgur.com/bk0RHiLl.png",
         "desktopImage" : "https://imgur.com/y49GQgX.png",
@@ -16,7 +32,7 @@
         "class": "first-card"
     },
     {   
-        "id" : 2,
+        "id" : 3,
         "categorie": "Featured AI",
         "thumbnail": "https://i.imgur.com/QaNBQBrl.png",
         "desktopImage" : "https://i.imgur.com/HRhS9mB.png",
@@ -32,7 +48,7 @@
         "class": "first-card"
     },
     {
-        "id" : 3,
+        "id" : 4,
         "categorie": "Featured Frontend CMS",
         "thumbnail": "https://i.imgur.com/upuh6Tdl.png",
         "desktopImage" : "https://i.imgur.com/ld4VXNH.png",
@@ -47,7 +63,7 @@
         "class": "sixth-card"
     },
     {
-        "id" : 4,
+        "id" : 5,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/Oq5RKexl.png",
         "desktopImage" : "https://i.imgur.com/7nXoVJm.png",
@@ -63,7 +79,7 @@
         "class": "fifth-card"
     },
     {
-        "id" : 5,
+        "id" : 6,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/6aGXhWOl.png",
         "desktopImage" : "https://i.imgur.com/WM4EXES.png",
@@ -79,7 +95,7 @@
         "class": "fourth-card"
     },
     {
-        "id" : 6,
+        "id" : 7,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/MmBBmOul.png",
         "desktopImage" : "https://i.imgur.com/A48pM5H.png",
@@ -96,7 +112,7 @@
         "class": "third-card"
     },
     {   
-        "id" : 7,
+        "id" : 8,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/UWxjF08l.png",
         "desktopImage" : "https://i.imgur.com/4lJFaef.png",
@@ -112,7 +128,7 @@
         "class": "second-card"
     },
     {   
-        "id" : 8,
+        "id" : 9,
         "categorie": "Frontend",
         "thumbnail": "https://i.imgur.com/FHqD6ETl.png",
         "desktopImage" : "https://i.imgur.com/41A5gzh.png",
@@ -128,7 +144,7 @@
         "class": "first-card"
     },
     {   
-        "id" : 9,
+        "id" : 10,
         "categorie": "Mobile App",
         "thumbnail": "https://i.imgur.com/dHXrhOkl.png",
         "desktopImage" : "https://i.imgur.com/ModsueL.png",
