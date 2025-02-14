@@ -6,6 +6,7 @@ import React, { useState, useEffect, useRef, useContext, Suspense } from 'react'
 import ToggleButton from './ToggleButton';
 import { ToggleContext } from '../../context/ToggleContext';
 
+
 const ThreeDComponent = React.lazy(() => import('../../3Dmodel/ThreeDComponent'));
 
 
@@ -64,7 +65,7 @@ function Header(props){
                 </div>
         </div> 
                 :
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div style={{color: "green", position: 'absolute', top: "48%"}}>Loading...</div>}>
                     <ThreeDComponent  />
                 </Suspense>
                        
@@ -77,3 +78,5 @@ function Header(props){
 }
 
 export default Header
+
+
