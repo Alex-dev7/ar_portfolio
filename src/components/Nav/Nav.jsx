@@ -30,16 +30,16 @@ const handleMouseEnter = (e) => {
             <m.nav variants={container} initial={"hidden"}
             animate="show" className='nav-container'>
                 <a  href="#about" onMouseEnter={handleMouseEnter}>
-                    <m.div variants={item} >➀ about</m.div>    
+                    <m.div variants={item} >about</m.div>    
                 </a> 
                 <a href="#work" >
-                    <m.div variants={item} >➁ work</m.div>    
+                    <m.div variants={item} >work</m.div>    
                 </a> 
                 <a href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target="_blank" >
-                    <m.div variants={item}>➂ resume</m.div>    
+                    <m.div variants={item}>resume</m.div>    
                 </a> 
                 <a  href="#contact" onClick={() => setToggle(true)}>
-                    <m.div variants={item} >➃ contact </m.div>    
+                    <m.div variants={item} >contact </m.div>    
                 </a> 
             </m.nav>
         </div>
