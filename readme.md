@@ -27,10 +27,10 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ```
 
 ## 📜 Features
-✅ Responsive design
-✅ Interactive animations
-✅ Dynamic project showcase
-✅ Contact form with email integration
+* ✅ Responsive design 
+* ✅ Interactive animations
+* ✅ Dynamic project showcase
+* ✅ Contact form with email integration
 
 
 
