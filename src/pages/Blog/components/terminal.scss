@@ -1,3 +1,7 @@
+.activeLink {
+    background-color: rgb(13, 147, 13);
+    color: #011c01;
+}
 .terminal-window {
     width: 80%;
     max-width: 1500px;
@@ -13,7 +17,7 @@
     }
     
     .blog-projects-container {
-        width: 50%;
+        width: 60%;
         max-width: 1000px;
         .projects-list {
             list-style: none;
