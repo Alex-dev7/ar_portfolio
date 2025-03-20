@@ -35,6 +35,9 @@ const handleMouseEnter = (e) => {
                 <a href="#work" >
                     <m.div variants={item} >work</m.div>    
                 </a> 
+                <a href="/blog" >
+                    <m.div variants={item} >blog</m.div>    
+                </a> 
                 <a href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target="_blank" >
                     <m.div variants={item}>resume</m.div>    
                 </a> 

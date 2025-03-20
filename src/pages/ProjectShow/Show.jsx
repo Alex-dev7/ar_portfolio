@@ -3,7 +3,7 @@ import "./show.scss";
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 function Show(props) {
     const item = useLoaderData();
