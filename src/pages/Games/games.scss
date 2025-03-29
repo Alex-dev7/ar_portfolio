@@ -1,0 +1,97 @@
+.games-page {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #13141b;
+    background-image: url('bg.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+
+    .home-btn {
+        position: absolute;
+        padding: 2px 10px;
+        left: 1%;
+        top: 2%;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ddd200;
+        background-color: inherit;
+        cursor: pointer;       
+    }
+
+    h1 {
+        margin-top: 10%;
+        font-size: 60px;
+        color: #f1e72b;
+        width:fit-content;
+        margin: 5% auto;
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 500;
+        animation: textAnim .3s ease 1.3s 2 normal forwards;
+        @keyframes textAnim {
+            0%,
+            50%{
+                -webkit-text-stroke: .5px rgba(241, 231, 43, 0.995);
+            }
+           100% {
+            -webkit-text-stroke: .5px rgb(241, 231, 43);
+                text-shadow:  -2px 2px 200px rgba(241, 231, 43, 0.747);
+                // color: rgb(1, 39, 45);
+            }
+            25%,
+            75% {
+                -webkit-text-stroke: .5px rgb(241, 231, 43);
+                text-shadow:  -2px 2px 200px #06dafb00;
+            }
+        }
+    }
+
+    .game-item-container {
+        max-width: 1000px;
+        max-height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+
+        .exit-btn {
+            position: absolute;
+            padding: 2px 10px;
+            right: 0;
+            font-size: 25px;
+            color: #ddd200;
+            background-color: inherit;
+            cursor: pointer;
+        }
+        .game-item{
+            width: 400px;
+            height: 230px;
+            border: 1px solid #7905fc;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            cursor: pointer;
+            transition: background-color 0.3 fade-in-out;
+
+            &:hover {
+                background-color: #5502b41e;
+            }
+
+            .content {
+                height: 70%;
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                h4 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+.bog-content-container {
+    // outline: auto;
+    .dotted-line {
+        width: 100%;
+        border-bottom: 2px dotted rgb(199, 196, 196);
+        margin: 10px 0;
+        
+    }
+    .bottom-image {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+}

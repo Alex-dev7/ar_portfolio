@@ -3,8 +3,6 @@ import certificate from "../../assets/Certificate-of-Completion.pdf"
 import { useState, useRef } from 'react';
 
 
-
-
 function Bio(props){
     const [toggle, setToggle] = useState(false)
     const parallaxImageRef = useRef(null);
@@ -16,9 +14,6 @@ function Bio(props){
 
     return (
     <>  
-
-    
-   
     <section id="about" className="about-container">
             <div className="parallax-container">
                 {/* <img  src={telescope} alt="Image description"/> */}

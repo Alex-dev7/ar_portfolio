@@ -16,7 +16,7 @@ function App({pageProps, router}) {
   return (
     <ToggleProvider>
       <div className="App"> 
-        <div className='stars'></div>
+        {/* <div className='stars'></div> */}
         <section className='falling-stars'>
           <span className='falling-star'></span>
           <span className='falling-star'></span>

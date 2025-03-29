@@ -17,7 +17,7 @@ const handleMouseEnter = (e) => {
     return (
         <div>
             
-            <div className='socials-wrapper'>
+            {/* <div className='socials-wrapper'>
                 
                 <a href="https://github.com/Alex-dev7" target="_blank" >
                     <img src='github.svg' width={30} height={30}/>
@@ -26,23 +26,26 @@ const handleMouseEnter = (e) => {
                      <img src='linkedin.svg' width={30} height={30}/>
                 </a>
               
-            </div>
+            </div> */}
             <m.nav variants={container} initial={"hidden"}
             animate="show" className='nav-container'>
                 <a  href="#about" onMouseEnter={handleMouseEnter}>
-                    <m.div variants={item} >about</m.div>    
+                    <m.div variants={item} >about.</m.div>    
                 </a> 
                 <a href="#work" >
-                    <m.div variants={item} >work</m.div>    
+                    <m.div variants={item} >projects.</m.div>    
                 </a> 
-                <a href="/blog" >
+                {/* <a href="/blog" >
                     <m.div variants={item} >blog</m.div>    
+                </a>  */}
+                <a href="/games" id='games-link'>
+                    <m.div variants={item} >games</m.div>    
                 </a> 
                 <a href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target="_blank" >
-                    <m.div variants={item}>resume</m.div>    
+                    <m.div variants={item}>resume.</m.div>    
                 </a> 
                 <a  href="#contact" onClick={() => setToggle(true)}>
-                    <m.div variants={item} >contact </m.div>    
+                    <m.div variants={item} >contact. </m.div>    
                 </a> 
             </m.nav>
         </div>
