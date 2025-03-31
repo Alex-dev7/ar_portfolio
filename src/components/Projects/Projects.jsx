@@ -100,8 +100,9 @@ function Projects(props) {
         <section className="parallax-container">
           <ParallaxText baseVelocity={3}>my_work</ParallaxText>
         </section>
-
+      
         <ul className="categories-container">
+        <span className="filter-title">Filter by:</span>
           {filterLinks.map((link, index) => (
             <li key={index} onClick={handleClick} className={`${currentIndex === index && 'active'}`}>
               {link}
@@ -117,9 +118,32 @@ function Projects(props) {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               whileInView={{ opacity: 1, y: "0%" }}
               viewport={{ once: true }}
-              className={`project-card ${project.class}`}
+              className={`project-card`}
             >
-              <div className="column1">
+              <span className="rotating-span">+</span>
+              <div className="column-left">
+                <Link className="title" to={`/show/${project.id}`}>
+                    <p>{project.title}</p>
+                  </Link>
+                  <div className="links-wrapper">
+              {  project.repo &&   
+                    (<a href={project.repo} target="_blank">
+                      Source code -{">"}
+                    </a>)}
+                    {project.live && (
+                      <a href={project.live} target="_blank">
+                        Live Site
+                      </a>
+                    )}
+                  </div>
+                  <div className="skills">
+                    {project.skills.map((skill, i) => (
+                      <p key={i}>{skill}</p>
+                    ))}
+                  </div>
+              </div>
+
+              <div className="column-right">
                 <Link className="title" to={`/show/${project.id}`}>
                   <img
                     src={project.thumbnail}
@@ -129,28 +153,6 @@ function Projects(props) {
                     referrerPolicy="no-referrer"
                   />
                 </Link>
-              </div>
-
-              <div className="column2">
-                <Link className="title" to={`/show/${project.id}`}>
-                  <p>{project.title}</p>
-                </Link>
-                <div className="links-wrapper">
-             {  project.repo &&   
-                  (<a href={project.repo} target="_blank">
-                    Source code -{">"}
-                  </a>)}
-                  {project.live && (
-                    <a href={project.live} target="_blank">
-                      Live Site
-                    </a>
-                  )}
-                </div>
-                <div className="skills">
-                  {project.skills.map((skill, i) => (
-                    <p key={i}>{skill}</p>
-                  ))}
-                </div>
               </div>
             </m.div>
           ))

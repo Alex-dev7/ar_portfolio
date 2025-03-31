@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "category": "frontend",
+        "skills": ["html.svg", "css.svg", "js.svg", "ts.svg", "react.svg", "next.svg", "tailwind.svg", "boot.svg"]
+    },
+    {
+        "id": 2,
+        "category": "backend",
+        "skills": ["node.svg", "ex.svg", "py.svg", "dj.svg", "fastapi.svg"]
+    },
+    {
+        "id": 3,
+        "category": "database",
+        "skills": ["postgre.svg", "sql.svg", "graph.svg","mongo.svg", "prisma.svg"]
+    },
+    {
+        "id": 4,
+        "category": "DevOps",
+        "skills": ["docker.svg", "kubernetes.svg", "AWS.svg", "terraform.svg", "linux.svg", "nginx.svg"]
+    },
+    {
+        "id": 5,
+        "category": "CI/CD",
+        "skills": ["github-actions.svg", "aws-codepipeline.svg", "gitlab-ci.svg"]
+    },
+    {
+        "id": 6,
+        "category": "tools",
+        "skills": ["figma.svg", "postman.svg", "vscode.svg", "git.svg", "neoVim.svg"]
+    }
+]
