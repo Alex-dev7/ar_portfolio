@@ -281,39 +281,7 @@
             }
         }
     }
-    // .first-card {
-    //     margin-left: 20%;
-    //     direction:rtl;
-        
-    // }
-    // .second-card{
-    //     margin-left: 10%;
-    //     .column1{
-    //         img {
-    //             // width: 80%;
-    //             height: 120%;
-               
-    //         }
-    //     }
-       
-    // }
-    // .third-card{
-    //     margin-left: 35%;
-    //     .column1{
-    //         img {
-    //             width: 90%;
-               
-    //         }
-    //     }
-    // }
-    // .fourth-card{
-    //     margin-left: 10%;
-    //     direction:rtl;
-    // }
-    // .fifth-card {
-    //     margin-left: 30%;
-    //     direction:rtl;
-    // }
+
 }
 
 
@@ -336,91 +304,40 @@
 }
 
 
-@media (max-width: 1320px) {
-    .projects-container {
-        .parallax .scroller {
-            font-size: 2.2rem;
-          }
 
-          .project-card {           
-            .column1 {
-                width: 380px;
-                height: 180px;
-            }
-
-            .column2 {
-
-                .title {
-                    font-size: 2.5rem;
-                    text-transform: uppercase;
-                    transition: color .5s,opacity .5s;
-                    
-                }
-                .links-wrapper {
-                    a {
-
-                            font-size: 1rem;
-                            padding: 5px 3px;
-                    }
-                }
-
-            }
-          }
-
-    }
-}
-
-
-@media (max-width: 1110px) {
-    .projects-container {
-        grid-template-columns: 100%;
-        // padding: 20% 1rem 0 1rem;
-
-        .parallax .scroller {
-            font-size: 2rem !important;
-          }
-          .project-card { 
-            display: flex;
-            flex-direction: column;
-            // margin: 0 1rem;
-            .column1 {
-                width: 80vw;
-                height: 180px;
-                margin: 0;
-                img {
-                    width: 100%;
-                }
-            }
-
-            .column2 {
-
-                .title {
-                    font-size: 2.1rem;
-                    margin: 0 auto;
-                    
-                }
-
-            }
-          }
-          .first-card,
-          .second-card,
-          .third-card,
-          .fourth-card,
-          .fifth-card {
-            margin: 0 auto;
-
-          }
-    }
-}
 @media (max-width: 800px) {
    .projects-container {
     // padding-top: 200px;
     .categories-container {
         top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 340px;
         flex-wrap: wrap;
+        gap: 10px;
+        .filter-title  {
+            font-size: 20px;
+        }
     }
     .project-card {
         margin: 0 auto;
+        max-width: 90%;
+        .column-left{
+            text-align: center;
+            z-index: 11;
+        }
+        .column-right {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            img {
+                filter: brightness(0.15)  ;
+            }
+        }
     }
    }
 }
