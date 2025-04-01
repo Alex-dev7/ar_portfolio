@@ -69,18 +69,13 @@ function Bio(props){
                         
                     </div> 
                        
-                    {/* <div className='cred-container'> */}
-                        {/* <a href="mailto:rusualexei1995@gmail.com"> email ✉️</a> */}
-      
- 
-                    {/* </div>                               */}
                 </div>   
             </div>
             
             <p className='skills-title'>skills and expertise</p>
             
             <div className="svg-container">
-            <img className='hover-over' src='hover-over.svg' alt='hover-over' width={40} />
+                <img className='hover-over' src='hover-over.svg' alt='hover-over' width={40} />
                 <div className='row-a'>
                     <CircleMenu skillsArray={skills[0].skills} title={skills[0].category}/>
                     <CircleMenu skillsArray={skills[1].skills}  title={skills[1].category}/>

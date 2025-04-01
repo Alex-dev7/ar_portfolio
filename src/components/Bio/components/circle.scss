@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // height: 100vh;
+
   
     .central-button {
       width: 120px;
@@ -45,6 +45,51 @@
       img {
         max-width: 50px;
       }
+    }    
+  
+
+  }
+
+  @media (max-width: 1300px) {
+    .circle-menu{
+      .central-button{
+        width: 90px;
+        height: 80px;
+        font-size: 18px;
+
+      }
+      
+        .menu-item{
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+          img{
+            max-width: 30px;
+          }   
+      }        
     }
   }
+  @media (max-width: 700px) {
+    .circle-menu{
+      position: relative;
+      .central-button{
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+
+      }
+
+        .menu-item{
+          width: 40px;
+          height: 40px;
+          img{
+            max-width: 30px;
+          }
+        }        
+      // }
+        
+    }
+  }
+
+
   
