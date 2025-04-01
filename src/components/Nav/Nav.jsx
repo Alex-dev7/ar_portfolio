@@ -16,17 +16,6 @@ const handleMouseEnter = (e) => {
 
     return (
         <div>
-            
-            {/* <div className='socials-wrapper'>
-                
-                <a href="https://github.com/Alex-dev7" target="_blank" >
-                    <img src='github.svg' width={30} height={30}/>
-                </a>
-                <a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">
-                     <img src='linkedin.svg' width={30} height={30}/>
-                </a>
-              
-            </div> */}
             <m.nav variants={container} initial={"hidden"}
             animate="show" className='nav-container'>
                 <a  href="#about" onMouseEnter={handleMouseEnter}>
@@ -35,9 +24,9 @@ const handleMouseEnter = (e) => {
                 <a href="#work" >
                     <m.div variants={item} >projects.</m.div>    
                 </a> 
-                {/* <a href="/blog" >
-                    <m.div variants={item} >blog</m.div>    
-                </a>  */}
+                <a href="/blog" >
+                    <m.div variants={item} >blog.</m.div>    
+                </a> 
                 <a href="/games" id='games-link'>
                     <m.div variants={item} >games</m.div>    
                 </a> 

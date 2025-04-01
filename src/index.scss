@@ -2,6 +2,10 @@
 // @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Libre+Franklin&family=Silkscreen:wght@400;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Gabarito:wght@400..900&family=Libre+Franklin&family=Silkscreen:wght@400;700&display=swap');
 
+// font-family: "Libre Franklin", sans-serif;
+// font-family: "Expletus Sans", sans-serif;
+// font-family: "Silkscreen", sans-serif;
+
 
 $yellow: #f1e72b;
 
@@ -13,11 +17,11 @@ $yellow: #f1e72b;
 }
 
 
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  width: 100vw;
 }
 
  body {

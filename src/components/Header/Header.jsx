@@ -13,9 +13,6 @@ function Header(props){
         <section
         id="header"
         className='header-container'> 
-        {/* <ToggleButton /> */}
-            
-            
 
             <div  className='center-content'>  
                
