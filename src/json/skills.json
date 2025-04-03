@@ -7,7 +7,7 @@
     {
         "id": 2,
         "category": "backend",
-        "skills": ["node.svg", "ex.svg", "py.svg", "dj.svg", "fastapi.svg"]
+        "skills": ["node.svg", "ex.svg", "py.svg", "dj.svg"]
     },
     {
         "id": 3,
@@ -17,16 +17,16 @@
     {
         "id": 4,
         "category": "DevOps",
-        "skills": ["docker.svg", "kubernetes.svg", "AWS.svg", "terraform.svg", "linux.svg", "nginx.svg"]
+        "skills": ["docker.svg",  "aws.svg",  "github.svg"]
     },
     {
         "id": 5,
         "category": "CI/CD",
-        "skills": ["github-actions.svg", "aws-codepipeline.svg", "gitlab-ci.svg"]
+        "skills": ["GitHub Actions", "Code Commit", "Code Build", "Code Deploy"]
     },
     {
         "id": 6,
         "category": "tools",
-        "skills": ["figma.svg", "postman.svg", "vscode.svg", "git.svg", "neoVim.svg"]
+        "skills": ["figma.svg", "postman.svg", "vscode.svg", "git.svg", "terminal.svg", "coffee-mug.svg"]
     }
 ]

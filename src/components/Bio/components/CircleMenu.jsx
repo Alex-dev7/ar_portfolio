@@ -77,7 +77,7 @@ function CircleMenu({title, skillsArray}) {
                           transition={{ duration: 0.4 }}
                           className="menu-item"
                         >
-                          <img src={skill} alt="skill logo" width={50} />
+                         {skill.includes("svg") ? <img src={skill} alt="skill logo" width={50} /> : <span>{skill}</span> }
                         </motion.div>
                       )  
                   }) : ""}          

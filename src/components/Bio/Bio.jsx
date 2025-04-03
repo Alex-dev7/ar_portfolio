@@ -90,7 +90,7 @@ function Bio(props){
                 </div>
                
                 <div className='row-c'>
-                    <CircleMenu skillsArray={skills[4].skills} title={skills[5].category}/>
+                    <CircleMenu skillsArray={skills[5].skills} title={skills[5].category}/>
                     {/* <img className='arrow-c' src='node-arrow.svg' alt='arrow' width={300} /> */}
                 </div>
                 
