@@ -14,7 +14,7 @@
     // background-color: #000000f0;
     // background: linear-gradient(to right, rgba(4, 42, 50, 0.955) 20%, rgb(2, 30, 36) 80%);
     font-family: "Gabarito", sans-serif;
-    background-color: #1b1b1cda;
+    background-color: rgba(54, 55, 55, 0.761);
     transition: all 0.1s ease-in-out;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -145,9 +145,11 @@
 
 @media (max-width: 880px) {
     .contact-container {
+        top: 0;
         width: 100vw;
         height: 100vh;
         overflow: hidden;
+        padding: 10px;
         p {
             letter-spacing: 0rem;
             font-size: 2.8rem;
@@ -170,37 +172,12 @@
 }
 
 
-@media (max-width: 880px) {
-    .contact-container {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        p {
-            letter-spacing: 0rem;
-            font-size: 2.8rem;
-       
-        }
-
-        form {
-            h4 {
-                font-size: 1.1rem;
-            }
-
-            div input {
-                display: flex;
-                flex-direction: column;
-                width: 99%;
-            }
-
-        }
-    }
-}
 
 @media (max-width: 500px) {
     .contact-container {
 
         form {
-            width: 100%;
+            width: 90%;
             margin: 5rem auto;
             h3 {
 

@@ -183,7 +183,9 @@
                         -webkit-backdrop-filter: blur(15px);
                         border-radius: 8px;
                         grid-column: 1;
-                        
+                        &:hover {
+                            background-color: #232328d3;
+                        }
                         
                     }
                     .cell-res {
@@ -197,7 +199,9 @@
                         border-radius: 8px;
                         grid-row: 3;
                         grid-column: 2;
-                       
+                        &:hover {
+                            background-color: #232328d3;
+                        }
                     }
                 }
                 .text-container > *:hover  {
