@@ -1,16 +1,17 @@
 import './nav.scss'
 import { container, item } from './animation'
 import {motion as m } from 'framer-motion'
-import { useState } from 'react'
+import { ToggleContext } from '../../context/ToggleContext'
+import { useContext } from 'react';
 
 
-function Nav({setElementHovered}) {
-const {toggle, setToggle} = useState(false)
+function Nav() {
+const { toggle, changeToggle } = useContext(ToggleContext);
 
 
-const handleMouseEnter = (e) => {
-    setElementHovered(e.target.innerText);
-}
+// const handleMouseEnter = (e) => {
+//     setElementHovered(e.target.innerText);
+// }
 
 
 
@@ -18,7 +19,7 @@ const handleMouseEnter = (e) => {
         <div>
             <m.nav variants={container} initial={"hidden"}
             animate="show" className='nav-container'>
-                <a  href="#about" onMouseEnter={handleMouseEnter}>
+                <a  href="#about" >
                     <m.div variants={item} >about.</m.div>    
                 </a> 
                 <a href="#work" >
@@ -33,7 +34,7 @@ const handleMouseEnter = (e) => {
                 <a href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target="_blank" >
                     <m.div variants={item}>resume.</m.div>    
                 </a> 
-                <a  href="#contact" onClick={() => setToggle(true)}>
+                <a  href="#" onClick={changeToggle}>
                     <m.div variants={item} >contact. </m.div>    
                 </a> 
             </m.nav>

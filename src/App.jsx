@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Nav from './components/Nav/Nav'
 import Header from './components/Header/Header'
 import Bio from './components/Bio/Bio'
@@ -11,7 +11,7 @@ import { ToggleProvider } from './context/ToggleContext';
 
 
 function App({pageProps, router}) {
-  const [hoveredElement, setHoveredElement] = useState(null)
+
 
   return (
     <ToggleProvider>
@@ -24,7 +24,7 @@ function App({pageProps, router}) {
           <span className='falling-star'></span>
         </section>
         <div className='content-container'>
-          <Nav setElementHovered={setHoveredElement} />
+          <Nav />
           <Header />
           <Bio />
           <Projects  />
