@@ -15,7 +15,7 @@ export default function ContactForm() {
 
  
     return (
-      <div className="contact-container" id="contact"   style={{opacity: toggle ?  "1" : "0" }} >
+      <div className="contact-container" id="contact"   style={toggle ? {display: "flex"} : {display: "none"}} >
           <span className="close-button" onClick={changeToggle}>x</span>
           <p>contact/</p>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -30,7 +30,7 @@ export default function ContactForm() {
           </form>      
           <div className="contact-info-container">
               <p>
-                  <span>Email:</span> rusualexei1995@gmail.com
+                  <span>email:</span> rusualexei1995@gmail.com
               </p>
           
           </div>

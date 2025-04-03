@@ -1,0 +1,27 @@
+.popup-window {
+    position: fixed;
+    right: -300px;
+    bottom: 10px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #383838;
+    background: rgba(39, 41, 40, 0.517);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+    opacity: 0;
+    z-index:50;
+}
+
+@media (max-width: 800px) {
+    .popup-window {
+        background: rgba(44, 45, 44, 0.961);
+    }
+}

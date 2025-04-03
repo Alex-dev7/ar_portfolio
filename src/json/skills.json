@@ -2,31 +2,37 @@
     {
         "id": 1,
         "category": "frontend",
-        "skills": ["html.svg", "css.svg", "js.svg", "ts.svg", "react.svg", "next.svg", "tailwind.svg", "boot.svg"]
+        "skills": ["html.svg", "css.svg", "js.svg", "ts.svg", "react.svg", "next.svg", "tailwind.svg", "boot.svg"],
+        "list": "### Frontend Skills\n\n- HTML\n- CSS\n- JavaScript\n- TypeScript\n- React\n- Next.js\n- Tailwind CSS\n- Bootstrap"
     },
     {
         "id": 2,
         "category": "backend",
-        "skills": ["node.svg", "ex.svg", "py.svg", "dj.svg"]
+        "skills": ["node.svg", "ex.svg", "py.svg", "dj.svg"],
+        "list": "### Backend Skills\n\n- NodeJS\n- ExpressJS\n- Python\n- Django\n"
     },
     {
         "id": 3,
         "category": "database",
-        "skills": ["postgre.svg", "sql.svg", "graph.svg","mongo.svg", "prisma.svg"]
+        "skills": ["postgre.svg", "sql.svg", "graph.svg","mongo.svg", "prisma.svg"],
+        "list": "### Database\n\n- PostgreSQL\n- SQL\n- GraphQL\n- MongoDB\n- Prisma"
     },
     {
         "id": 4,
         "category": "DevOps",
-        "skills": ["docker.svg",  "aws.svg",  "github.svg"]
+        "skills": ["docker.svg",  "aws.svg",  "github.svg"],
+        "list": "### DevOps Skills\n\n- Docker\n- AWS\n- GitHub"
     },
     {
         "id": 5,
         "category": "CI/CD",
-        "skills": ["GitHub Actions", "Code Commit", "Code Build", "Code Deploy"]
+        "skills": ["GitHub Actions", "Code Commit", "Code Build", "Code Deploy"],
+        "list":"### CI/CD\n\n- GitHub Actions\n- AWS CodePipeline\n  -  Code Commit\n  -  Code Build\n  - Code Deploy"
     },
     {
         "id": 6,
         "category": "tools",
-        "skills": ["figma.svg", "postman.svg", "vscode.svg", "git.svg", "terminal.svg", "coffee-mug.svg"]
+        "skills": ["figma.svg", "postman.svg", "vscode.svg", "git.svg", "terminal.svg", "coffee-mug.svg"],
+        "list": "### Tools\n\n- HTML\n- CSS\n- JavaScript\n- TypeScript\n- React\n- Next.js\n- Tailwind CSS\n- Bootstrap"
     }
 ]

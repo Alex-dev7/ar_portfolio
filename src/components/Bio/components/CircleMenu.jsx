@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import './circle.scss'
+import PopupWindow from "./PopupWindow";
 
-function CircleMenu({title, skillsArray}) {
+function CircleMenu({title, skillsArray, list}) {
     const [isOpen, setIsOpen] = useState(false)
+    // const [skillsList, setSkillsList] = useState(list)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     const radius = screenWidth < 1300 ? screenWidth <= 700 ? 60: 90  : 150
 
@@ -25,9 +27,9 @@ function CircleMenu({title, skillsArray}) {
     return (
         <div className="circle-menu"
             onMouseEnter={toggleMenu}
-            onMouseLeave={toggleMenu} 
-            // onClick={toggleMenu}     
+            onMouseLeave={toggleMenu}     
         >
+         <PopupWindow list={list} isOpen={isOpen} title={title}/> 
           {/* Central Button */}
           <div
             className="central-button"
