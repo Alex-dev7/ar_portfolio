@@ -1,12 +1,8 @@
 import './header.scss'
-// import { motion as m} from "framer-motion"
 import mouse from '../../assets/scroll-down.png'
-import { ToggleContext } from '../../context/ToggleContext';
-
 
 
 function Header(props){
-
 
 
     return (

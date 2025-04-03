@@ -1,21 +1,6 @@
 [
     {
       "id": 1,
-      "title": "Building a 6-Axis Robotic Arm",
-      "slug": "6-axis-robotic-arm",
-      "date": "2025-03-20",
-      "author": "Alexei Rusu",
-      "tags": ["iot", "robotics", "esp32", "arduino"],
-      "thumbnail": "blogImages/arm.webp",
-      "images": [
-        "https://i.imgur.com/BmY229K.jpg",
-        "https://i.imgur.com/LLvWE9C.jpg",
-        "https://i.imgur.com/1ZcozNX.jpg"
-      ],
-      "content": "## 6-Axis Robotic Arm Using ESP32\n\nI built a **6-axis robotic arm** using an ESP32 and Arduino to control the servos. \n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Features\n- Precise motion control using inverse kinematics\n -Wireless operation via a web interface\n- Can lift small objects and perform automated tasks\n\n### Components Used\n- ESP32\n- MG995 and SG90 servos\n- 3D-printed frame\n- Custom power supply\n\n### Code Example\n```cpp\n#include <ESP32Servo.h>\nServo servo1;\nvoid setup() {\n  servo1.attach(13);\n}\nvoid loop() {\n  servo1.write(90);\n  delay(1000);\n  servo1.write(0);\n  delay(1000);\n}\n```\n\nStay tuned for future improvements!"
-    },
-    {
-      "id": 2,
       "title": "DIY Electronic Scale in an AirPods Box",
       "slug": "electronic-scale-airpods-box",
       "date": "2025-03-21",
@@ -27,37 +12,7 @@
         "https://i.imgur.com/LLvWE9C.jpg",
         "https://i.imgur.com/1ZcozNX.jpg"
       ],
-      "content": "## Hidden Scale Inside an AirPods Box\n\n### Idea\nI modified an **AirPods box** to house a small electronic scale powered by an ESP32.\n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=400 height=350 style='object-fit: cover;' />\n\n### Features\n- Measures up to 500g\n- Bluetooth app integration for weight display\n- Rechargeable battery powered\n\n### Components Used\n- ESP32\n- HX711 load cell amplifier\n- Miniature load cell sensor\n\n<img src='https://i.imgur.com/BmY229K.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' /><img src='https://i.imgur.com/LLvWE9C.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Code Example\n```cpp\n#include \"HX711.h\"\nHX711 scale;\nvoid setup() {\n  scale.begin(4, 5);\n}\nvoid loop() {\n  Serial.println(scale.get_units(), 2);\n  delay(1000);\n}\n```\n\nIt's a fun and discreet way to carry a scale anywhere!"
-    },
-    {
-      "id": 3,
-      "title": "Smart Blinds Opener with Remote Control",
-      "slug": "smart-blinds-opener",
-      "date": "2025-03-22",
-      "author": "Alexei Rusu",
-      "tags": ["iot", "home-automation", "esp32", "arduino"],
-      "thumbnail": "blogImages/arm.webp",
-      "images": [
-        "https://i.imgur.com/BmY229K.jpg",
-        "https://i.imgur.com/LLvWE9C.jpg",
-        "https://i.imgur.com/1ZcozNX.jpg"
-      ],
-      "content": "## Remote Controlled Blinds Opener\n\nI designed a **motorized blinds opener** controlled via Wi-Fi.\n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Features\n- Open and close blinds remotely\n- Integrates with Home Assistant\n- Low power consumption\n\n### Components Used\n- ESP32\n- Stepper motor (28BYJ-48) with ULN2003 driver\n- 3D-printed mount\n\n### Code Example\n```cpp\n#include <WiFi.h>\nvoid setup() {\n  WiFi.begin(\"SSID\", \"PASSWORD\");\n}\nvoid loop() {\n  // Receive open/close commands over WiFi\n}\n```\n\nNow I can control my blinds with a tap on my phone!"
-    },
-    {
-      "id": 4,
-      "title": "ESP32-Based Temperature & Humidity Monitor",
-      "slug": "temperature-humidity-monitor",
-      "date": "2025-03-23",
-      "author": "Alexei Rusu",
-      "tags": ["iot", "esp32", "arduino", "sensor"],
-      "thumbnail": "blogImages/monitor.webp",
-      "images": [
-        "https://i.imgur.com/BmY229K.jpg",
-        "https://i.imgur.com/LLvWE9C.jpg",
-        "https://i.imgur.com/1ZcozNX.jpg"
-      ],
-      "content": "## IoT Temperature & Humidity Monitor\n\nI built an **IoT sensor** to monitor temperature and humidity using an ESP32 and DHT22 sensor.\n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Features\n- Displays data on an OLED screen\n- Sends data to a cloud server\n- Battery powered with deep sleep mode\n\n### Components Used\n- ESP32\n- DHT22 Temperature & Humidity Sensor\n- SSD1306 OLED Display\n\n### Code Example\n```cpp\n#include <DHT.h>\nDHT dht(2, DHT22);\nvoid setup() {\n  Serial.begin(115200);\n  dht.begin();\n}\nvoid loop() {\n  Serial.println(dht.readTemperature());\n  delay(2000);\n}\n```\n\nA useful device for real-time environmental monitoring!"
+      "content": "## Hidden Scale Inside an AirPods Box\n\n### Idea\nI modified an **AirPods box** to house a small electronic scale powered by an ESP32.\n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=400 height=350 style='object-fit: cover;' />\n\n### Features\n- Measures up to 1kg\n- Bluetooth app integration for weight display\n- Rechargeable battery powered\n\n### Components Used\n- ESP32\n- HX711 load cell amplifier\n- Miniature load cell sensor\n\n<img src='https://i.imgur.com/BmY229K.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' /><img src='https://i.imgur.com/LLvWE9C.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Code Example\n```cpp\n#include \"HX711.h\"\nHX711 scale;\nvoid setup() {\n  scale.begin(4, 5);\n}\nvoid loop() {\n  Serial.println(scale.get_units(), 2);\n  delay(1000);\n}\n```\n\nIt's a fun and discreet way to carry a scale anywhere!"
     }
   ]
   

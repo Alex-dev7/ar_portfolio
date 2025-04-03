@@ -40,9 +40,12 @@ function Bio(props){
                             I am passionate about a varity of hobbies, a really exciting one is building IoT projects ⚙️ with Raspberry Pi and Arduino, and exploring the limitless possibilities of these versatile microcomputers. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.
                             {/* <hr/> */}
                             {/* <br/><br/> */}
-                            <a href={'/blog'} className='link'>see more here ↗</a>
+                            {/* <a href={'/blog'} className='link'>see more here ↗</a> */}
+                            
                             <br/><br/>
-                            Additionally, I am a big coffee lover who appreciates a great cup of coffee. 
+                            <hr/>
+                            <br/><br/>
+                            Additionally, I am a big coffee lover who appreciates a great cup of coffee. ☕
                             </p>                   
                         </div>
 

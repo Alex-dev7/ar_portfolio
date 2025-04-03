@@ -99,9 +99,7 @@
         margin-right: 60px;
       }
     }
-
-
-
+ 
 
 //---------------------------------------------------------------- 
 
@@ -279,6 +277,17 @@
                 background-position-y: bottom !important;
                 top: -80%;
             }
+        }
+    }
+
+}
+
+@media (min-width: 1800px) {
+    .projects-container {
+        .parallax-container {
+            .parallax .scroller {
+                font-size: 44px;
+            }            
         }
     }
 

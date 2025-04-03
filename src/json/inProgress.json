@@ -1,0 +1,28 @@
+[
+    {
+        "id": 2,
+        "title": "Building a 6-Axis Robotic Arm",
+        "slug": "6-axis-robotic-arm",
+        "date": "2025-03-20",
+        "author": "Alexei Rusu",
+        "tags": ["iot", "robotics", "esp32", "arduino"],
+        "thumbnail": "blogImages/arm.webp",
+        "images": [
+          "https://i.imgur.com/BmY229K.jpg",
+          "https://i.imgur.com/LLvWE9C.jpg",
+          "https://i.imgur.com/1ZcozNX.jpg"
+        ],
+        "content": "## 6-Axis Robotic Arm Using ESP32\n\nI built a **6-axis robotic arm** using an ESP32 and Arduino to control the servos. \n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Features\n- Precise motion control using inverse kinematics\n -Wireless operation via a web interface\n- Can lift small objects and perform automated tasks\n\n### Components Used\n- ESP32\n- MG995 and SG90 servos\n- 3D-printed frame\n- Custom power supply\n\n### Code Example\n```cpp\n#include <ESP32Servo.h>\nServo servo1;\nvoid setup() {\n  servo1.attach(13);\n}\nvoid loop() {\n  servo1.write(90);\n  delay(1000);\n  servo1.write(0);\n  delay(1000);\n}\n```\n\nStay tuned for future improvements!"
+      },
+      {
+        "id": 3,
+        "title": "ESP32-Based Temperature & Humidity Monitor",
+        "slug": "temperature-humidity-monitor",
+        "date": "2025-03-23",
+        "author": "Alexei Rusu",
+        "tags": ["iot", "esp32", "arduino IDE", "sensor"],
+        "thumbnail": "blogImages/monitor.webp",
+        "images": [ ],
+        "content": "## IoT Temperature & Humidity Monitor\n\nI built an **IoT sensor** to monitor temperature and humidity using an ESP32 and DHT22 sensor.\n\n<img src='https://i.imgur.com/1ZcozNX.jpg' alt='project image' width=390 height=350 style='object-fit: cover;' />\n\n### Features\n- Displays data on an OLED screen\n- Sends data to a cloud server\n- Battery powered with deep sleep mode\n\n### Components Used\n- ESP32\n- DHT22 Temperature & Humidity Sensor\n- SSD1306 OLED Display\n\n### Code Example\n```cpp\n#include <DHT.h>\nDHT dht(2, DHT22);\nvoid setup() {\n  Serial.begin(115200);\n  dht.begin();\n}\nvoid loop() {\n  Serial.println(dht.readTemperature());\n  delay(2000);\n}\n```\n\nA useful device for real-time environmental monitoring!"
+      }
+]
