@@ -33,6 +33,6 @@
         "id": 6,
         "category": "tools",
         "skills": ["figma.svg", "postman.svg", "vscode.svg", "git.svg", "terminal.svg", "coffee-mug.svg"],
-        "list": "### Tools\n\n- HTML\n- CSS\n- JavaScript\n- TypeScript\n- React\n- Next.js\n- Tailwind CSS\n- Bootstrap"
+        "list": "### Tools\n\n- Figma\n- Postman\n- VS Code\n- Git\n- Terminal\n- coffee"
     }
 ]
