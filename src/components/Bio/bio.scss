@@ -78,7 +78,7 @@
                 font-optical-sizing: auto;
                 font-weight: 100;
                 font-style: normal;
-                background-image: url('dotted-bg.svg');
+                background-image: url('/dotted-bg.svg');
     
                 // font-family: "Gabarito", sans-serif;
      
@@ -264,7 +264,7 @@
             justify-content: center;
             gap: 150px;
             position: relative;
-            background-image: url('dotted-bg.svg');
+            background-image: url('/dotted-bg.svg');
             .hover-over {
                 position: absolute;
                 width: 40px;

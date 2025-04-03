@@ -2,7 +2,7 @@
 .blog-container {
     height: 100dvh;
     width: 100dvw;
-    background-image: url('scanlines.png');
+    background-image: url('/scanlines.png');
     background-color: #011c01;
     font-family: "Silkscreen", sans-serif;
     color: rgb(13, 147, 13);
@@ -17,28 +17,7 @@
         color: rgb(13, 147, 13);
 
     }
-    .cursor {
-        background-image: url("arrow-cursor.svg");
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 100;
-      }
-      .pointer {
-        background-image: url("hand-pointer.svg");
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 100;
-      }
+
     .title-container {
 
         width: 80%;
