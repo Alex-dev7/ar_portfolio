@@ -69,10 +69,6 @@ const Breakout = () => {
     const canvas = canvasRef.current
     const ctx = canvas.getContext("2d")
 
-    // Flip the canvas coordinate system
-    // ctx.translate(0, canvas.height);
-    // ctx.scale(1, -1);
-
     const drawBlocks = () => {
       blocks.forEach((block) => {
         ctx.fillStyle = block.color[0]

@@ -1,66 +1,29 @@
 import { useState, useRef, useEffect } from "react"
 import './pac-man.scss'
+import win from '/soundEffects/winMusic.mp3'
+import loose from '/soundEffects/gameOverPop.mp3'
+import dot from '/soundEffects/dot.mp3'
+import bonus from '/soundEffects/bonus.mp3'
 
-// ghosts Class
-class Ghost {
-    constructor(className, startIndex, speed, homeCorner, lastMovedAt){
-        this.className = className
-        this.startIndex = startIndex
-        this.speed = speed
-        this.homeCorner = homeCorner
-        this.lastMovedAt = lastMovedAt
-        this.currentIndex = this.startIndex
-    }
-}
 
 function PacMan() {
     const [score, setScore] = useState(0)
     const [gameOver, setGameOver] = useState(false)
+    const [message, setMessage] = useState(null)
+    const [sound, setSound] = useState(true)
     const [pacManIndex, setPacManIndex] = useState(490)
     const [scatterMode, setScatterMode] = useState(false)
     const [isScared, setIsScared] = useState(false)
-    const [map, setMap] = useState(
-        [
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-            1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
-            1, 3, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 3, 1,
-            1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
-            1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-            1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
-            1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
-            1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 1, 1, 2, 2, 1, 1, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 2, 2, 2, 2, 2, 2, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            4, 4, 4, 4, 4, 4, 0, 0, 0, 4, 1, 2, 2, 2, 2, 2, 2, 1, 4, 0, 0, 0, 4, 4, 4, 4, 4, 4,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 2, 2, 2, 2, 2, 2, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
-            1, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-            1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
-            1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
-            1, 3, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 3, 1,
-            1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1,
-            1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1,
-            1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1,
-            1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1,
-            1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1,
-            1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-        ]
-    )
-    const [ghosts, setGhosts] = useState([
-        new Ghost("blinky", 348, 250, 29, Date.now()),
-        new Ghost("pinky", 347, 400, 54, Date.now()),
-        new Ghost("inky", 351, 300, 743, Date.now()),
-        new Ghost("clyde", 379, 500, 729, Date.now())
-      ])
+    const [map, setMap] = useState(initialMap)
+    const [ghosts, setGhosts] = useState(initialGhosts)
     const width = 28
     const grid = useRef(null)
     
-
+    // sounds
+    const winMusic = new Audio(win)
+    const looseMusic = new Audio(loose)
+    const dotSound = new Audio(dot)
+    const bonusSound = new Audio(bonus)
 
     // 0 - pac dots 
     // 1 - walls
@@ -70,6 +33,7 @@ function PacMan() {
     const layout = {0: "pac-dot", 1: "wall", 2: "ghost-lair", 3: "power-pellet"}
 
     useEffect(() => {
+        if (gameOver) return
         const handleKeyDown= (e) => {
             let tempIndex = pacManIndex
             console.log(e.key)
@@ -94,6 +58,7 @@ function PacMan() {
 
         // eat pac dots
         if(map[pacManIndex] === 0){
+            // if (sound) dotSound.play()
             const newMap = [...map]
             newMap[pacManIndex] = 4
             setMap(newMap)
@@ -101,18 +66,28 @@ function PacMan() {
         }
         // eat power pellet
         if(map[pacManIndex] === 3){
+            // if (sound) bonusSound.play()
             const newMap = [...map]
             newMap[pacManIndex] = 4
             setMap(newMap)
             setScore(score + 10)
             setIsScared(true)
         }
+        // WIN CONDITION
+        if(!map.includes(0)){
+            if (sound) winMusic.play()
+            setMessage("You Win!")
+            setGameOver(true)
+        }
+
         window.addEventListener("keydown", handleKeyDown)
         return () => window.removeEventListener("keydown", handleKeyDown)
     }), [pacManIndex]
 
+
     // move the ghosts
     useEffect(() => {
+        if (gameOver) return
         const interval = setInterval(() => {
           const now = Date.now()
       
@@ -121,6 +96,14 @@ function PacMan() {
               if (now - ghost.lastMovedAt >= ghost.speed) {
                 const target = isScared ? 347  : scatterMode ? ghost.homeCorner : pacManIndex
                 const path = bfs(ghost.currentIndex, target, map, width)
+
+                // LOOSE CONDITION
+                if(ghost.currentIndex === pacManIndex && !isScared){
+                    if (sound) looseMusic.play()
+                    setMessage("Game Over!")
+                    setGameOver(true)
+                    return { ...ghost, lastMovedAt: now }
+                }
       
                 if (path && path.length > 1) {
                   return {
@@ -129,6 +112,7 @@ function PacMan() {
                     lastMovedAt: now,
                   }
                 }
+
                 return {
                   ...ghost,
                   lastMovedAt: now,
@@ -137,10 +121,11 @@ function PacMan() {
               return ghost
             })
           )
-        }, 50) // a high-frequency loop to check all ghosts
+        }, 50) // a high frequency loop to check all ghosts
+
       
         return () => clearInterval(interval)
-      }, [scatterMode, pacManIndex, map, width])
+      }, [scatterMode, pacManIndex, map, width, isScared, gameOver])
 
     // toggle scattered mode
     useEffect(() => {
@@ -163,10 +148,26 @@ function PacMan() {
     }, [isScared])
 
 
+    const restartGame = () => {
+        setPacManIndex(490)
+        setGhosts(initialGhosts)
+        setMap(initialMap)  
+        setGameOver(false)
+        setMessage(null)
+      };
+
+
     //create the board
   return (
     <div className='game-container'>
+       
         <span id="score">Score: {score}</span>
+        {gameOver && 
+        <div className="game-over">
+            <p>{message}</p>
+            <button onClick={restartGame}>Restart</button>
+        </div>
+        }
         <div ref={grid} className='grid-container' >
         {map.map((cell, index) => {
             const ghostHere = ghosts.find(ghost => ghost.currentIndex === index)
@@ -241,3 +242,58 @@ function bfs(start, target, map, width){
     // In case we finished looping and never reached the target, return null (no path found)
     return null
 }
+
+
+
+// ghosts Class
+class Ghost {
+    constructor(className, startIndex, speed, homeCorner, lastMovedAt){
+        this.className = className
+        this.startIndex = startIndex
+        this.speed = speed
+        this.homeCorner = homeCorner
+        this.lastMovedAt = lastMovedAt
+        this.currentIndex = this.startIndex
+    }
+}
+const initialGhosts = [
+    new Ghost("blinky", 348, 250, 29, Date.now()),
+    new Ghost("pinky", 347, 400, 54, Date.now()),
+    new Ghost("inky", 351, 300, 743, Date.now()),
+    new Ghost("clyde", 379, 500, 729, Date.now())
+]
+
+const initialMap = 
+[
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
+    1, 3, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 3, 1,
+    1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
+    1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 1, 1, 2, 2, 1, 1, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 2, 2, 2, 2, 2, 2, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    4, 4, 4, 4, 4, 4, 0, 0, 0, 4, 1, 2, 2, 2, 2, 2, 2, 1, 4, 0, 0, 0, 4, 4, 4, 4, 4, 4,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 2, 2, 2, 2, 2, 2, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 0, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
+    1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1,
+    1, 3, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 3, 1,
+    1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1,
+    1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1,
+    1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1,
+    1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+]
+
+
+      
