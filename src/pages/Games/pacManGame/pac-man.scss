@@ -1,7 +1,26 @@
 .game-container    {
+    padding-top: 30px;
+    position: relative;
+    z-index: 0;
     #score {
         font-size: 20px;
         text-align: center;
+    }
+    .game-over{
+        position: absolute;
+        font-size: 30px;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: aqua;
+        text-align: center;
+        button {
+            background-color: rgb(26, 137, 16);
+            padding: 3px 10px;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+        }
     }
     .grid-container {
         width: 560px;
@@ -61,6 +80,7 @@
             z-index: 10;
             background-color: yellow;
             border-radius: 10px;
+            border: 2px solid #19191C;
         }
         .scared-ghost {
             background-image: url('/scared.svg');

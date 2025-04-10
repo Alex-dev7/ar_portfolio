@@ -18,7 +18,7 @@
         text-decoration: none;
         color: #ddd200;
         background-color: inherit;
-        cursor: pointer;       
+        cursor: pointer;     
     }
 
     h1 {
@@ -61,25 +61,22 @@
             position: absolute;
             padding: 2px 10px;
             right: 0;
+            top: 0;
             font-size: 25px;
             color: #ddd200;
             background-color: inherit;
             cursor: pointer;
+            z-index: 11;  
         }
         .game-item{
             width: 400px;
             height: 230px;
-            border: 1px solid #7905fc;
             border-radius: 12px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             cursor: pointer;
             transition: background-color 0.3 fade-in-out;
-
-            &:hover {
-                background-color: #5502b41e;
-            }
 
             .content {
                 height: 70%;
@@ -90,6 +87,18 @@
                 h4 {
                     font-size: 20px;
                 }
+            }
+        }
+        .block {
+            border: 1px solid #7905fc;
+            &:hover {
+                background-color: #5502b41e;
+            }
+        }
+        .pacman {
+            border: 1px solid #fcfc05;
+            &:hover {
+                background-color: #b4ab021e;
             }
         }
     }
