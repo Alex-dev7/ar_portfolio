@@ -14,7 +14,12 @@ function BlogContent({data}) {
         <p className='dotted-line'></p>
 
         {/* <img className='bottom-image' src={data.images[2]} alt={`image of ${data.title}`}/> */}
-        <p>{data.date}</p>
+        <div className='code-block'>
+          <Markdown rehypePlugins={rehypeRaw}>
+            {data.code}
+          </Markdown>
+        </div>
+        <p style={{}}>Posted on: {data.date}</p>
     </div>
   )
 }

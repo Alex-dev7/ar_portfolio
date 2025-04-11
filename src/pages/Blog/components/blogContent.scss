@@ -1,8 +1,9 @@
 .bog-content-container {
     // outline: auto;
+    max-width: 800px;
     .dotted-line {
-        width: 100%;
-        border-bottom: 2px dotted rgb(199, 196, 196);
+        max-width: 800px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.474);
         margin: 10px 0;
         
     }
@@ -10,5 +11,14 @@
         width: 400px;
         height: 400px;
         object-fit: cover;
+    }
+    .code-block {
+        max-width: 800px;
+        padding: 20px;
+        background-color: #171717;
+        // color: rgb(0, 0, 0);
+        outline: 3px solid black;
+        color: #9ca7a4;
+        overflow-y: scroll;
     }
 }
