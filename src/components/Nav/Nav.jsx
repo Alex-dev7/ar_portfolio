@@ -25,9 +25,9 @@ const { toggle, changeToggle } = useContext(ToggleContext);
                 <a href="#work" >
                     <m.div variants={item} >projects.</m.div>    
                 </a> 
-                {/* <a href="/blog" >
+                <a href="/blog" id='blog-link' >
                     <m.div variants={item} >blog.</m.div>    
-                </a>  */}
+                </a> 
                 <a href="/games" id='games-link'>
                     <m.div variants={item} >games</m.div>    
                 </a> 

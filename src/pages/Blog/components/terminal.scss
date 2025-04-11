@@ -16,6 +16,7 @@
     overflow-y: scroll;
     scrollbar-color: rgb(13, 147, 13);
     scrollbar-width: none;
+    
     .back-button{
         position: fixed;
         left: 50px;
@@ -33,7 +34,7 @@
         }
     }
     .intro-text-container {
-
+        max-width: 600px;
     }
     
     .blog-projects-container {
@@ -79,3 +80,19 @@
     }    
 }
 
+@media (max-width: 1250px) {
+
+    .terminal-window {
+        width: 95%;
+    }
+
+}
+@media (max-width: 1150px) {
+
+    .terminal-window {
+        .image-window-container{
+            display: none;
+        }
+    }
+
+}
