@@ -12,7 +12,7 @@ function Header(props){
 
             <div  className='center-content'>  
                
-                <img src='me.png' alt='scroll down'  className='avatar-img'/> 
+                <img fetchPriority='high' src='me.png' alt='scroll down'  className='avatar-img' loading='eager'/> 
                 <div className='text-wrapper'>
                     <h1  className="title" >FULL STACK ENGINEER </h1>
                     <p>Welcome,</p>
