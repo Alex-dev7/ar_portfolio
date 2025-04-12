@@ -55,7 +55,7 @@ function CircleMenu({title, skillsArray, list}) {
                             className="menu-item"
                             
                           >
-                            <img src={skill} alt="skill logo" width={50} />
+                           {skill.includes("svg") ? <img src={skill} alt="skill logo" width={50} height={50} /> : <span >{skill}</span> }
                           </motion.div>
                         )
                       })
