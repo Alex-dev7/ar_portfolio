@@ -119,6 +119,12 @@ footer {
             ul {
                 flex-direction: column;
             }
+            #games{
+                display: none;
+            }
+            #blog {
+                display: none;
+            }
         }
     }
 }
