@@ -148,19 +148,19 @@ function PacMan() {
     }, [isScared])
 
 
-    const restartGame = () => {
+    function restartGame() {
         setPacManIndex(490)
         setGhosts(initialGhosts)
         setMap(initialMap)  
         setGameOver(false)
         setMessage(null)
-      };
+      }
 
 
     //create the board
   return (
     <div className='game-container'>
-       
+        <button className="start-button" onClick={() => setGameOver(!gameOver)}>{gameOver ? "Start" : "Pause"}</button>
         <span id="score">Score: {score}</span>
         {gameOver && 
         <div className="game-over">
