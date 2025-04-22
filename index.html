@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="referrer" content="no-referrer"> 
-    <!-- take it off ^ -->
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/cos.svg" />
-    <!-- Load the stylesheet that will reference the LCP image. -->
-    <link rel="stylesheet" href="./src/components/Header/header.scss">
-    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
-    <link rel="preload" fetchpriority="high" as="image" href="./src/assets/cos.svg" type="image/svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Gabarito:wght@400..900&family=Libre+Franklin:wght@100&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexei Rusu</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-K8NFVMLC");
+        </script>
+        <!-- End Google Tag Manager -->
+        <meta name="referrer" content="no-referrer" />
+        <!-- take it off ^ -->
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="./src/assets/cos.svg" />
+        <!-- Load the stylesheet that will reference the LCP image. -->
+        <link rel="stylesheet" href="./src/components/Header/header.scss" />
+        <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+        <link
+            rel="preload"
+            fetchpriority="high"
+            as="image"
+            href="./src/assets/cos.svg"
+            type="image/svg"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Gabarito:wght@400..900&family=Libre+Franklin:wght@100&family=Silkscreen:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alexei Rusu</title>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-K8NFVMLC"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
