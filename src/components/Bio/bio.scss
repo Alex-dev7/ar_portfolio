@@ -13,7 +13,6 @@
     -webkit-box-orient: vertical;
  }
 
-
 .about-container {
     width: 100vw;
     min-height: 100vh;
@@ -272,7 +271,14 @@
                 top: 5%;
                 left: 2%;
                 animation: bounce 1s ease-in-out infinite alternate;
-               
+            }
+            .badge {
+                position: absolute;
+                height: auto;
+                object-fit: contain;
+                top: 5%;
+                right: 2%;
+                animation: bounce 1s ease-in-out infinite alternate;
             }
 
             @keyframes bounce {

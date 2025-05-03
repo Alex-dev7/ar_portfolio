@@ -73,6 +73,7 @@ function Bio(props){
             <div className="svg-container">
 
                 <img className='hover-over' src='hover-over.svg' alt='hover-over' width={40} />
+                <img className='badge' src='aws-badge.png' width={120} alt="aws badge image" />
                 <div className='row-a'>
                     <CircleMenu skillsArray={skills[0].skills} list={skills[0].list} title={skills[0].category} />
                     <CircleMenu skillsArray={skills[1].skills} list={skills[1].list} title={skills[1].category} />
