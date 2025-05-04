@@ -176,14 +176,41 @@
                         width: 315px;
                         height: 60px;
                         padding: 15px;
+                        font-size: 19px;
                         border: 1px solid #383838;
                         background-color: #161618bc;
                         backdrop-filter: blur(15px);
                         -webkit-backdrop-filter: blur(15px);
                         border-radius: 8px;
                         grid-column: 1;
+                        cursor: pointer;
                         &:hover {
                             background-color: #232328d3;
+                        }
+                        .cert-dropdown-container {
+                            min-width: 650px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            position: absolute;
+                            bottom: -80px;
+                            left: 0;
+                            
+                            .item-cert{
+                                width: 315px;
+                                height: 60px;
+                                padding: 15px auto;
+                                place-content: center;
+                                border: 1px solid #383838;
+                                background-color: #161618bc;
+                                backdrop-filter: blur(15px);
+                                -webkit-backdrop-filter: blur(15px);
+                                border-radius: 8px;
+                                
+                                &:hover {
+                                    background-color: #1a4b1df9;
+                                }
+                            }
                         }
                         
                     }
@@ -360,6 +387,7 @@
             .outter-text-wrapper{
                 .text-wrapper{
                     width: 100%;
+                    padding:50px 0 200px 0;
 
                     .text-container{
                         height: auto;
@@ -380,6 +408,17 @@
                         .cell-background{
                         }
                         .cell-cert{
+                            .cert-dropdown-container {
+                                gap: 20px;
+                                flex-direction: column;
+                                position: absolute;
+                                bottom: -150px;
+                                left: 0;
+                                
+                                .item-cert{
+
+                                }
+                            }
 
                         }
                         .cell-res{

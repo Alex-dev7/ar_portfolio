@@ -1,11 +1,14 @@
 import './bio.scss'
 import certificate from "../../assets/Certificate-of-Completion.pdf"
+import aws from "../../assets/AWS-Cert.pdf"
 import CircleMenu from './components/CircleMenu';
 import skills from "../../json/skills.json"
+import { useState } from 'react';
 
 
 
 function Bio(props){
+    const [toggle, setToggle] = useState(false)
 
 
     return (
@@ -55,8 +58,14 @@ function Bio(props){
                                 Beyond the world of code, my background in choreography adds a unique dimension to my problem-solving and design process. As a professional choreographer and dancer, I've cultivated communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams.                                   
                             </p>                      
                         </div>
-                        <div className='cell-cert'>
-                            <a  href={certificate} target="_blank" > certification</a>  
+                        <div className='cell-cert' onClick={() => setToggle(!toggle)}>
+                            <span > certification</span>  
+                           { toggle ?
+                            <div className='cert-dropdown-container'>
+                                    <a className='item-cert' href={aws} target="_blank" >AWS</a>  
+
+                                    <a className='item-cert' href={certificate} target="_blank" >Software Engineer</a>  
+                            </div> : <></>}
                         </div>
                         <div className='cell-res'>
                             <a  href="https://docs.google.com/document/d/1_u7fTIbalKg1xV9sb57bnsyPFXR-3FQb1tBLGiKst4E/edit?usp=sharing"  target='_blank'>resume</a> 
