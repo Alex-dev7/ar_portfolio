@@ -59,7 +59,7 @@ function Bio(props){
                             </p>                      
                         </div>
                         <div className='cell-cert' onClick={() => setToggle(!toggle)}>
-                            <span > certification</span>  
+                            <span > certifications</span>  
                            { toggle ?
                             <div className='cert-dropdown-container'>
                                     <a className='item-cert' href={aws} target="_blank" >AWS</a>  
