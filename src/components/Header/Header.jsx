@@ -11,8 +11,7 @@ function Header(props){
         className='header-container'> 
 
             <div  className='center-content'>  
-               
-                <img fetchPriority='high' src='me.png' alt='scroll down'  className='avatar-img' loading='eager'/> 
+                <img fetchPriority='high' src='me.png' alt='scroll down'  className='avatar-img' loading="eager"/> 
                 <div className='text-wrapper'>
                     <h1  className="title" >FULL STACK ENGINEER </h1>
                     <p>Welcome,</p>
@@ -26,7 +25,6 @@ function Header(props){
                         </a>
                     </div>                     
                 </div>
-            
             </div>    
 
             <img src={mouse} alt='scroll down'  className='mouse'/> 
