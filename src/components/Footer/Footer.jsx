@@ -31,7 +31,7 @@ function Footer(props){
                     <li><a href="#contact" onClick={changeToggle}>contact me</a></li>
                 </ul>
                 <ul className="copyright-wrapper">
-                    <li className='copy-text'>© 2024 <span>Alexei Rusu</span></li>
+                    <li className='copy-text'>© 2026 <span>Alexei Rusu</span></li>
                     
                     <li onClick={handleClick}><a href="#">to top</a></li>
                 </ul>

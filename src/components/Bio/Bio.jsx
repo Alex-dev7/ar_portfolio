@@ -46,7 +46,7 @@ function Bio(props){
                             {/* <a href={'/blog'} className='link'>see more here ↗</a> */}
                             
                             <br/><br/>
-                            <hr/>
+                            {/* <hr/> ERROR */}
                             <br/><br/>
                             Additionally, I am a big coffee lover who appreciates a great cup of coffee. ☕
                             </p>                   

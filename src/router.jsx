@@ -1,6 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
 import App from "./App";
-import { showLoader, blogLoader } from "./loaders";
+import { showLoader } from "./loaders"; //import { showLoader, blogLoader } from "./loaders";
 import Show from "./pages/ProjectShow/Show";
 import Blog from "./pages/Blog/Blog";
 import Games from "./pages/Games/Games";
