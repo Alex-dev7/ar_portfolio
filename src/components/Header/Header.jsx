@@ -2,7 +2,7 @@ import './header.scss'
 import mouse from '../../assets/scroll-down.png'
 
 
-function Header(props){
+function Header(){
 
 
     return (
@@ -12,8 +12,10 @@ function Header(props){
 
             <div  className='center-content'>  
                 <img fetchPriority='high' src='me.png' alt='scroll down' width={200} height={200}  className='avatar-img' loading="eager"/> 
-                <div className='text-wrapper'>
-                    <h1  className="title" >FULL STACK ENGINEER </h1>
+                <div>
+                    <p  id="t"  >FULL STACK ENGINEER</p>
+                    <div className='text-wrapper'>
+                    
                     <p>Welcome,</p>
                     <p>explore my work and get in touch.</p>   
                     <div className='socials-wrapper'>
@@ -25,6 +27,8 @@ function Header(props){
                         </a>
                     </div>                     
                 </div>
+            </div>
+
             </div>    
 
             <img src={mouse} alt='scroll down'  className='mouse'/> 

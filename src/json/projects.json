@@ -1,6 +1,22 @@
 [
     {   
         "id" : 1,
+        "categorie": "Featured Frontend CMS Full Stack",
+        "thumbnail": "https://imgur.com/U3Ujd64l.jpg", 
+        "desktopImage" : "https://imgur.com/B8ejXGT.png",
+        "mobileImage": "https://imgur.com/moG4lMQ.png",
+        "title": "Lower Adirondack Alliance for Freedom",
+        "subtitle": "Application built with NextJS.",
+        "role": "FULL-STACK DEVELOPER", 
+        "context": "CLIENT WORK",
+        "description": "Designed and developed a responsive website for the Lower Adirondack Alliance for Freedom (LAAF), a nonprofit organization dedicated to combating human trafficking through education, prevention, survivor support, and advocacy.The website was designed to make sensitive and complex information approachable, while helping visitors quickly understand the organization’s mission, access educational resources, learn about human trafficking, explore upcoming events, and find ways to get involved or seek support. This is a live client website that I designed and developed. The source code is kept private in accordance with the client’s ownership and confidentiality requirements.",
+        "skills": ["ReactJS", "NextJS", "TypeScript", "UI/UX", "Sass", "Responsive Design", "SEO", "Domain Transfer"],
+        "live": "https://www.loweradkfree.org/",
+        "repo": "",
+        "class": "first-card"
+    },
+    {   
+        "id" : 2,
         "categorie": "Featured Frontend Full Stack",
         "thumbnail": "https://i.imgur.com/EfInj3dl.jpg",
         "desktopImage" : "https://i.imgur.com/bgFFTUk.png",
@@ -16,7 +32,7 @@
         "class": "first-card"
     },
     {   
-        "id" : 2,
+        "id" : 3,
         "categorie": "Featured Frontend CMS Full Stack",
         "thumbnail": "https://imgur.com/bk0RHiLl.png",
         "desktopImage" : "https://imgur.com/y49GQgX.png",
@@ -25,14 +41,14 @@
         "subtitle": "Application built with NextJS.",
         "role": "FULL-STACK DEVELOPER", 
         "context": "CLIENT WORK",
-        "description": "Client Work: The Hamlet at Hearthstone Pointe is a website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date content. This project showcases my expertise in creating high-quality web applications that meet clients unique needs.",
+        "description": "Client Work: The Hamlet at Hearthstone Pointe is a website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date content. This project showcases my expertise in creating high-quality web applications that meet clients unique needs. This is a live client website that I designed and developed. The source code is kept private in accordance with the client’s ownership and confidentiality requirements.",
         "skills": ["NextJS", "Framer Motion", "TypeScript", "Tailwind",  "Sanity.io", "GROQ", "CMS", "Responsive Design", "SEO"],
         "live": "https://www.thehamletathearthstonepointe.com/",
         "repo": "",
         "class": "first-card"
     },
     {   
-        "id" : 3,
+        "id" : 4,
         "categorie": "Featured AI",
         "thumbnail": "https://i.imgur.com/QaNBQBrl.png",
         "desktopImage" : "https://i.imgur.com/HRhS9mB.png",
@@ -41,14 +57,14 @@
         "subtitle": "Application built with React and ChatGPT",
         "role": "FULL-STACK DEVELOPER", 
         "context": "Personal Project",
-        "description": "An environmental awareness bot which can offer insights and guidance on sustainability and green living.",
+        "description": "An environmental awareness bot which can offer insights and guidance on sustainability and green living. Note: The live AI functionality is currently disabled, as the project is no longer connected to a paid OpenAI API account. The project remains available to demonstrate the implementation and development concepts behind it.",
         "skills": ["ReactJS", "OpenAI Assistants API", "ExpressJS", "NodeJS"],
         "live": "https://chat-bot-red-phi.vercel.app/",
         "repo": "https://github.com/Alex-dev7/_ChatBot_",
         "class": "first-card"
     },
     {
-        "id" : 4,
+        "id" : 5,
         "categorie": "Featured Frontend CMS",
         "thumbnail": "https://i.imgur.com/upuh6Tdl.png",
         "desktopImage" : "https://i.imgur.com/ld4VXNH.png",
@@ -57,13 +73,13 @@
         "subtitle": "Applocation built with NextJS.",
         "role": "FRONT-END DEVELOPER", 
         "context": "CLIENT WORK",
-        "description": " Client Work: Lake House Bistro is a restaurant website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date menus and events. Lake House Bistro offers a diverse menu inspired by local and global cuisine, and the website provides easy access to online reservations, event updates, and social media connections. This project showcases my expertise in creating high-quality web applications that meet clients unique needs.",
+        "description": " Client Work: Lake House Bistro is a restaurant website I developed using a cutting-edge tech stack. Built with NextJS, TypeScript, Tailwind, Sanity.io, GROQ, and a robust CMS, the website delivers a seamless user experience. NextJS ensures fast performance and optimized search engine visibility, while TypeScript guarantees reliability and maintainability. The visually stunning design is crafted using Tailwind. The CMS powered by Sanity.io and GROQ allows effortless content management, ensuring up-to-date menus and events. Lake House Bistro offers a diverse menu inspired by local and global cuisine, and the website provides easy access to online reservations, event updates, and social media connections. This project showcases my expertise in creating high-quality web applications that meet clients unique needs. This is a live client website that I designed and developed. The source code is kept private in accordance with the client’s ownership and confidentiality requirements.",
         "skills": ["NextJS",  "TypeScript", "Tailwind",  "Sanity.io", "GROQ", "CMS"],
         "live": "https://lakehousebistro.com/",
         "class": "sixth-card"
     },
     {
-        "id" : 5,
+        "id" : 6,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/Oq5RKexl.png",
         "desktopImage" : "https://i.imgur.com/7nXoVJm.png",
@@ -79,7 +95,7 @@
         "class": "fifth-card"
     },
     {
-        "id" : 6,
+        "id" : 7,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/6aGXhWOl.png",
         "desktopImage" : "https://i.imgur.com/WM4EXES.png",
@@ -95,7 +111,7 @@
         "class": "fourth-card"
     },
     {
-        "id" : 7,
+        "id" : 8,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/MmBBmOul.png",
         "desktopImage" : "https://i.imgur.com/A48pM5H.png",
@@ -112,7 +128,7 @@
         "class": "third-card"
     },
     {   
-        "id" : 8,
+        "id" : 9,
         "categorie": "Full Stack",
         "thumbnail": "https://i.imgur.com/UWxjF08l.png",
         "desktopImage" : "https://i.imgur.com/4lJFaef.png",
@@ -128,7 +144,7 @@
         "class": "second-card"
     },
     {   
-        "id" : 9,
+        "id" : 10,
         "categorie": "Frontend",
         "thumbnail": "https://i.imgur.com/FHqD6ETl.png",
         "desktopImage" : "https://i.imgur.com/41A5gzh.png",
@@ -144,7 +160,7 @@
         "class": "first-card"
     },
     {   
-        "id" : 10,
+        "id" : 11,
         "categorie": "Mobile App",
         "thumbnail": "https://i.imgur.com/dHXrhOkl.png",
         "desktopImage" : "https://i.imgur.com/ModsueL.png",

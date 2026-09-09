@@ -28,35 +28,39 @@ function Bio(props){
                             <br/>
                             <p>
                                 <br/>
-                                Hi, I'm <span className='accent-text'>Alexei</span>, a <span className='accent-text'>software developer</span> with a background in performing arts. <br/><br/>
-                                
-                                 I combine technical expertise with a creative problem-solving to bring unique perspectives to the development process.
-                                
-                                {/* My journey in software development has equipped me with a strong foundation in full-stack development and a passion for crafting effortless user experiences.                                    */}
+                                Hi, I'm <span className='accent-text'>Alexei</span>, a <span className='accent-text'>software developer</span> with a growing focus on cybersecurity. I am continuously expanding my skill set and enjoy stepping outside of what I already know to tackle unfamiliar challenges.
+                                <br />
+
+                            
+                             
                             </p>           
                         </div>
 
                         <div className='cell-hobbies'>
-                            <span className='hobbies' >- hobbies -</span>
-                            <br/>
                             <p>
-                            I am passionate about a varity of hobbies, a really exciting one is building IoT projects ⚙️ with Raspberry Pi and Arduino, and exploring the limitless possibilities of these versatile microcomputers. This hands-on experience fuels my curiosity and allows me to apply my technical skills to creative DIY projects.
-                            {/* <hr/> */}
-                            {/* <br/><br/> */}
-                            {/* <a href={'/blog'} className='link'>see more here ↗</a> */}
-                            
-                            <br/><br/>
-                            {/* <hr/> ERROR */}
-                            <br/><br/>
-                            Additionally, I am a big coffee lover who appreciates a great cup of coffee. ☕
+                                <span className='hobbies' >- hobbies -</span>
+                                <br/><br />
+                                I always try keeping a balance between creative and active pursuits. I’ve been playing guitar for years, which gives me a creative outlet and a chance to step away from the screen.
+
+                                I also enjoy working on electronics projects and experimenting with hardware, whether it's building or breaking something in the process.
+
+                                Staying active is another important part of my lifestyle. I like working out and spending time outdoors, which helps me stay energized and focused.
+       
+                                <br/><br/>
+                                Additionally, I am a big coffee lover who appreciates a great cup of coffee. ☕
                             </p>                   
                         </div>
 
                         <div className='cell-background'>
                             <span className='background' >- background -</span>
                             <p>
-                                Beyond the world of code, my background in choreography adds a unique dimension to my problem-solving and design process. As a professional choreographer and dancer, I've cultivated communication, leadership, and adaptability skills, which are essential for working in dynamic and diverse teams.                                   
-                            </p>                      
+                                My background in software development has taught me how to turn ideas into practical solutions, while studying cybersecurity has encouraged me to think more critically about how those solutions are built, connected, and protected. 
+                            </p>                 
+                                
+                            <p>
+                                <span className='accent-text'>Why is this important?</span> <br />
+                                I believe that some of the best solutions come from combining knowledge across different disciplines. 
+                            </p> 
                         </div>
                         <div className='cell-cert' onClick={() => setToggle(!toggle)}>
                             <span > certifications</span>  
