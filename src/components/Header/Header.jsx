@@ -15,18 +15,18 @@ function Header(){
                 <div>
                     <p  id="t"  >FULL STACK ENGINEER</p>
                     <div className='text-wrapper'>
-                    
-                    <p>Welcome,</p>
-                    <p>explore my work and get in touch.</p>   
-                    <div className='socials-wrapper'>
-                        <a href="https://github.com/Alex-dev7" target="_blank" >
-                            <img src='github.svg' width={22} height={22}/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">
-                            <img src='linkedin.svg' width={22} height={22}/>
-                        </a>
-                    </div>                     
-                </div>
+                        
+                        <p>Welcome,</p>
+                        <p>explore my work and get in touch.</p>   
+                        <div className='socials-wrapper'>
+                            <a href="https://github.com/Alex-dev7" target="_blank" >
+                                <img src='github.svg' width={22} height={22}/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alexei-rusu-dev/" target="_blank">
+                                <img src='linkedin.svg' width={22} height={22}/>
+                            </a>
+                        </div>                     
+                    </div>
             </div>
 
             </div>    
